@@ -9,7 +9,7 @@ Looking for a project generator for your Sinatra projects? Check out my new proj
 
 ### Demo
 
-<iframe src="http://player.vimeo.com/video/23707392" width="400" height="300" frameborder="0"></iframe>
+{{% vimeo 23707392 %}}
 
 ### Usage
 

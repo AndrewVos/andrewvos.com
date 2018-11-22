@@ -10,6 +10,6 @@ Here's a refactored version of the
 
 A shell context menu is the shortcut menu you see when right clicking on a file in Explorer.
 
-![Shell Context Menu](https://content.anmo.io/user-1-809236b7c2fa8e7349ecfe49082ab678-shellcontextmenu.png)
+![Shell Context Menu](/shellcontextmenu.png)
 
-[Download the code here!](https://content.anmo.io/user-1-0e61a42586ec2f45de7b72eb18043415-shellcontextmenu.zip)
+[Download the code here!](/shellcontextmenu.zip)

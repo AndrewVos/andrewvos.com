@@ -1,0 +1,25 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="/jquery.watermark.js" type="text/javascript"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("#example1").watermark("watermark text!");
+    $("#example2").watermark("red watermark text!", "red");
+  });
+</script>
+
+<h3>Usage:</h3>
+
+```javascript
+$("#example1").watermark(watermarkText, [watermarkColour]);
+```    
+
+<h3>Example:</h3>
+
+<h4>Without colour specified:</h4>
+
+<input type="text" id="example1"></input>
+
+<h4>With colour specified:</h4>
+
+<input type="text" id="example2"></input>

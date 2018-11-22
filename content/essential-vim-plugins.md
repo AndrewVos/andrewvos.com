@@ -12,7 +12,7 @@ vimux is a "vim plugin to interact with tmux". Want to run your unit tests in a 
 Firstly, type :PromptVimTmuxCommand and vimux will ask you for a command to execute.
   This command will now be executed in a 20 character (by default) high tmux pane below your current vim session.
 
-![vimux.png](https://content.anmo.io/user-1-4fd3f81fbe3ea40a471dba6741237ec0-vimux.png)
+![vimux.png](/vimux.png)
 
 As you can see, I executed `rake test`.
 
@@ -33,7 +33,7 @@ ctrlp is the best plugin I've found for quickly searching and opening files.</p>
   Other than finding files a hell of a lot faster than you would in a tree structure,
   a great benefit of this approach is that you actually start remembering what files are named, and end up with a better mental model of the project you're working on.
 
-![ctrlp.png](https://content.anmo.io/user-1-6b0892252e5fd6d2bfb49cff522bbf2c-ctrlp.png)
+![ctrlp.png](/ctrlp.png)
 
 ## Per-project VIM config
 

@@ -7,7 +7,7 @@ aliases:
 ---
 This simple library helps you to create windows similar to the ones used in Photoshop.
 
-![DockForms - A .Net library for creating dockable forms](https://content.anmo.io/user-1-cbe0ce7534507c699ae6bbe9cde55801-dockforms.png)
+![DockForms - A .Net library for creating dockable forms](/dockforms.png)
 
 Example Usage:
 
@@ -42,4 +42,4 @@ And we're done. This will add three dockable forms to your main form.
 
 DockForms also contains a Theme Maker tool, which allows you to easily create themes, and even generates C#/VB code for you!
 
-[Download DockForms.Zip](https://content.anmo.io/user-1-9186c63009c87adcd8e986b39050bae9-dockforms.zip)
+[Download DockForms.Zip](/dockforms.zip)

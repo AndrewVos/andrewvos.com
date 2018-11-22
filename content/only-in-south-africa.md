@@ -5,6 +5,6 @@ draft: false
 aliases:
   - "/2007/05/28/only-in-south-africa"
 ---
-![No Dangerous Weapons Allowed](https://content.anmo.io/user-1-32e226f2f840f44972bc783beed4230e-nodangerousweaponsallowed.jpg)
+![No Dangerous Weapons Allowed](/nodangerousweaponsallowed.jpg)
 
 Fucking hell.

@@ -5,7 +5,7 @@ draft: false
 aliases:
   - "/2013/08/02/hacker-news-in-the-terminal"
 ---
-![hacker-news-script.png](https://content.anmo.io/user-1-2016-01-10%2021%3A39%3A43%20%2B0000-hacker-news-script.png)
+![hacker-news-script.png](/hacker-news-script.png)
 
 A simple script that shows Hacker News in your terminal. There are no links to comments, because you should never read the comments.
 

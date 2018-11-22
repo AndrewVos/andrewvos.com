@@ -15,11 +15,11 @@ Sorry I  havent been around in a while. Thought Id stop by and release an awesom
 
 Lets say you have this:
 
-![codeanywhere1.png](https://content.anmo.io/user-1-8aa64ba1c075d341eca0a5108741eae5-codeanywhere1.png)
+![codeanywhere1.png](/codeanywhere1.png)
 
 And then you press CAPS LOCK:
 
-![codeanywhere2.png](https://content.anmo.io/user-1-5bb3fce98efc962c3d9ac6a953869bc2-codeanywhere2.png)
+![codeanywhere2.png](/codeanywhere2.png)
 
 CodeDOM compiled the code and executed it. (Its C# code, by the way)
 

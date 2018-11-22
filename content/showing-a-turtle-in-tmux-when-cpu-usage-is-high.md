@@ -7,7 +7,7 @@ aliases:
 ---
 ## Turtle/Rabbit:
 
-![turtle-rabbit.gif](https://content.anmo.io/user-1-1d724e42f63efb92e44798463cb55a83-turtle-rabbit.gif)
+![turtle-rabbit.gif](/turtle-rabbit.gif)
 
 (You're looking at the icon on the bottom right)
 

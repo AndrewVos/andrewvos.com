@@ -9,7 +9,7 @@ This is quite weird. StartMenuEx must have been listed on some large website or 
 
 These are unique visitors...
 
-![visitors](https://content.anmo.io/user-1-72466e0d71aa7ee93df3d10214901299-visitors.jpg)
+![visitors](/visitors.jpg)
 
 As you can see, it's been pretty slow.
 

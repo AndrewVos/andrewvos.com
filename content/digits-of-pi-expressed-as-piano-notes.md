@@ -12,6 +12,6 @@ This inspired me to write a ruby script that does the same. The script is availa
 Here's a sound clip of this script:
 
 <audio autobuffer='autobuffer' controls='controls' preload='auto'>
-  <source src='https://content.anmo.io/user-1-ac47755b1d9cfbc47005abefd0e0a68a-pi-notes.mp3'></source>
-  <source src='https://content.anmo.io/user-1-69d365763009da80554a29f754ae37a7-pi-notes.ogg'></source>
+  <source src='/pi-notes.mp3'></source>
+  <source src='/pi-notes.ogg'></source>
 </audio>

@@ -11,7 +11,7 @@ Anyway, here's a nice minimal bash prompt that I hand whittled myself. It took y
 
 ## Demo
 
-![image.png](https://content.anmo.io/user-1-d1c98eb8487aaa967ae5f0a211f15d13-image.png)
+![image.png](/image.png)
 
 ## Setup
 Paste the following into your `~/.bashrc`:

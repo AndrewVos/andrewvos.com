@@ -14,13 +14,13 @@ HtmlBuilder uses a simple template system, and includes some example templates u
 On the left we have the Site browser, which lists all files in the site.
 
 
-![HtmlBuilder Main Window](https://content.anmo.io/user-1-2d05ff788cb85a93a134eed6b669725d-htmlbuilder1.png)
+![HtmlBuilder Main Window](/htmlbuilder1.png)
 
 ### The Color Chooser Window
 
 Favorite colors can be stored on the right hand side.
 
-![HtmlBuilder Color Chooser](https://content.anmo.io/user-1-65fd2f5fac1980feef79a68728fa54f3-htmlbuildercolorchooser1.png)
+![HtmlBuilder Color Chooser](/htmlbuildercolorchooser1.png)
 
 
 ### Requirements

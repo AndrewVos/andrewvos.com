@@ -15,7 +15,7 @@ The code is [on GitHub](http://github.com/AndrewVos/Quine-of-Life) if you want t
 
 Here's a video:
 
-<iframe src="http://player.vimeo.com/video/15295218" width="400" height="300" frameborder="0"></iframe>
+{{% vimeo 15295218 %}}
 
 Here's the code:
 

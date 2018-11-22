@@ -7,9 +7,6 @@ aliases:
 ---
 Did this last night with a friend of mine.
 
-<object height='355' width='425'>
-  <param name='movie' value='http://www.youtube.com/v/vAU1PTJQGBs&amp;amp;hl=en&amp;amp;fs=1&amp;amp;rel=0&amp;amp;hl=en' />
-  <embed height='355' src='http://www.youtube.com/v/vAU1PTJQGBs&amp;amp;hl=en&amp;amp;fs=1&amp;amp;rel=0&amp;amp;hl=en' type='application/x-shockwave-flash' width='425'></embed>
-</object>
+{{% youtube vAU1PTJQGBs %}}
 
 Our first attempt at stop motion.

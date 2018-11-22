@@ -16,19 +16,19 @@ ContextMenuCleaner cleans some of your context menus in Windows, and currently s
 
   Basically, you just open up a context menu,
 
-![ContextMenuCleaner - Dirty Menu](https://content.anmo.io/user-1-0cc1c5d96215c495448cd70291a7e486-contextmenucleaner-dirty-menu.png)
+![ContextMenuCleaner - Dirty Menu](/contextmenucleaner-dirty-menu.png)
 
   then double click the system tray icon, and drag some items over to the Hidden section.
 
-![ContextMenuCleaner - Config](https://content.anmo.io/user-1-a23db280510111e9aba75b444a4b6c1a-contextmenucleaner-config.png)
+![ContextMenuCleaner - Config](/contextmenucleaner-config.png)
 
 The next time you open this menu it should have been cleaned:
 
-![ContextMenuCleaner - Better Menu](https://content.anmo.io/user-1-9f1312d0ca0dea7e99533fcc8eafe44c-contextmenucleaner-better-menu.png)
+![ContextMenuCleaner - Better Menu](/contextmenucleaner-better-menu.png)
 
   Here's a before and after of the Internet Explorer context menu:
 
-![ContextMenuCleaner - Before and After](https://content.anmo.io/user-1-69c58d84724fde61c9b6d48732293da4-contextmenucleaner-before-and-after.png)
+![ContextMenuCleaner - Before and After](/contextmenucleaner-before-and-after.png)
 
 EDIT: If you want to remove an item such as "Scan file.zip", you can drag an item over to the hidden items list, and rename it to "Scan *". This should remove all items that start with "Scan".
 

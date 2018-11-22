@@ -37,7 +37,7 @@ settingsForm.ShowDialog();
 
 And we get this:
 
-![settingsmanager.png](https://content.anmo.io/user-1-67009e05e211feb6a3dcdc0f1f9d4091-settingsmanager.png)
+![settingsmanager.png](/settingsmanager.png)
 
 ### Creating custom editors
 
@@ -111,4 +111,4 @@ public class TabbedSettingsForm : SettingsFormBase {
 }
 ```
 
-[Source and a Demo project is available here.](https://content.anmo.io/user-1-76df03c1eaad9a67f66c367180591d7f-settingsmanager.zip)
+[Source and a Demo project is available here.](/settingsmanager.zip)

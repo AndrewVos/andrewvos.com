@@ -9,7 +9,7 @@ I really needed a clipboard manager, and I wanted it to be simple to use. I also
 
 Introducing Clippee:
 
-![Clippee](https://content.anmo.io/user-1-2cc7212a4afbc03128077e81ab55e622-clippee.png)
+![Clippee](/clippee.png)
 
 Clippee shows you a menu of recently copied items when you press CTRL+ALT+V. When you select an item, whatever is in the clipboard gets swapped with the selected item.
 
@@ -17,4 +17,4 @@ I haven't added support for saving items yet, but will do it soon.
 Bugs/Requests in the comments please.
 Clippee requires .NET Framework 2.0.
 
-[Download Version 0.2](https://content.anmo.io/user-1-7be075c60eebc27675681fb26b1ef61f-clippee.zip)
+[Download Version 0.2](/clippee.zip)

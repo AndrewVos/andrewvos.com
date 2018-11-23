@@ -1,4 +1,4 @@
 baseURL = "https://andrewvos.com/"
 languageCode = "en-us"
 title = "andrewvos.com"
-theme = "hugo-bootswatch"
+theme = "vos"

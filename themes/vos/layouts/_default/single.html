@@ -7,6 +7,10 @@
     {{ .Content }}
   </div>
 
+  <div>
+    {{ template "_internal/disqus.html" . }}
+  </div>
+
   {{ partial "container-footer.html" . }}
 </div>
 {{ partial "footer.html" . }}

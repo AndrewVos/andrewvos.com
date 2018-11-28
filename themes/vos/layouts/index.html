@@ -1,8 +1,7 @@
 {{ partial "header.html" . }}
 {{ partial "navbar.html" . }}
 <div class="container">
-
-  {{ range .Data.Pages }}
+  {{ range where .Pages "Type" "posts" }}
   <div>
     <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
     <span class="lead">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>

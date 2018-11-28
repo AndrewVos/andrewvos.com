@@ -2,3 +2,5 @@ baseURL = "https://andrewvos.com/"
 languageCode = "en-us"
 title = "andrewvos.com"
 theme = "vos"
+[permalinks]
+  post = "/:title/"

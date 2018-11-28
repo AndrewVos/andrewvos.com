@@ -1,5 +1,6 @@
 require 'goodreads'
 require 'json'
+require 'date'
 
 client = Goodreads::Client.new(
   api_key: ENV.fetch('GOODREADS_API_KEY'),
@@ -25,9 +26,14 @@ loop do
       rating: Integer(book_info.rating),
       author: book.authors.author.name,
       author_url: book.authors.author.link,
+      read_at: DateTime.parse(book_info.read_at || book_info.date_added)
     }
   end
   page += 1
+end
+
+data = data.sort do |a,b|
+  b[:read_at] <=> a[:read_at]
 end
 
 File.open('./data/books.json', 'w') do |file|

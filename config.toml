@@ -2,5 +2,6 @@ baseURL = "https://andrewvos.com/"
 languageCode = "en-us"
 title = "andrewvos.com"
 pygmentsCodeFences = true
+pygmentsUseClasses = true
 [permalinks]
   post = "/:title/"

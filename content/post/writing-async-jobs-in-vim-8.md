@@ -10,7 +10,7 @@ run my rake spec in the background, and then open up a quickfix window to show m
 
 This needs a lot of work, but it gets the job done for now!
 
-```vimscript
+```viml
 " This callback will be executed when the entire command is completed
 function! BackgroundCommandClose(channel)
   " Read the output from the command into the quickfix window

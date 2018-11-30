@@ -5,6 +5,10 @@ footer{
     padding-top:50px;
 }
 
+.lead {
+    margin-bottom: 20px;
+}
+
 /* Background */ .chroma { background-color: #ffffff }
 /* Error */ .chroma .err { color: #a61717; background-color: #e3d2d2 }
 /* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }

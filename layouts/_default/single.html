@@ -2,7 +2,7 @@
 {{ partial "navbar.html" . }}
 <div class="container">
   <h1><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
-  <span class="lead">{{ .Date.Format "Mon, Jan 2, 2006" }}</span>
+  <div class="lead">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
   <div class="post">
     {{ .Content }}
   </div>

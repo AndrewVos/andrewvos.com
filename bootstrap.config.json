@@ -390,6 +390,8 @@
     "responsive-utilities.less",
     "navs.less",
     "navbar.less",
+    "media.less",
+    "panels.less",
     "component-animations.less"
   ],
   "js": [

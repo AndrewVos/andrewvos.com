@@ -2,29 +2,55 @@
 {{ partial "navbar.html" . }}
 <style>
 .book-cover {
-  min-width: 111px;
+  min-width: 48px;
 }
 </style>
 <div class="container">
   <h1>{{ .Title }}</h1>
+
   <div class="post">
     {{ range $.Site.Data.books }}
-    <div class="media">
-      <div class="media-left">
-        <img class="media-object book-cover" src="{{ .image_url }}" alt="{{ .title }}">
-      </div>
-      <div class="media-body">
-        <h4 class="media-heading">
-          <a href="{{ .url }}">{{ .title }}</a>
-        </h4>
-        <p>
-          <a href="{{ .author_url }}">{{ .author }}</a>
-        </p>
-        <p>
-          {{ .rating }} / 5 stars
-        </p>
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+      <div class="panel panel-default">
+        <div class="panel-heading" role="tab" id="heading{{ .year }}">
+          <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse{{ .year }}" aria-expanded="true" aria-controls="collapse{{ .year }}">
+              {{ .year }} ({{ .books | len }})
+            </a>
+          </h4>
+        </div>
+        <div id="collapse{{ .year }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading{{.year}}">
+          <div class="panel-body">
+            <ul class="media-list">
+              {{ range .books }}
+              <li class="media">
+                <div class="media-left">
+                  <a href="{{ .url }}">
+                    <img class="media-object book-cover" src="{{ .small_image_url }}" alt="{{ .title }}">
+                  </a>
+                </div>
+                <div class="media-body">
+                  <h4 class="media-heading">
+                    <a href="{{ .url }}">{{ .title }}</a>
+                  </h4>
+                  <p>
+                    <a href="{{ .author_url }}">{{ .author }}</a>
+                  </p>
+                  <p>
+                    Read: {{ .read_at | dateFormat "02 January 2006" }}
+                  </p>
+                  <p>
+                    {{ .rating }} / 5 stars
+                  </p>
+                </div>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
+
     {{ end }}
 
   </div>

@@ -11,6 +11,6 @@ I've actually read this article a few times but never scrolled down far enough t
 
 https://communities.intel.com/thread/108361
 
-```
+```bash
 echo 'options snd-hda-intel model=dell-headset-multi' | sudo tee -a /etc/modprobe.d/alsa-base.conf
 ```

@@ -1,24 +1,10 @@
-<nav class="navbar navbar-default">
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="/">{{ .Site.Title }}</a>
-  </div>
-  <div class="collapse navbar-collapse" id="navbar-collapse">
-    <ul class="nav navbar-nav navbar-right">
-      <li>
-        <a href="/page/books">books</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/AndrewVos">twitter</a>
-      </li>
-      <li>
-        <a href="https://pdfcv.herokuapp.com/?markdown_url=https://raw.githubusercontent.com/AndrewVos/cv/master/AndrewVos.md&amp;css_url=https://raw.githubusercontent.com/AndrewVos/cv/master/style.css">cv</a>
-      </li>
-    </ul>
-  </div>
-</nav>
+<div class="nav">
+  <a class="nav-title" href="/">
+    {{ .Site.Title }}
+  </a>
+  <a class="nav-sub" href="/page/books">books</a>
+  -
+  <a class="nav-sub" href="https://twitter.com/AndrewVos">twitter</a>
+  -
+  <a class="nav-sub" href="https://pdfcv.herokuapp.com/?markdown_url=https://raw.githubusercontent.com/AndrewVos/cv/master/AndrewVos.md&amp;css_url=https://raw.githubusercontent.com/AndrewVos/cv/master/style.css">cv</a>
+</div>

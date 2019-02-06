@@ -9,7 +9,7 @@ I really needed a clipboard manager, and I wanted it to be simple to use. I also
 
 Introducing Clippee:
 
-![Clippee](/clippee.png)
+![Clippee](/images/clippee.png)
 
 Clippee shows you a menu of recently copied items when you press CTRL+ALT+V. When you select an item, whatever is in the clipboard gets swapped with the selected item.
 
@@ -17,4 +17,4 @@ I haven't added support for saving items yet, but will do it soon.
 Bugs/Requests in the comments please.
 Clippee requires .NET Framework 2.0.
 
-[Download Version 0.2](/clippee.zip)
+[Download Version 0.2](/downloads/clippee.zip)

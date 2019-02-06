@@ -111,4 +111,4 @@ public class TabbedSettingsForm : SettingsFormBase {
 }
 ```
 
-[Source and a Demo project is available here.](/settingsmanager.zip)
+[Source and a Demo project is available here.](/downloads/settingsmanager.zip)

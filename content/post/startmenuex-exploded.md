@@ -9,7 +9,7 @@ This is quite weird. StartMenuEx must have been listed on some large website or 
 
 These are unique visitors...
 
-![visitors](/visitors.jpg)
+![visitors](/images/visitors.jpg)
 
 As you can see, it's been pretty slow.
 

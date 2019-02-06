@@ -5,6 +5,6 @@ draft: false
 aliases:
   - "/2007/05/28/only-in-south-africa"
 ---
-![No Dangerous Weapons Allowed](/nodangerousweaponsallowed.jpg)
+![No Dangerous Weapons Allowed](/images/nodangerousweaponsallowed.jpg)
 
 Fucking hell.

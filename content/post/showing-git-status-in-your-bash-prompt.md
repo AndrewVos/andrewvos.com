@@ -13,7 +13,7 @@ I use git almost exclusively for any new code I write, and I end up checking the
 
 An example of what it should look like is below:
 
-![git-prompt.png](/git-prompt.png)
+![git-prompt.png](/images/git-prompt.png)
 
 Copy this code into your ~/.bash_profile and you're good to go!
 

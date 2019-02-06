@@ -11,7 +11,7 @@ Anyway, here's a nice minimal bash prompt that I hand whittled myself. It took y
 
 ## Demo
 
-![image.png](/image.png)
+![image.png](/images/image.png)
 
 ## Setup
 Paste the following into your `~/.bashrc`:

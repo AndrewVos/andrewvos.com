@@ -16,6 +16,6 @@ Some VB.NET 2005 code to display the Shell Context Menu for file system objects.
 
 Any problems with the code or bug fixes please don't hesitate to complain.
 
-[Source code is here](/shellcontextmenuold.zip)
+[Source code is here](/downloads/shellcontextmenuold.zip)
 
-![Shell Context Menu](/shell-context-menu.png)
+![Shell Context Menu](/images/shell-context-menu.png)

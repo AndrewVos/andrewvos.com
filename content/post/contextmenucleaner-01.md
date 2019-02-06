@@ -16,19 +16,19 @@ ContextMenuCleaner cleans some of your context menus in Windows, and currently s
 
   Basically, you just open up a context menu,
 
-![ContextMenuCleaner - Dirty Menu](/contextmenucleaner-dirty-menu.png)
+![ContextMenuCleaner - Dirty Menu](/images/contextmenucleaner-dirty-menu.png)
 
   then double click the system tray icon, and drag some items over to the Hidden section.
 
-![ContextMenuCleaner - Config](/contextmenucleaner-config.png)
+![ContextMenuCleaner - Config](/images/contextmenucleaner-config.png)
 
 The next time you open this menu it should have been cleaned:
 
-![ContextMenuCleaner - Better Menu](/contextmenucleaner-better-menu.png)
+![ContextMenuCleaner - Better Menu](/images/contextmenucleaner-better-menu.png)
 
   Here's a before and after of the Internet Explorer context menu:
 
-![ContextMenuCleaner - Before and After](/contextmenucleaner-before-and-after.png)
+![ContextMenuCleaner - Before and After](/images/contextmenucleaner-before-and-after.png)
 
 EDIT: If you want to remove an item such as "Scan file.zip", you can drag an item over to the hidden items list, and rename it to "Scan *". This should remove all items that start with "Scan".
 

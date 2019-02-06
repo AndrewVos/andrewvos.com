@@ -9,6 +9,6 @@ A jQuery plugin that allows you to watermark text inputs. Watermarking is when y
 
 {{% jquery-watermark %}}
 
-[Download the code here](/jquery.watermark.js)
+[Download the code here](/downloads/jquery.watermark.js)
 
 Peace!

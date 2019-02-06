@@ -14,13 +14,13 @@ HtmlBuilder uses a simple template system, and includes some example templates u
 On the left we have the Site browser, which lists all files in the site.
 
 
-![HtmlBuilder Main Window](/htmlbuilder1.png)
+![HtmlBuilder Main Window](/images/htmlbuilder1.png)
 
 ### The Color Chooser Window
 
 Favorite colors can be stored on the right hand side.
 
-![HtmlBuilder Color Chooser](/htmlbuildercolorchooser1.png)
+![HtmlBuilder Color Chooser](/images/htmlbuildercolorchooser1.png)
 
 
 ### Requirements
@@ -29,7 +29,7 @@ Favorite colors can be stored on the right hand side.
 
 ### Downloads
 
-~~[Version 0.1.33](/downloads/HtmlBuilder/HtmlBuilder.zip)~~ _not supported anymore_
+~~[Version 0.1.33](/downloads/HtmlBuilder.zip)~~ _not supported anymore_
 
 ### Changes
 

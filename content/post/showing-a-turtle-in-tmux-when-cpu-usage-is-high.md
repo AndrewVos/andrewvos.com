@@ -7,7 +7,7 @@ aliases:
 ---
 ## Turtle/Rabbit:
 
-![turtle-rabbit.gif](/turtle-rabbit.gif)
+![turtle-rabbit.gif](/images/turtle-rabbit.gif)
 
 (You're looking at the icon on the bottom right)
 

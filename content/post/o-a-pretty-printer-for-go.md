@@ -7,7 +7,7 @@ aliases:
 ---
 Here's a useful little tool that prints out go objects in colour.
 
-![o.gif](/o.gif)
+![o.gif](/images/o.gif)
 
 Get it on [github](https://github.com/AndrewVos/o)
 

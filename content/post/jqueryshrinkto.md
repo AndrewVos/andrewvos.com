@@ -7,6 +7,6 @@ aliases:
 ---
 A cool little plugin that shrinks and fades any element to a position on the page.
 
-[Download jquery.shrinkTo.js](/jquery.shrinkto.js)
+[Download jquery.shrinkTo.js](/downloads/jquery.shrinkto.js)
 
 {{% jquery-shrinkto %}}

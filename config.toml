@@ -3,5 +3,6 @@ languageCode = "en-us"
 title = "andrewvos.com"
 pygmentsCodeFences = true
 pygmentsUseClasses = true
+enableRobotsTXT = true
 [permalinks]
   post = "/:title/"

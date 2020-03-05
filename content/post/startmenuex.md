@@ -1,7 +1,7 @@
 ---
 title: "StartMenuEx"
 date: 2006-03-30T00:00:00.000Z
-draft: false
+draft: true
 aliases:
   - "/2006/03/30/startmenuex"
 ---

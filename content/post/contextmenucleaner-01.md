@@ -1,7 +1,7 @@
 ---
 title: "ContextMenuCleaner 0.1"
 date: 2008-03-28T00:00:00.000Z
-draft: false
+draft: true
 aliases:
   - "/2008/03/28/contextmenucleaner-01"
 ---

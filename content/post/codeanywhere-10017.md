@@ -1,7 +1,7 @@
 ---
 title: "CodeAnywhere 1.0.0.17"
 date: 2010-01-20T00:00:00.000Z
-draft: false
+draft: true
 aliases:
   - "/2010/01/20/codeanywhere-10017"
 ---

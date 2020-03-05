@@ -1,7 +1,7 @@
 ---
 title: "SettingsManager 0.1"
 date: 2008-09-24T00:00:00.000Z
-draft: false
+draft: true
 aliases:
   - "/2008/09/24/settingsmanager-01"
 ---

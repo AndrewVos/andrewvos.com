@@ -1,7 +1,7 @@
 ---
 title: "Uploading files directly to Google Cloud Storage from client-side JavaScript"
 date: 2017-03-19T17:45:21.429Z
-draft: false
+draft: true
 aliases:
   - "/uploading-files-directly-to-google-cloud-storage-from-client-side-javascript"
 ---

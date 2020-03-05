@@ -1,7 +1,7 @@
 ---
 title: "Minimal bash prompt with git status and colours"
 date: 2017-09-21T22:21:02.552Z
-draft: false
+draft: true
 aliases:
   - "/minimal-bash-prompt-with-git-status-and-colours"
 ---

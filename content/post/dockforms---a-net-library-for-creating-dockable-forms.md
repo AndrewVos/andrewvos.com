@@ -1,7 +1,7 @@
 ---
 title: "DockForms - A .Net library for creating dockable forms"
 date: 2007-11-18T00:00:00.000Z
-draft: false
+draft: true
 aliases:
   - "/2007/11/18/dockforms---a-net-library-for-creating-dockable-forms"
 ---

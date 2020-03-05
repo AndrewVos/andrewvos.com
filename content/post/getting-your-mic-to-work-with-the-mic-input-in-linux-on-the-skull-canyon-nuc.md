@@ -1,7 +1,7 @@
 ---
 title: "Getting your mic to work with the mic input in Linux on the Skull Canyon NUC"
 date: 2017-11-13T22:26:50.970Z
-draft: false
+draft: true
 aliases:
   - "/getting-your-mic-to-work-with-the-mic-input-in-linux-on-the-skull-canyon-nuc"
 ---

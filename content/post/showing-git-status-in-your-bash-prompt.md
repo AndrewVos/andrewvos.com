@@ -1,7 +1,7 @@
 ---
 title: "Showing git status in your bash prompt"
 date: 2011-07-25T00:00:00.000Z
-draft: false
+draft: true
 aliases:
   - "/2011/07/25/showing-git-status-in-your-bash-prompt"
 ---

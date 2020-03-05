@@ -1,7 +1,7 @@
 ---
 title: "tony - a project generator for Sinatra"
 date: 2011-05-14T00:00:00.000Z
-draft: false
+draft: true
 aliases:
   - "/2011/05/14/tony-a-project-generator-for-sinatra"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Who are the laziest and hackiest developers?"
 date: 2011-02-28T00:00:00.000Z
-draft: false
+draft: true
 aliases:
   - "/2011/02/28/who-are-the-laziest-and-hackiest-developers"
 ---

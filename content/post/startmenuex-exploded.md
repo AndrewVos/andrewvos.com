@@ -1,7 +1,7 @@
 ---
 title: "StartMenuEx Exploded?"
 date: 2006-06-08T00:00:00.000Z
-draft: false
+draft: true
 aliases:
   - "/2006/06/08/startmenuex-exploded"
 ---

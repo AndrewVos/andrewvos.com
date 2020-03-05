@@ -1,7 +1,7 @@
 ---
 title: "jquery.watermark"
 date: 2010-04-20T00:00:00.000Z
-draft: false
+draft: true
 aliases:
   - "/2010/04/20/jquerywatermark"
 ---

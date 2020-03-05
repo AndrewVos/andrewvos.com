@@ -1,7 +1,7 @@
 ---
 title: "Shell Context Menu"
 date: 2007-07-04T00:00:00.000Z
-draft: false
+draft: true
 aliases:
   - "/2007/07/04/shell-context-menu"
 ---

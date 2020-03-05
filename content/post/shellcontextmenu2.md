@@ -1,7 +1,7 @@
 ---
 title: "ShellContextMenu2"
 date: 2009-01-06T00:00:00.000Z
-draft: false
+draft: true
 aliases:
   - "/2009/01/06/shellcontextmenu2"
 ---

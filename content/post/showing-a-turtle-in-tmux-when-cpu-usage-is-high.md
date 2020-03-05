@@ -1,7 +1,7 @@
 ---
 title: "Showing a Turtle In tmux When CPU Usage Is High"
 date: 2013-07-31T00:00:00.000Z
-draft: false
+draft: true
 aliases:
   - "/2013/07/31/showing-a-turtle-in-tmux-when-cpu-usage-is-high"
 ---

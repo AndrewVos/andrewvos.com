@@ -1,7 +1,7 @@
 ---
 title: "How to pair a bluetooth keyboard with an Ubuntu and Windows 10 dual boot"
 date: 2017-07-12T15:34:53.939Z
-draft: false
+draft: true
 aliases:
   - "/how-to-pair-a-bluetooth-keyboard-with-an-ubuntu-and-windows-10-dual-boot"
 ---

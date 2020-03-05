@@ -1,7 +1,7 @@
 ---
 title: "jQuery.shrinkTo"
 date: 2010-05-28T00:00:00.000Z
-draft: false
+draft: true
 aliases:
   - "/2010/05/28/jqueryshrinkto"
 ---

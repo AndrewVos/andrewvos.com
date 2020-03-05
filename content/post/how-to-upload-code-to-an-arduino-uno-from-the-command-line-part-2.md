@@ -1,7 +1,7 @@
 ---
 title: "How to upload code to an Arduino Uno from the command line (part 2)"
 date: 2011-04-30T00:00:00.000Z
-draft: false
+draft: true
 aliases:
   - "/2011/04/30/how-to-upload-code-to-an-arduino-uno-from-the-command-line-part-2"
 ---

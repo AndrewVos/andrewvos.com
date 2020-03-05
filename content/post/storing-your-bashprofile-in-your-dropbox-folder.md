@@ -1,7 +1,7 @@
 ---
 title: "Storing your .bash_profile in your dropbox folder"
 date: 2011-01-23T00:00:00.000Z
-draft: false
+draft: true
 aliases:
   - "/2011/01/23/storing-your-bashprofile-in-your-dropbox-folder"
 ---

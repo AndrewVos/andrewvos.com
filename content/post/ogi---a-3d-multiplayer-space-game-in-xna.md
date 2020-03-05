@@ -1,7 +1,7 @@
 ---
 title: "Ogi - A 3d Multiplayer space game, in XNA"
 date: 2008-05-21T00:00:00.000Z
-draft: false
+draft: true
 aliases:
   - "/2008/05/21/ogi---a-3d-multiplayer-space-game-in-xna"
 ---

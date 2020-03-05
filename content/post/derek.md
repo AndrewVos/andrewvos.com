@@ -1,7 +1,7 @@
 ---
 title: "Derek"
 date: 2009-05-12T00:00:00.000Z
-draft: false
+draft: true
 aliases:
   - "/2009/05/12/derek"
 ---

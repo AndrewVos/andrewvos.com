@@ -1,7 +1,7 @@
 ---
 title: "Dealing with unique indexes in FactoryGirl"
 date: 2017-04-06T11:16:54.163Z
-draft: false
+draft: true
 aliases:
   - "/dealing-with-unique-indexes-in-factorygirl"
 ---
@@ -41,4 +41,4 @@ FactoryGirl.define do
 end
 ```
 
-This ensures that when you `create(:currency)` it will only be created once (per test run) for each currency code.                                                                                                                                                                  
+This ensures that when you `create(:currency)` it will only be created once (per test run) for each currency code.

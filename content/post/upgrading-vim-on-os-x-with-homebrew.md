@@ -1,7 +1,7 @@
 ---
 title: "Upgrading VIM on OS X with homebrew"
 date: 2011-07-23T00:00:00.000Z
-draft: false
+draft: true
 aliases:
   - "/2011/07/23/upgrading-vim-on-os-x-with-homebrew"
 ---

@@ -1,7 +1,7 @@
 ---
 title: "Installing VIM 8"
 date: 2016-09-12T14:00:01.811Z
-draft: false
+draft: true
 aliases:
   - "/2016/09/12/installing-vim-8"
 ---

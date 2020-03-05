@@ -25,15 +25,17 @@ img, iframe {border: none}
 
 h1,h2,h3,h4,h5,h6 {margin: 0.6em 0; font-weight: normal}
 
-h1 {font-size: 2.625em; line-height: 1.2}
+h1 {font-size: 2em; line-height: 1.2}
 
-h2 {font-size: 1.625em; line-height: 1.2}
+h2 {font-size: 1.5em; line-height: 1.2}
 
-h3 {font-size: 1.3125em;line-height: 1.24}
+h3 {font-size: 1.17em; line-height: 1.24}
 
-h4 {font-size: 1.1875em;line-height: 1.23}
+h4 {font-size: 1.12em; line-height: 1.23}
 
-h5,h6 {font-size: 1em; font-weight:bold}
+h5 {font-size: .83em;}
+
+h6 {font-size: .75em;}
 
 table {border-collapse: collapse;border-spacing: 0}
 
@@ -42,14 +44,12 @@ th, td {text-align: left;vertical-align: top}
 /* Vos */
 
 .nav {
-  margin: 0 auto;
+  margin: 20px;
   max-width: 920px;
   text-align: left;
-  padding:20px 20px;
 }
 
 .nav .nav-title {
-  margin-right: 20px;
   font-size: 2em;
   color: #111;
   text-decoration: none;

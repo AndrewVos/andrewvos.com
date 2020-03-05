@@ -12,6 +12,6 @@ This inspired me to write a ruby script that does the same. The script is availa
 Here's a sound clip of this script:
 
 <audio autobuffer='autobuffer' controls='controls' preload='auto'>
-  <source src='/pi-notes.mp3'></source>
-  <source src='/pi-notes.ogg'></source>
+  <source src='/downloads/pi-notes.mp3'></source>
+  <source src='/downloads/pi-notes.ogg'></source>
 </audio>

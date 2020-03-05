@@ -15,6 +15,7 @@ by_year = {}
 page = 1
 loop do
   puts "Page #{page}"
+
   book_infos = client.shelf(USER_ID, 'read', page: page).books
   break if book_infos.size == 0
   book_infos.each do |book_info|

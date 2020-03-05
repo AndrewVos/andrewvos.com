@@ -1,8 +1,12 @@
 {{ partial "header.html" . }}
 {{ partial "navbar.html" . }}
 <div class="container">
-  <h1>{{ .Title }}</h1>
-  <div class="date">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+  {{if .Params.title}}
+    <h1>{{ .Title }}</h1>
+  {{end}}
+  {{if .Params.date}}
+    <div class="date">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+  {{end}}
   <div class="post">
     {{ .Content }}
   </div>

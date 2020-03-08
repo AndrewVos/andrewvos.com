@@ -10,4 +10,4 @@ Links:
   - [Instagram](https://www.instagram.com/AndrewVos/)
   - [Github](https://github.com/AndrewVos)
   - [CV (pdf)](/cv/AndrewVos.pdf)
-  - [Books I've read](/page/books) 
+  - [Books I've read](/books)

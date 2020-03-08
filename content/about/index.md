@@ -1,5 +1,6 @@
 ---
 draft: false
+type: "about"
 ---
 
 I'm a husband, dad, software engineer, and woodworker.

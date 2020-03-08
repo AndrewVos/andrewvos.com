@@ -3,7 +3,7 @@
     {{ .Site.Title }}
   </a>
   -
-  <a class="nav-sub" href="/recipes">recipes</a>
+  <a class="nav-sub {{ if eq .Params.type "recipe-list" }} active{{ end }}" href="/recipes">recipes</a>
   -
-  <a class="nav-sub" href="/about">about</a>
+  <a class="nav-sub {{ if eq .Params.type "about" }} active{{ end }}" href="/about">about</a>
 </div>

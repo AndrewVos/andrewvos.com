@@ -1,0 +1,11 @@
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+<div class="container body">
+  {{if .Params.title}}
+    <h1>{{ .Title }}</h1>
+  {{end}}
+  <div class="recipe">
+    {{ .Content }}
+  </div>
+</div>
+{{ partial "footer.html" . }}

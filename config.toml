@@ -5,4 +5,4 @@ pygmentsCodeFences = true
 pygmentsUseClasses = true
 enableRobotsTXT = true
 [permalinks]
-  post = "/:title/"
+  posts = "/:title/"

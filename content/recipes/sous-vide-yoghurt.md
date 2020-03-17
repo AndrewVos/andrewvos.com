@@ -1,10 +1,9 @@
 ---
 title: "Sous Vide Yoghurt"
 date: 2020-03-17T19:01:39Z
-type: recipe
+type: "recipe"
 draft: false
 ---
-
 
 ### Ingredients
 
@@ -18,19 +17,28 @@ draft: false
 
 ### Method
 
-{{% recipes/number 1 "Pour the milk in the jar %}}
+This is a recipe I have been using lately for a very creamy consistent yoghurt.
+
+With this approach you won't see much whey separation.
+
+In my experience you don't really need to strain it either.
+
+Note that this is a very low temperature recipe, so I make no guarantees how
+safe it is. Use this recipe at your own risk.
+
+{{% recipes/number 1 "Pour the milk in the jar" %}}
 ___
 
 {{% recipes/number 2 "Boil" %}}
 
 Leave the jar open, and put it in your sous vide bath. Make sure no water gets into the jar.
 
-Set your machine to 194 °F / 90 °C", with a 10 minute timer.
+Set your machine to {{% recipes/temperature 90 %}}, with a 10 minute timer.
 ___
 
 {{% recipes/number 3 "Cool" %}}
 
-Set your machine to 110 °F / 43 °C", and let it cool down until it reaches that temperature.
+Set your machine to {{% recipes/temperature 43 %}}, and let it cool down until it reaches that temperature.
 ___
 
 {{% recipes/number 4 "Add your yoghurt starter, stir well" %}}
@@ -38,7 +46,7 @@ ___
 
 {{% recipes/number 5 "Cook" %}}
 
-Close the jar up, and set your machine to 86 °F / 30 °C. Set a timer for 18 hours, and go live your life.
+Close the jar up, and set your machine to {{% recipes/temperature 30 %}}. Set a timer for 18 hours, and go live your life.
 ___
 
 {{% recipes/number 6 "Set" %}}

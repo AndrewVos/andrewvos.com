@@ -20,8 +20,11 @@ draft: false
 
 ### Method
 
-{{% recipes/number 1 "Preheat your sous vide bath to 176 °F / 80 °C" %}}
+{{% recipes/number 1 "Preheat" %}}
+
+Preheat your sous vide bath to {{% recipes/temperature 80 %}}.
 ___
+
 
 {{% recipes/number 2 "Combine milk and cream" %}}
 

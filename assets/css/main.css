@@ -1,63 +1,3 @@
-/* Mini CSS reset and basic typography  */
-/* https://github.com/vladocar/Basic-CSS-Typography-Reset */
-
-* {box-sizing: border-box}
-
-html {
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
-}
-
-/* General settings */
-
-body {
-    margin: 0;
-    font: 1em/1.6 system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Droid Sans, Helvetica Neue, Fira Sans, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    color: #111
-}
-img, iframe {border: none}
-
- /* Headlines */
-
-h1,h2,h3,h4,h5,h6 {margin: 0.6em 0; font-weight: normal}
-
-h1 {font-size: 2em; line-height: 1.2}
-
-h2 {font-size: 1.5em; line-height: 1.2}
-
-h3 {font-size: 1.17em; line-height: 1.24}
-
-h4 {font-size: 1.12em; line-height: 1.23}
-
-h5 {font-size: .83em;}
-
-h6 {font-size: .75em;}
-
-table {border-collapse: collapse;border-spacing: 0}
-
-th, td {text-align: left;vertical-align: top}
-
-/* Vos */
-
-.container {
-  margin: 0 auto;
-  max-width: 920px;
-  text-align: left;
-  padding: 0 20px ;
-}
-
-.container .date {
-  font-weight: bold;
-}
-
-.container.body {
-  margin-bottom: 50px;
-}
-
 .container.nav .nav-title {
   font-size: 2em;
   color: #111;
@@ -74,32 +14,17 @@ th, td {text-align: left;vertical-align: top}
 }
 
 .post img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .books .book {
   border: 1px solid #eee;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.books .book .book-cover {
-  float: left;
-  margin-right: 10px;
-}
-
-.books .book .book-title {
-  font-size: large;
 }
 
 .highlight {
   overflow: auto;
   border: 1px solid #eee;
   padding: 0px 10px 0px 10px;
-}
-
-.recipe .temperature {
-  font-weight: bold;
 }
 
 /* Background */ .chroma { background-color: #ffffff }

@@ -1,11 +1,15 @@
 {{ partial "header.html" . }}
 {{ partial "navbar.html" . }}
-<div class="container body">
-  {{if .Params.title}}
-    <h1>{{ .Title }}</h1>
-  {{end}}
-  <div class="recipe">
-    {{ .Content }}
+<div class="container">
+  <div class="row">
+    <div class="col">
+      {{if .Params.title}}
+        <h2>{{ .Title }}</h2>
+      {{end}}
+      <div class="recipe">
+        {{ .Content }}
+      </div>
+    </div>
   </div>
 </div>
 {{ partial "footer.html" . }}

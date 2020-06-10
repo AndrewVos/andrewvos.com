@@ -1,7 +1,7 @@
 ---
 title: "Beignets"
 date: 2020-06-05T18:34:41+01:00
-type: recipe
+type: recipes
 draft: false
 ---
 

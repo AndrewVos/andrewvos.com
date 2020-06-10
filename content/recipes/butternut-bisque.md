@@ -1,13 +1,9 @@
 ---
 title: "Butternut Bisque"
 date: 2020-06-10T17:35:43+01:00
-type: recipe
+type: recipes
 draft: false
 ---
-
-
-
-
 
 ### Ingredients
 

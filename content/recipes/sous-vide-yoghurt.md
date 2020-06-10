@@ -1,7 +1,7 @@
 ---
 title: "Sous Vide Yoghurt"
 date: 2020-03-17T19:01:39Z
-type: "recipe"
+type: recipes
 draft: false
 ---
 

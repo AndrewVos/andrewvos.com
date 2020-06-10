@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 {{ partial "navbar.html" . }}
 <div class="container body">
-  {{ range where .Pages "Type" "recipe" }}
+  {{ range where .Pages "Type" "recipes" }}
   <div>
     <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
   </div>

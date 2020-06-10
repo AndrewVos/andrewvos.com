@@ -1,7 +1,7 @@
 ---
 title: "Crème Brûlée"
 date: 2019-12-25T20:00:59Z
-type: "recipe"
+type: recipes
 draft: false
 ---
 

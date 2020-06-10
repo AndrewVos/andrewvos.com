@@ -76,9 +76,7 @@ ___
 
 {{% recipes/number 10 "Brûlée" %}}
 
-- Granulated sugar
-
-Add one teaspoon of granulated sugar to each jar, then give the jar a small shake to spread it over the custard.
+Add one teaspoon of sugar to each jar, then give the jar a small shake to spread it over the custard.
 
 Fire up your blowtorch and burn the top of the sugar until it bubbles up.
 

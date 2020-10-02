@@ -34,13 +34,9 @@ loop do
     by_year[read_at.year][:books] << {
       title: book.title,
       url: book.link,
-      description: book.description,
-      image_url: book.image_url,
-      small_image_url: book.small_image_url,
       rating: Integer(book_info.rating),
       author: book.authors.author.name,
-      author_url: book.authors.author.link,
-      read_at: read_at
+      author_url: book.authors.author.link
     }
   end
   page += 1

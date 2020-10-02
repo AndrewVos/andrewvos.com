@@ -1,5 +1,7 @@
-/public
-/resources
+node_modules
+dist
+.cache
+.env
 cv/AndrewVos.aux
 cv/AndrewVos.log
 cv/AndrewVos.out

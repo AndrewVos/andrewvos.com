@@ -52,6 +52,6 @@ data.each do |year|
   end
 end
 
-File.open('./data/books.json', 'w') do |file|
+File.open('./src/data/books.json', 'w') do |file|
   file.write(JSON.pretty_generate(data))
 end

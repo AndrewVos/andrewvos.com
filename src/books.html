@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Andrew Vos - Reading</title>
+    <link rel="stylesheet" href="./assets/styles/application.css" />
+  </head>
+  <body class="bg-gray-100 font-serif">
+    <div class="container mx-auto p-3 mt-10 mb-5">
+      <h1 class="text-4xl text-gray-800">
+        Books I've read
+      </h1>
+    </div>
+    <div class="container mx-auto p-3">
+      <div class="js-rating-filters flex">
+        <button class="js-rating-filter bg-white bg-gray-300 hover:bg-gray-300 focus:outline-none text-gray-800 font-semibold mr-1 py-1 px-3 border border-gray-400 rounded shadow">All</button>
+
+        <button class="js-rating-filter bg-white hover:bg-gray-100 focus:outline-none text-gray-800 font-semibold mr-1 py-1 px-3 border border-gray-400 rounded shadow" data-rating="5">5 stars</button>
+        <button class="js-rating-filter bg-white hover:bg-gray-100 focus:outline-none text-gray-800 font-semibold mr-1 py-1 px-3 border border-gray-400 rounded shadow" data-rating="4">4 stars</button>
+        <button class="js-rating-filter bg-white hover:bg-gray-100 focus:outline-none text-gray-800 font-semibold mr-1 py-1 px-3 border border-gray-400 rounded shadow" data-rating="3">3 stars</button>
+        <button class="js-rating-filter bg-white hover:bg-gray-100 focus:outline-none text-gray-800 font-semibold mr-1 py-1 px-3 border border-gray-400 rounded shadow" data-rating="2">2 stars</button>
+        <button class="js-rating-filter bg-white hover:bg-gray-100 focus:outline-none text-gray-800 font-semibold mr-1 py-1 px-3 border border-gray-400 rounded shadow" data-rating="1">1 star</button>
+      </div>
+    </div>
+    <div class="js-books-container container mx-auto p-3 mb-10"></div>
+    <script src="./assets/scripts/books.js"></script>
+  </body>
+</html>

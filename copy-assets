@@ -1,0 +1,7 @@
+#!/bin/bash
+set -euo pipefail
+IFS=$'\n\t'
+
+mkdir -p dist
+cp src/robots.txt dist/
+cp src/AndrewVos.pdf dist/

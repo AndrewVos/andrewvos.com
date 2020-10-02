@@ -1,9 +1,0 @@
-<span class="temperature">
-  <strong>
-    {{ $celsius := int (.Get 0) }}
-    <!-- (C * 1.8) + 32 = F -->
-    {{ $fahrenheit := add (mul $celsius 1.8) 32 }}
-
-    {{ $celsius }} &deg;C ({{ math.Round $fahrenheit }} &deg;F)
-  </strong>
-</span>

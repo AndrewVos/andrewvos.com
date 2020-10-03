@@ -1,4 +1,4 @@
-import books from '../../data/books.json';
+import books from '../data/books.json';
 
 var booksContainer = document.querySelector('.js-books-container');
 books.forEach(function(year) {

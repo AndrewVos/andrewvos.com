@@ -9,8 +9,7 @@ client = Goodreads::Client.new(
 
 USER_ID='25834255'
 
-data = []
-by_year = {}
+books = []
 
 page = 1
 loop do
@@ -22,32 +21,24 @@ loop do
     book = book_info.book
 
     read_at = DateTime.parse(book_info.read_at || book_info.date_added)
-    if !by_year[read_at.year]
-      year = {
-        year: read_at.year,
-        books: []
-      }
-      by_year[read_at.year] = year
-      data << year
-    end
 
-    by_year[read_at.year][:books] << {
+    books << {
       title: book.title,
       url: book.link,
       rating: Integer(book_info.rating),
       author: book.authors.author.name,
-      author_url: book.authors.author.link
+      author_url: book.authors.author.link,
+      image_url: book.image_url,
+      year: read_at.year
     }
   end
   page += 1
 end
 
-data.each do |year|
-  year[:books] = year[:books].sort do |a,b|
-    b[:read_at] <=> a[:read_at]
-  end
+books = books.sort do |a, b|
+  b[:read_at] <=> a[:read_at]
 end
 
 File.open('./src/data/books.json', 'w') do |file|
-  file.write(JSON.pretty_generate(data))
+  file.write(JSON.pretty_generate(books))
 end

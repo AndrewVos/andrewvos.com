@@ -1,57 +1,60 @@
+import { h, render, Component } from 'preact';
 import books from '../data/books.json';
 
-var booksContainer = document.querySelector('.js-books-container');
-books.forEach(function(year) {
-  year.books.forEach(function(book) {
-    var bookContainer = document.createElement('div');
-    bookContainer.setAttribute('class', 'js-book');
-    bookContainer.setAttribute('data-rating', book.rating);
+class App extends Component {
+  state = { filterByRating: 'all' };
 
-    var title = document.createElement('a');
-    title.setAttribute('href', book.url);
-    title.classList.add('text-3xl');
-    title.classList.add('text-gray-700');
-    title.textContent = book.title;
-    bookContainer.appendChild(title);
+  applyFilter = (e) => {
+    this.setState({ filterByRating: e.target.dataset.rating });
+  };
 
-    var author = document.createElement('a');
-    author.setAttribute('href', book.author_url);
-    author.classList.add('text-xl');
-    author.classList.add('text-gray-500');
-    author.textContent = ' by ' + book.author;
-    bookContainer.appendChild(author);
-
-    booksContainer.appendChild(bookContainer);
-  });
-});
-
-var ratingFilters = document.querySelectorAll('.js-rating-filters .js-rating-filter');
-
-var filterBooks = function(rating) {
-  booksContainer.querySelectorAll('.js-book').forEach(function(book) {
-    var visible = rating == null || rating === book.dataset.rating
-    if (visible) {
-      book.classList.remove('hidden');
-    } else {
-      book.classList.add('hidden');
-    }
-  });
+  render() {
+    return ([
+      <Buttons filterByRating={this.state.filterByRating} applyFilter={this.applyFilter} />,
+      <Books filterByRating={this.state.filterByRating} />
+    ]);
+  }
 }
 
-var handleRatingFilterClick = function(event) {
-  ratingFilters.forEach(function(ratingFilter) {
-    if (ratingFilter === event.target) {
-      ratingFilter.classList.add('bg-gray-300');
-      ratingFilter.classList.add('hover:bg-gray-300');
-    } else {
-      ratingFilter.classList.remove('bg-gray-300');
-      ratingFilter.classList.remove('hover:bg-gray-300');
-    }
-  });
+class Buttons extends Component {
+  render({ filterByRating, applyFilter }) {
+    var ratings = ['all', 5, 4, 3, 2, 1];
 
-  filterBooks(event.target.dataset.rating);
+    var defaultClass = "bg-white hover:bg-gray-100 focus:outline-none text-gray-800 font-semibold mr-1 py-1 px-3 border border-gray-400 rounded shadow";
+    var activeClass = defaultClass + ' bg-gray-300 hover:bg-gray-300';
+
+    return (
+      <div class="buttons mb-5">
+      {
+      ratings.map((rating) => {
+        return <button onClick={applyFilter} class={filterByRating == rating ? activeClass : defaultClass} data-rating={rating}>
+          {rating == 'all' ? 'All' : rating + ' stars'}
+        </button>
+      })
+      }
+      </div>
+    );
+  };
+};
+
+class Books extends Component {
+  render({ filterByRating }) {
+    var visibleBooks = books
+      .filter((book) => filterByRating == 'all' || book.rating == filterByRating)
+
+    return visibleBooks
+      .map(book => (
+        <div class="book" data-rating={book.rating}>
+        <a href={book.url} class="text-3xl text-gray-700">
+        {book.title}
+        </a>
+        &nbsp;
+        <a href={book.author_url} class="text-xl text-gray-500">
+        by {book.author}
+        </a>
+        </div>
+      ))
+  }
 }
 
-ratingFilters.forEach(function(ratingFilter) {
-  ratingFilter.addEventListener('click', handleRatingFilterClick);
-});
+render(<App />, document.querySelector('.books'));

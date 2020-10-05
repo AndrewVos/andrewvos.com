@@ -2,58 +2,71 @@ import { h, render, Component } from 'preact';
 import books from '../data/books.json';
 
 class App extends Component {
-  state = { filterByRating: 'all' };
+  state = { filters: { rating: 'all' } };
 
-  applyFilter = (e) => {
-    this.setState({ filterByRating: e.target.dataset.rating });
+  filterByRating = (rating) => {
+    this.setState({ filters: { rating: rating } });
   };
 
   render() {
-    return ([
-      <Buttons filterByRating={this.state.filterByRating} applyFilter={this.applyFilter} />,
-      <Books filterByRating={this.state.filterByRating} />
-    ]);
+    return (
+      <div>
+      <Buttons filters={this.state.filters} filterByRating={this.filterByRating} />
+      <Books filters={this.state.filters} />
+      </div>
+    );
   }
 }
 
 class Buttons extends Component {
-  render({ filterByRating, applyFilter }) {
-    var ratings = ['all', 5, 4, 3, 2, 1];
-
-    var defaultClass = "bg-white hover:bg-gray-100 focus:outline-none text-gray-800 font-semibold mr-1 py-1 px-3 border border-gray-400 rounded shadow";
-    var activeClass = defaultClass + ' bg-gray-300 hover:bg-gray-300';
-
+  render({ filters, filterByRating }) {
     return (
       <div class="buttons mb-5">
-      {
-      ratings.map((rating) => {
-        return <button onClick={applyFilter} class={filterByRating == rating ? activeClass : defaultClass} data-rating={rating}>
-          {rating == 'all' ? 'All' : rating + ' stars'}
-        </button>
-      })
-      }
+        <RatingButton rating="all" filters={filters} filterByRating={filterByRating} />
+        <RatingButton rating="5" filters={filters} filterByRating={filterByRating} />
+        <RatingButton rating="4" filters={filters} filterByRating={filterByRating} />
+        <RatingButton rating="3" filters={filters} filterByRating={filterByRating} />
+        <RatingButton rating="2" filters={filters} filterByRating={filterByRating} />
+        <RatingButton rating="1" filters={filters} filterByRating={filterByRating} />
       </div>
     );
   };
 };
 
-class Books extends Component {
-  render({ filterByRating }) {
-    var visibleBooks = books
-      .filter((book) => filterByRating == 'all' || book.rating == filterByRating)
+class RatingButton extends Component {
+  render({ rating, filters, filterByRating }) {
+    var defaultClass = "bg-white hover:bg-gray-100 focus:outline-none text-gray-800 font-semibold mr-1 py-1 px-3 border border-gray-400 rounded shadow";
+    var activeClass = defaultClass + ' bg-gray-300 hover:bg-gray-300';
+    var currentClass = filters.rating == rating ? activeClass : defaultClass;
 
-    return visibleBooks
+    return (
+      <button onClick={() => filterByRating(rating)} class={currentClass}>
+      {rating == 'all' ? 'All' : rating + ' stars'}
+      </button>
+    );
+  }
+}
+
+class Books extends Component {
+  render({ filters }) {
+    return books
       .map(book => (
-        <div class="book" data-rating={book.rating}>
-        <a href={book.url} class="text-3xl text-gray-700">
-        {book.title}
-        </a>
-        &nbsp;
-        <a href={book.author_url} class="text-xl text-gray-500">
-        by {book.author}
-        </a>
-        </div>
+        <Book book={book} filters={filters} />
       ))
+  }
+}
+
+class Book extends Component {
+  render({ book, filters }) {
+    var visible = filters.rating == 'all' || filters.rating == book.rating;
+
+    return (
+      <div class={visible ? 'book' : 'book hidden'}>
+        <a href={book.url} class="text-3xl text-gray-700">{book.title}</a>
+        &nbsp;
+        <a href={book.author_url} class="text-xl text-gray-500">by {book.author}</a>
+      </div>
+    )
   }
 }
 

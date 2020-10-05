@@ -1,3 +1,4 @@
+require 'dotenv/load'
 require 'goodreads'
 require 'json'
 require 'date'

@@ -3,7 +3,7 @@ import books from '../data/books.json';
 
 class App extends Component {
   state = {
-    filters: { rating: 'all' },
+    filters: { rating: null },
     visibleBooks: books
   };
 

@@ -2,17 +2,26 @@ import { h, render, Component } from 'preact';
 import books from '../data/books.json';
 
 class App extends Component {
-  state = { filters: { rating: 'all' } };
+  state = {
+    filters: { rating: 'all' },
+    visibleBooks: books
+  };
 
   filterByRating = (rating) => {
-    this.setState({ filters: { rating: rating } });
+    var visibleBooks = rating == 'all' ? books : books.filter((book) => book.rating === rating);
+
+    this.setState({
+      visibleBooks: visibleBooks,
+      filters: { rating: rating }
+    });
   };
 
   render() {
     return (
       <div>
       <Buttons filters={this.state.filters} filterByRating={this.filterByRating} />
-      <Books filters={this.state.filters} />
+      <ResultCount visibleBooks={this.state.visibleBooks} />
+      <Books visibleBooks={this.state.visibleBooks} filters={this.state.filters} />
       </div>
     );
   }
@@ -20,17 +29,17 @@ class App extends Component {
 
 class Buttons extends Component {
   render({ filters, filterByRating }) {
+    var ratings = ['all', 5, 4, 3, 2, 1];
+    var buttons = ratings.map((rating) => (
+      <RatingButton rating={rating} filters={filters} filterByRating={filterByRating} />
+    ));
+
     return (
-      <div class="buttons mb-5">
-        <RatingButton rating="all" filters={filters} filterByRating={filterByRating} />
-        <RatingButton rating="5" filters={filters} filterByRating={filterByRating} />
-        <RatingButton rating="4" filters={filters} filterByRating={filterByRating} />
-        <RatingButton rating="3" filters={filters} filterByRating={filterByRating} />
-        <RatingButton rating="2" filters={filters} filterByRating={filterByRating} />
-        <RatingButton rating="1" filters={filters} filterByRating={filterByRating} />
+      <div class="mb-5">
+      {buttons}
       </div>
     );
-  };
+  }
 };
 
 class RatingButton extends Component {
@@ -47,9 +56,19 @@ class RatingButton extends Component {
   }
 }
 
+class ResultCount extends Component {
+  render({ visibleBooks }) {
+    return (
+    <div class="mb-5 text-xl text-gray-700">
+      Found { visibleBooks.length } books
+    </div>
+    )
+  }
+}
+
 class Books extends Component {
-  render({ filters }) {
-    return books
+  render({ visibleBooks, filters }) {
+    return visibleBooks
       .map(book => (
         <Book book={book} filters={filters} />
       ))
@@ -58,10 +77,8 @@ class Books extends Component {
 
 class Book extends Component {
   render({ book, filters }) {
-    var visible = filters.rating == 'all' || filters.rating == book.rating;
-
     return (
-      <div class={visible ? 'book' : 'book hidden'}>
+      <div>
         <a href={book.url} class="text-3xl text-gray-700">{book.title}</a>
         &nbsp;
         <a href={book.author_url} class="text-xl text-gray-500">by {book.author}</a>

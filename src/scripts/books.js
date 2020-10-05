@@ -8,7 +8,7 @@ class App extends Component {
   };
 
   filterByRating = (rating) => {
-    var visibleBooks = rating == 'all' ? books : books.filter((book) => book.rating === rating);
+    var visibleBooks = rating == null ? books : books.filter((book) => book.rating === rating);
 
     this.setState({
       visibleBooks: visibleBooks,
@@ -19,9 +19,9 @@ class App extends Component {
   render() {
     return (
       <div>
-      <Buttons filters={this.state.filters} filterByRating={this.filterByRating} />
-      <ResultCount visibleBooks={this.state.visibleBooks} />
-      <Books visibleBooks={this.state.visibleBooks} filters={this.state.filters} />
+        <Buttons filters={this.state.filters} filterByRating={this.filterByRating} />
+        <ResultCount visibleBooks={this.state.visibleBooks} />
+        <Books visibleBooks={this.state.visibleBooks} filters={this.state.filters} />
       </div>
     );
   }
@@ -29,7 +29,7 @@ class App extends Component {
 
 class Buttons extends Component {
   render({ filters, filterByRating }) {
-    var ratings = ['all', 5, 4, 3, 2, 1];
+    var ratings = [null, 5, 4, 3, 2, 1, 0];
     var buttons = ratings.map((rating) => (
       <RatingButton rating={rating} filters={filters} filterByRating={filterByRating} />
     ));
@@ -48,9 +48,19 @@ class RatingButton extends Component {
     var activeClass = defaultClass + ' bg-gray-300 hover:bg-gray-300';
     var currentClass = filters.rating == rating ? activeClass : defaultClass;
 
+    var labels = {
+      null: 'all',
+      1: '1 star',
+      2: '2 stars',
+      3: '3 stars',
+      4: '4 stars',
+      5: '5 stars',
+      0: 'unfinished'
+    }
+
     return (
       <button onClick={() => filterByRating(rating)} class={currentClass}>
-      {rating == 'all' ? 'All' : rating + ' stars'}
+      {labels[rating]}
       </button>
     );
   }

@@ -1,8 +1,9 @@
-const purgeEnabled = process.env.NODE_ENV === 'production';
-
 module.exports = {
+  future: {
+    removeDeprecatedGapUtilities: true,
+    purgeLayersByDefault: true,
+  },
   purge: {
-    enabled: purgeEnabled,
     content: [
       "./src/**/*.html",
       "./src/**/*.js"

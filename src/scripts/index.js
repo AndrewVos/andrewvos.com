@@ -1,4 +1,5 @@
-const Sketch = require('sketch-js');
+import '../styles/application.css';
+import Sketch from 'sketch-js';
 
 // ----------------------------------------
 // Particle

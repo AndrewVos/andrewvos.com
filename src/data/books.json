@@ -1,5 +1,41 @@
 [
   {
+    "title": "Lexicon",
+    "url": "https://www.goodreads.com/book/show/16158596-lexicon",
+    "rating": 1,
+    "author": "Max Barry",
+    "author_url": "https://www.goodreads.com/author/show/18741.Max_Barry",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1356080172l/16158596.jpg",
+    "year": 2021
+  },
+  {
+    "title": "Jack Glass",
+    "url": "https://www.goodreads.com/book/show/13235961-jack-glass",
+    "rating": 3,
+    "author": "Adam Roberts",
+    "author_url": "https://www.goodreads.com/author/show/23023.Adam_Roberts",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1328403804l/13235961.jpg",
+    "year": 2021
+  },
+  {
+    "title": "Harrow the Ninth",
+    "url": "https://www.goodreads.com/book/show/39325105-harrow-the-ninth",
+    "rating": 5,
+    "author": "Tamsyn Muir",
+    "author_url": "https://www.goodreads.com/author/show/6876324.Tamsyn_Muir",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1602323622l/39325105._SY475_.jpg",
+    "year": 2021
+  },
+  {
+    "title": "The Flicker Men",
+    "url": "https://www.goodreads.com/book/show/17910095-the-flicker-men",
+    "rating": 4,
+    "author": "Ted Kosmatka",
+    "author_url": "https://www.goodreads.com/author/show/1916426.Ted_Kosmatka",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1411353677l/17910095.jpg",
+    "year": 2021
+  },
+  {
     "title": "Unconquerable Sun (The Sun Chronicles #1)",
     "url": "https://www.goodreads.com/book/show/53803708-unconquerable-sun",
     "rating": 0,
@@ -185,15 +221,6 @@
     "rating": 0,
     "author": "Mary Robinette Kowal",
     "author_url": "https://www.goodreads.com/author/show/2868678.Mary_Robinette_Kowal",
-    "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
-    "year": 2020
-  },
-  {
-    "title": "The Forever War",
-    "url": "https://www.goodreads.com/book/show/13343065-the-forever-war",
-    "rating": 0,
-    "author": "Joe Haldeman",
-    "author_url": "https://www.goodreads.com/author/show/12476.Joe_Haldeman",
     "image_url": "https://s.gr-assets.com/assets/nophoto/book/111x148-bcc042a9c91a29c1d680899eff700a03.png",
     "year": 2020
   },

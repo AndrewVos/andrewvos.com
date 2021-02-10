@@ -10,7 +10,8 @@ module.exports = {
   entry: {
     index: ['./src/scripts/shared.js', './src/scripts/index.js'],
     bio: './src/scripts/shared.js',
-    books: ['./src/scripts/shared.js', './src/scripts/books.js']
+    books: ['./src/scripts/shared.js', './src/scripts/books.js'],
+    hire: './src/scripts/shared.js'
   },
   devtool: isProduction ? 'eval-cheap-module-source-map' : 'inline-source-map',
   output: {
@@ -32,6 +33,11 @@ module.exports = {
       filename: 'books.html',
       template: './src/books.html',
       chunks: ['books']
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'hire.html',
+      template: './src/hire.html',
+      chunks: ['hire']
     }),
     new CleanWebpackPlugin({ cleanStaleWebpackAssets: false })
   ].filter(Boolean),

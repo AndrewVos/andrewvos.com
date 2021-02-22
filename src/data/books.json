@@ -1,5 +1,14 @@
 [
   {
+    "title": "The Wind-Up Bird Chronicle",
+    "url": "https://www.goodreads.com/book/show/11275.The_Wind_Up_Bird_Chronicle",
+    "rating": 5,
+    "author": "by Haruki Murakami, Jay Rubin (Translator)",
+    "author_url": "https://www.goodreads.com/author/show/3354.Haruki_Murakami",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327872639l/11275.jpg",
+    "year": 2021
+  },
+  {
     "title": "Lexicon",
     "url": "https://www.goodreads.com/book/show/16158596-lexicon",
     "rating": 1,
@@ -34,6 +43,69 @@
     "author_url": "https://www.goodreads.com/author/show/1916426.Ted_Kosmatka",
     "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1411353677l/17910095.jpg",
     "year": 2021
+  },
+  {
+    "title": "A Gentleman in Moscow",
+    "url": "https://www.goodreads.com/book/show/50823666-a-gentleman-in-moscow",
+    "rating": 5,
+    "author": "Amor Towles",
+    "author_url": "https://www.goodreads.com/author/show/4536964.Amor_Towles",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1560441634l/50823666._SX318_SY475_.jpg",
+    "year": 2021
+  },
+  {
+    "title":"Summer Frost",
+    "url":"https://www.goodreads.com/book/show/49676965-summer-frost",
+    "rating": 4,
+    "author":"Blake Crouch",
+    "author_url":"https://www.goodreads.com/author/show/442240.Blake_Crouch",
+    "image_url":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1563468943l/49676965._SX318_SY475_.jpg",
+    "year": 2021
+  },
+  {
+    "title": "Excession (Culture, #5)",
+    "url": "https://www.goodreads.com/book/show/12013.Excession",
+    "rating": 5,
+    "author": "Iain M. Banks",
+    "author_url": "https://www.goodreads.com/author/show/5807106.Iain_M_Banks",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1288930712l/12013._SX98_.jpg",
+    "year": 2020
+  },
+  {
+    "title": "Nophek Gloss",
+    "url": "https://www.goodreads.com/book/show/53790608-nophek-gloss",
+    "rating": 1,
+    "author": "Essa Hansen",
+    "author_url": "https://www.goodreads.com/author/show/19813251.Essa_Hansen",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1591167196l/53790608._SY475_.jpg",
+    "year": 2020
+  },
+  {
+    "title":"New Atlantis",
+    "url":"https://www.goodreads.com/book/show/53423015-new-atlantis",
+    "rating": 2,
+    "author":"Lavie Tidhar",
+    "author_url":"https://www.goodreads.com/author/show/572738.Lavie_Tidhar",
+    "image_url":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1589642768l/53423015._SY475_.jpg",
+    "year": 2020
+  },
+  {
+    "title":"Every Sky A Grave",
+    "url":"https://www.goodreads.com/book/show/54811216-every-sky-a-grave",
+    "rating": 2,
+    "author":"Jay Posey",
+    "author_url":"https://www.goodreads.com/author/show/6862026.Jay_Posey",
+    "image_url":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1596533720l/54811216._SY475_.jpg",
+    "year": 2020
+  },
+  {
+    "title":"The Last Day",
+    "url":"https://www.goodreads.com/book/show/51056759-the-last-day",
+    "rating": 3,
+    "author":"Andrew Hunter Murray",
+    "author_url":"https://www.goodreads.com/author/show/14586394.Andrew_Hunter_Murray",
+    "image_url":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562432154l/51056759._SX318_SY475_.jpg",
+    "year": 2020
   },
   {
     "title": "Unconquerable Sun (The Sun Chronicles #1)",

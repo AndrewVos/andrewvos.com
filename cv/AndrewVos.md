@@ -41,15 +41,19 @@ amounts of docker containers running on Amazon EC2.
 
 ## I like working with
 
-- Ruby, Go, JavaScript, HTML, CSS
+- Ruby, JavaScript, React, HTML, Tailwind CSS, Go
 - Postgres, ~~ElasticSearch~~, ~~MongoDB~~
 - Git, ~~Mercurial~~, ~~TFS~~
-- vim
+- Kakoune
 - Heroku, Ubuntu, ArchLinux, CoreOS, Docker, ~~Vagrant~~, ~~Puppet~~, ~~Chef~~
 
 ### Experience
 
-#### Florence  - _23 March 2020_
+#### Florence  - _23 March 2020_ to _present_
+
+- Built https://www.staffsmarter.co.uk/ in Rails with Bootstrap.
+- Built version 2 of Staff Smarter (renamed, but not yet release) in Rails with React and Tailwindcss.
+
 #### Featurist - _5th February 2018_ to _17th March 2019_
 
 - Working on a project for an undisclosed client

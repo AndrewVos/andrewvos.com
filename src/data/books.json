@@ -1,9 +1,18 @@
 [
   {
+    "title": "Across the Universe",
+    "url": "https://www.goodreads.com/book/show/8235178-across-the-universe",
+    "rating": 5,
+    "author": "Beth Revis",
+    "author_url": "https://www.goodreads.com/author/show/4018722.Beth_Revis",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1401852218l/8235178.jpg",
+    "year": 2021
+  },
+  {
     "title": "The Wind-Up Bird Chronicle",
     "url": "https://www.goodreads.com/book/show/11275.The_Wind_Up_Bird_Chronicle",
     "rating": 5,
-    "author": "by Haruki Murakami, Jay Rubin (Translator)",
+    "author": "Haruki Murakami, Jay Rubin (Translator)",
     "author_url": "https://www.goodreads.com/author/show/3354.Haruki_Murakami",
     "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1327872639l/11275.jpg",
     "year": 2021

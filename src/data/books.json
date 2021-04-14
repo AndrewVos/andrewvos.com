@@ -1,5 +1,32 @@
 [
   {
+    "title": "A Desolation Called Peace",
+    "url": "https://www.goodreads.com/book/show/45154547-a-desolation-called-peace",
+    "rating": 2,
+    "author": "Arkady Martine",
+    "author_url": "https://www.goodreads.com/author/show/13803582.Arkady_Martine",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1591755604l/45154547._SY475_.jpg",
+    "year": 2021
+  },
+  {
+    "title": "The Last Wish",
+    "url": "https://www.goodreads.com/book/show/40603587-the-last-wish?from_search=true&from_srp=true&qid=39lJ3d8k3s&rank=1",
+    "rating": 1,
+    "author": "Andrzej Sapkowski",
+    "author_url": "https://www.goodreads.com/author/show/38569.Andrzej_Sapkowski",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1529591917l/40603587._SX318_.jpg",
+    "year": 2021
+  },
+  {
+    "title": "The Return of the Incredible Exploding Man",
+    "url": "https://www.goodreads.com/en/book/show/43822102-the-return-of-the-incredible-exploding-man",
+    "rating": 3,
+    "author": "Dave Hutchinson",
+    "author_url": "https://www.goodreads.com/author/show/498091.Dave_Hutchinson",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1554035388l/43822102.jpg",
+    "year": 2021
+  },
+  {
     "title": "Across the Universe",
     "url": "https://www.goodreads.com/book/show/8235178-across-the-universe",
     "rating": 5,
@@ -63,12 +90,12 @@
     "year": 2021
   },
   {
-    "title":"Summer Frost",
-    "url":"https://www.goodreads.com/book/show/49676965-summer-frost",
+    "title": "Summer Frost",
+    "url": "https://www.goodreads.com/book/show/49676965-summer-frost",
     "rating": 4,
-    "author":"Blake Crouch",
-    "author_url":"https://www.goodreads.com/author/show/442240.Blake_Crouch",
-    "image_url":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1563468943l/49676965._SX318_SY475_.jpg",
+    "author": "Blake Crouch",
+    "author_url": "https://www.goodreads.com/author/show/442240.Blake_Crouch",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1563468943l/49676965._SX318_SY475_.jpg",
     "year": 2021
   },
   {
@@ -90,30 +117,30 @@
     "year": 2020
   },
   {
-    "title":"New Atlantis",
-    "url":"https://www.goodreads.com/book/show/53423015-new-atlantis",
+    "title": "New Atlantis",
+    "url": "https://www.goodreads.com/book/show/53423015-new-atlantis",
     "rating": 2,
-    "author":"Lavie Tidhar",
-    "author_url":"https://www.goodreads.com/author/show/572738.Lavie_Tidhar",
-    "image_url":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1589642768l/53423015._SY475_.jpg",
+    "author": "Lavie Tidhar",
+    "author_url": "https://www.goodreads.com/author/show/572738.Lavie_Tidhar",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1589642768l/53423015._SY475_.jpg",
     "year": 2020
   },
   {
-    "title":"Every Sky A Grave",
-    "url":"https://www.goodreads.com/book/show/54811216-every-sky-a-grave",
+    "title": "Every Sky A Grave",
+    "url": "https://www.goodreads.com/book/show/54811216-every-sky-a-grave",
     "rating": 2,
-    "author":"Jay Posey",
-    "author_url":"https://www.goodreads.com/author/show/6862026.Jay_Posey",
-    "image_url":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1596533720l/54811216._SY475_.jpg",
+    "author": "Jay Posey",
+    "author_url": "https://www.goodreads.com/author/show/6862026.Jay_Posey",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1596533720l/54811216._SY475_.jpg",
     "year": 2020
   },
   {
-    "title":"The Last Day",
-    "url":"https://www.goodreads.com/book/show/51056759-the-last-day",
+    "title": "The Last Day",
+    "url": "https://www.goodreads.com/book/show/51056759-the-last-day",
     "rating": 3,
-    "author":"Andrew Hunter Murray",
-    "author_url":"https://www.goodreads.com/author/show/14586394.Andrew_Hunter_Murray",
-    "image_url":"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562432154l/51056759._SX318_SY475_.jpg",
+    "author": "Andrew Hunter Murray",
+    "author_url": "https://www.goodreads.com/author/show/14586394.Andrew_Hunter_Murray",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1562432154l/51056759._SX318_SY475_.jpg",
     "year": 2020
   },
   {

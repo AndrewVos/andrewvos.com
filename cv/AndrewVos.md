@@ -26,19 +26,6 @@ Interests:
   - Writing code on prototyping boards... Wemos, Arduino etc.
   - Playing with my .vimrc and writing scripts for Arch Linux
 
-### Recent Projects
-
-[**myfil.ms**](https://myfil.ms) basically goodreads but for films, and much simpler. Good film recommendations too.
-
-[**anmo.io**](https://anmo.io/) is a tool to quickly create websites with markdown. I use it for [andrewvos.com](andrewvos.com).
-
-[**ancientcitadel.com**](http://ancientcitadel.com) is a gif aggregator. It has it's own API
-that converts animated gifs to webm and mp4 formats. Supporting both formats means the videos
-work on all common browsers. Also the size of the gifs is drastically reduced.
-
-[**garrison**](https://github.com/AndrewVos/garrison) is a tool used to deploy software to large
-amounts of docker containers running on Amazon EC2.
-
 ## I like working with
 
 - Ruby, JavaScript, React, HTML, Tailwind CSS, Go

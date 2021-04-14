@@ -38,8 +38,9 @@ Interests:
 
 #### Florence  - _23 March 2020_ to _present_
 
+- Built https://rota.florence.co.uk in Rails with React and Tailwind 2 and migrated all users over from the original Staff Smarter.
 - Built https://www.staffsmarter.co.uk/ in Rails with Bootstrap.
-- Built version 2 of Staff Smarter (renamed, but not yet release) in Rails with React and Tailwindcss.
+- Built the National Care Force site (https://www.nationalcareforce.co.uk/) with plain Rails.
 
 #### Featurist - _5th February 2018_ to _17th March 2019_
 

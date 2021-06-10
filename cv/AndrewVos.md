@@ -36,9 +36,17 @@ Interests:
 
 ### Experience
 
-#### Florence  - _23 March 2020_ to _present_
+#### ChangeLab - _17 May 2021_ to _present_
+
+- Worked on Democracy
+- Worked on PinPoint
+
+#### Florence (permanent) - _19 May 2020_ to _6 May 2021_
 
 - Built https://rota.florence.co.uk in Rails with React and Tailwind 2 and migrated all users over from the original Staff Smarter.
+
+#### Florence - _23 March 2020_ to _18 May 2020_
+
 - Built https://www.staffsmarter.co.uk/ in Rails with Bootstrap.
 - Built the National Care Force site (https://www.nationalcareforce.co.uk/) with plain Rails.
 

@@ -1,5 +1,32 @@
 [
   {
+    "title": "Legendborn",
+    "url": "https://www.goodreads.com/book/show/50892338-legendborn?ac=1&from_search=true&qid=4GqP3sMo4b&rank=1",
+    "rating": 5,
+    "author": "Tracy Deonn",
+    "author_url": "https://www.goodreads.com/author/show/19593708.Tracy_Deonn",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1598382979l/50892338.jpg",
+    "year": 2021
+  },
+  {
+    "title": "The Gilded Ones",
+    "url": "https://www.goodreads.com/book/show/40024121-the-gilded-ones?from_search=true&from_srp=true&qid=g8w0AYzINX&rank=1",
+    "rating": 5,
+    "author": "Namina Forna",
+    "author_url": "https://www.goodreads.com/author/show/17999114.Namina_Forna",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1585578175l/40024121._SY475_.jpg",
+    "year": 2021
+  },
+  {
+    "title": "Red Rising",
+    "url": "https://www.goodreads.com/book/show/15839976-red-rising",
+    "rating": 2,
+    "author": "Pierce Brown",
+    "author_url": "https://www.goodreads.com/author/show/6474348.Pierce_Brown",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1461354651l/15839976.jpg",
+    "year": 2021
+  },
+  {
     "title": "Lightning Child",
     "url": "https://www.goodreads.com/book/show/48912747-lightning-child",
     "rating": 5,

@@ -1,5 +1,41 @@
 [
   {
+    "title": "Echogenesis",
+    "url": "https://www.goodreads.com/book/show/58744261-echogenesis",
+    "rating": 4,
+    "author": "Gary Gibson",
+    "author_url": "https://www.goodreads.com/author/show/1442754.Gary_Gibson",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1628614411l/58744261._SY475_.jpg",
+    "read_year": 2021
+  },
+  {
+    "title": "Wildwood",
+    "url": "https://www.goodreads.com/book/show/19441663-wildwood",
+    "rating": 5,
+    "author": "Colin Meloy",
+    "author_url": "https://www.goodreads.com/author/show/10741.Colin_Meloy",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1386937460l/19441663.jpg",
+    "read_year": 2021
+  },
+  {
+    "title": "The Exiled Fleet",
+    "url": "https://www.goodreads.com/book/show/55077639-the-exiled-fleet",
+    "rating": 3,
+    "author": "J.S. Dewes",
+    "author_url": "https://www.goodreads.com/author/show/20220570.J_S_Dewes",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1613416660l/55077639.jpg",
+    "read_year": 2021
+  },
+  {
+    "title": "The Last Watch",
+    "url": "https://www.goodreads.com/en/book/show/53205794-the-last-watch",
+    "rating": 5,
+    "author": "J.S. Dewes",
+    "author_url": "https://www.goodreads.com/author/show/20220570.J_S_Dewes",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1610925839l/53205794.jpg",
+    "read_year": 2021
+  },
+  {
     "title": "Legendborn",
     "url": "https://www.goodreads.com/book/show/50892338-legendborn?ac=1&from_search=true&qid=4GqP3sMo4b&rank=1",
     "rating": 5,

@@ -1,5 +1,23 @@
 [
   {
+    "title": "The Warrior's Apprentice",
+    "url": "https://www.goodreads.com/book/show/61906.The_Warrior_s_Apprentice",
+    "rating": 4,
+    "author": "Lois McMaster Bujold",
+    "author_url": "https://www.goodreads.com/author/show/16094.Lois_McMaster_Bujold",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1170597854l/61906._SY475_.jpg",
+    "read_year": 2021
+  },
+  {
+    "title": "Foundation",
+    "url": "https://www.goodreads.com/book/show/29579.Foundation",
+    "rating": 3,
+    "author": "Isaac Asimov",
+    "author_url": "https://www.goodreads.com/author/show/16667.Isaac_Asimov",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1417900846l/29579.jpg",
+    "read_year": 2021
+  },
+  {
     "title": "Echogenesis",
     "url": "https://www.goodreads.com/book/show/58744261-echogenesis",
     "rating": 4,

@@ -21,10 +21,9 @@ NOTE: I have recently moved to Cornwall, so I am only taking on remote work.
 
 Interests:
 
-  - Cycling
   - Dogs
-  - Writing code on prototyping boards... Wemos, Arduino etc.
-  - Playing with my .vimrc and writing scripts for Arch Linux
+  - Woodworking
+  - Cycling
 
 ## I like working with
 
@@ -36,10 +35,13 @@ Interests:
 
 ### Experience
 
-#### ChangeLab - _17 May 2021_ to _present_
+#### MoneyHelper - _9 November 2021 to _present_
 
-- Worked on Democracy
-- Worked on PinPoint
+TBA
+
+#### ChangeLab - _17 May 2021_ to _10 October 2021_
+
+- Worked on custom built react apps
 
 #### Florence (permanent) - _19 May 2020_ to _6 May 2021_
 

@@ -35,7 +35,7 @@ Interests:
 
 ### Experience
 
-#### MoneyHelper - _9 November 2021 to _present_
+#### MoneyHelper - _9 November 2021_ to _present_
 
 TBA
 

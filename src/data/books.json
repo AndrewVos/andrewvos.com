@@ -1,5 +1,32 @@
 [
   {
+    "title": "The Lathe of Heaven",
+    "url": "https://www.goodreads.com/book/show/59924.The_Lathe_of_Heaven",
+    "rating": 3,
+    "author": "Ursula K. Le Guin",
+    "author_url": "https://www.goodreads.com/author/show/874602.Ursula_K_Le_Guin",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1433084322l/59924.jpg",
+    "read_year": 2021
+  },
+  {
+    "title": "The Thursday Murder Club",
+    "url": "https://www.goodreads.com/book/show/46000520-the-thursday-murder-club",
+    "rating": 5,
+    "author": "Richard Osman",
+    "author_url": "https://www.goodreads.com/author/show/6173710.Richard_Osman",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1582287822l/46000520.jpg",
+    "read_year": 2021
+  },
+  {
+    "title": "Head On",
+    "url": "https://www.goodreads.com/en/book/show/35018901",
+    "rating": 2,
+    "author": "John Scalzi",
+    "author_url": "https://www.goodreads.com/author/show/4763.John_Scalzi",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1497994548l/35018901.jpg",
+    "read_year": 2021
+  },
+  {
     "title": "The Warrior's Apprentice",
     "url": "https://www.goodreads.com/book/show/61906.The_Warrior_s_Apprentice",
     "rating": 4,

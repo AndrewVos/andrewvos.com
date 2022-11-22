@@ -1,5 +1,41 @@
 [
   {
+    "title": "The Hobbit, Part One",
+    "url": "https://www.goodreads.com/book/show/17157681-the-hobbit-part-one",
+    "rating": 3,
+    "author": "J.R.R. Tolkien",
+    "author_url": "https://www.goodreads.com/author/show/656983.J_R_R_Tolkien",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1371834025l/17157681.jpg",
+    "read_year": 2022
+  },
+  {
+    "title": "Wake Me After the Apocalypse",
+    "url": "https://www.goodreads.com/book/show/41042431-wake-me-after-the-apocalypse",
+    "rating": 4,
+    "author": "Jordan Rivet",
+    "author_url": "https://www.goodreads.com/author/show/9789569.Jordan_Rivet",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1533390058l/41042431._SY475_.jpg",
+    "read_year": 2022
+  },
+  {
+    "title": "The Man Who Died Twice",
+    "url": "https://www.goodreads.com/book/show/55457493-the-man-who-died-twice",
+    "rating": 3,
+    "author": "Richard Osman",
+    "author_url": "https://www.goodreads.com/author/show/6173710.Richard_Osman",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1616100048l/55457493._SY475_.jpg",
+    "read_year": 2022
+  },
+  {
+    "title": "How to Kill Your Family",
+    "url": "https://www.goodreads.com/book/show/50224049-how-to-kill-your-family",
+    "rating": 4,
+    "author": "Bella Mackie",
+    "author_url": "https://www.goodreads.com/author/show/18375540.Bella_Mackie",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1617719574l/50224049.jpg",
+    "read_year": 2022
+  },
+  {
     "title": "Heir to the Empire",
     "url": "https://www.goodreads.com/book/show/40604754-heir-to-the-empire",
     "rating": 3,

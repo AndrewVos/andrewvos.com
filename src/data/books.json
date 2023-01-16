@@ -1,5 +1,50 @@
 [
   {
+    "title": "Stars and Bones",
+    "url": "https://www.goodreads.com/book/show/58520263-stars-and-bones",
+    "rating": 4,
+    "author": "Gareth L. Powell",
+    "author_url": "https://www.goodreads.com/author/show/2890031.Gareth_L_Powell",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1625818389l/58520263.jpg",
+    "read_year": 2023
+  },
+  {
+    "title": "Shaman",
+    "url": "https://www.goodreads.com/book/show/17669062-shaman",
+    "rating": 1,
+    "author": "Kim Stanley Robinson",
+    "author_url": "https://www.goodreads.com/author/show/1858.Kim_Stanley_Robinson",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1364007577l/17669062.jpg",
+    "read_year": 2023
+  },
+  {
+    "title": "The Veiled Edge of Contact",
+    "url": "https://www.goodreads.com/book/show/62970809-the-veiled-edge-of-contact",
+    "rating": 5,
+    "author": "James Brayken",
+    "author_url": "https://www.goodreads.com/author/show/22288509.James_Brayken",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1665520851l/62970809._SY475_.jpg",
+    "read_year": 2023
+  },
+  {
+    "title": "The Sudden Appearance of Hope",
+    "url": "https://www.goodreads.com/book/show/25746699-the-sudden-appearance-of-hope",
+    "rating": 3,
+    "author": "Claire North",
+    "author_url": "https://www.goodreads.com/author/show/7210024.Claire_North",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1454363620l/25746699.jpg",
+    "read_year": 2022
+  },
+  {
+    "title": "Upgrade",
+    "url": "https://www.goodreads.com/book/show/59838811-upgrade",
+    "rating": 3,
+    "author": "Blake Crouch",
+    "author_url": "https://www.goodreads.com/author/show/442240.Blake_Crouch",
+    "image_url": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1643994317l/59838811.jpg",
+    "read_year": 2022
+  },
+  {
     "title": "The Hobbit, Part One",
     "url": "https://www.goodreads.com/book/show/17157681-the-hobbit-part-one",
     "rating": 3,

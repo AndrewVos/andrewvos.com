@@ -2,4 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "./index.css";
+.bg-very-dark {
+  background-color: #252934;
+}

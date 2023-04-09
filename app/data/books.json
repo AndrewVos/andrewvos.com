@@ -1,5 +1,77 @@
 [
   {
+    "title": "Escape",
+    "rating": 3,
+    "author": "Michael Robertson",
+    "author_url": "https://www.goodreads.com/author/show/7102623.Michael_Robertson",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1632782855i/59087665.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/59087665-escape"
+  },
+  {
+    "title": "Divided",
+    "rating": 3,
+    "author": "Michael Robertson",
+    "author_url": "https://www.goodreads.com/author/show/7102623.Michael_Robertson",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1622726522i/58252400.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/58252400-divided"
+  },
+  {
+    "title": "The Wall",
+    "rating": 3,
+    "author": "Michael Robertson",
+    "author_url": "https://www.goodreads.com/author/show/7102623.Michael_Robertson",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1618677653i/57764759.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/57764759-the-wall"
+  },
+  {
+    "title": "Before The Dawn",
+    "rating": 3,
+    "author": "Michael Robertson",
+    "author_url": "https://www.goodreads.com/author/show/7102623.Michael_Robertson",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609012877i/56425598.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/56425598-before-the-dawn"
+  },
+  {
+    "title": "Between Fury and Fear",
+    "rating": 3,
+    "author": "Michael Robertson",
+    "author_url": "https://www.goodreads.com/author/show/7102623.Michael_Robertson",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1595520604i/54648885.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/54648885-between-fury-and-fear"
+  },
+  {
+    "title": "The Asylum",
+    "rating": 2,
+    "author": "Michael Robertson",
+    "author_url": "https://www.goodreads.com/author/show/7102623.Michael_Robertson",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1585236793i/52698183.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/52698183-the-asylum"
+  },
+  {
+    "title": "Three Days",
+    "rating": 3,
+    "author": "Michael Robertson",
+    "author_url": "https://www.goodreads.com/author/show/7102623.Michael_Robertson",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1600646612i/50485205.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/50485205-three-days"
+  },
+  {
+    "title": "After Edin",
+    "rating": 3,
+    "author": "Michael Robertson",
+    "author_url": "https://www.goodreads.com/author/show/7102623.Michael_Robertson",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1568116623l/53057490.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/53057490-after-edin"
+  },
+  {
     "title": "Collapse",
     "url": "https://www.goodreads.com/book/show/44086707-collapse",
     "rating": 4,

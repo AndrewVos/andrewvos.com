@@ -1,12 +1,13 @@
 import puppeteer from "puppeteer";
 import queryString from "query-string";
 import prompts from "prompts";
+import fs from "fs";
 
 const retrieveBook = async () => {
   const bookResponse = await prompts({
     type: "text",
     name: "value",
-    message: "Which book do you want to retrieve",
+    message: "Search for a book",
   });
 
   if (!bookResponse.value) {
@@ -20,7 +21,7 @@ const retrieveBook = async () => {
     });
 
   const browser = await puppeteer.launch({
-    headless: false,
+    headless: true,
     defaultViewport: null,
   });
 
@@ -43,23 +44,22 @@ const retrieveBook = async () => {
     process.exit(1);
   }
 
-  console.log("Results:");
-  results.forEach((r) => console.log(r.title));
+  const bookChoiceResponse = await prompts([
+    {
+      type: "select",
+      name: "value",
+      message: "Choose a result",
+      choices: results.map((r) => ({
+        title: r.title,
+        value: r.href,
+      })),
+      initial: 0,
+    },
+  ]);
 
-  const correctBookResponse = await prompts({
-    type: "toggle",
-    name: "value",
-    message: "Use the first result?",
-    initial: true,
-    active: "yes",
-    inactive: "no",
-  });
-
-  if (correctBookResponse.value) {
-    const result = results[0];
-    console.log(result);
+  if (bookChoiceResponse.value) {
     const bookPage = await browser.newPage();
-    await bookPage.goto(result.href, {
+    await bookPage.goto(bookChoiceResponse.value, {
       waitUntil: "domcontentloaded",
     });
 
@@ -81,12 +81,35 @@ const retrieveBook = async () => {
         read_year: 2023,
       };
     });
-    book.url = result.href.substring(0, result.href.indexOf("?"));
+    book.url = bookChoiceResponse.value.substring(
+      0,
+      bookChoiceResponse.value.indexOf("?")
+    );
 
-    console.log(book);
+    const data = fs.readFileSync("app/data/books.json", "utf8");
+    const modified = [book].concat(JSON.parse(data));
+    fs.writeFileSync(
+      "app/data/books.json",
+      JSON.stringify(modified, null, "  ")
+    );
   }
 
   await browser.close();
 };
 
-retrieveBook();
+for (;;) {
+  await retrieveBook();
+
+  const continueResponse = await prompts({
+    type: "toggle",
+    name: "value",
+    message: "Would you like to do another?",
+    initial: true,
+    active: "yes",
+    inactive: "no",
+  });
+
+  if (!continueResponse.value) {
+    break;
+  }
+}

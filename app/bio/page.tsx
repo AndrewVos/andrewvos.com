@@ -1,6 +1,23 @@
 import Link from "next/link"
 
 export default function Bio() {
+  const clients = [
+    { name: "BBC", image: "./images/logos/bbc.png" },
+    { name: "Featurist", image: "./images/logos/featurist.png" },
+    { name: "Florence", image: "./images/logos/florence.png" },
+    { name: "Fullsix", image: "./images/logos/fullsix.png" },
+    { name: "GAIN Capital", image: "./images/logos/gain-capital.png" },
+    { name: "GDS", image: "./images/logos/gds.png" },
+    { name: "Honeycomb", image: "./images/logos/honeycomb-tv.png" },
+    { name: "ITV", image: "./images/logos/itv.png" },
+    { name: "PensionWise", image: "./images/logos/pension-wise.png" },
+    { name: "Shopa", image: "./images/logos/shopa.png" },
+    { name: "Sky", image: "./images/logos/sky.png" },
+    { name: "ChangeLab", className: "bg-gray-700 p-3", image: "./images/logos/changelab.png" },
+    { name: "MoneyHelper", className: "p-3", image: "./images/logos/moneyhelper.png" },
+    { name: "Quidco", className: "p-3", image: "./images/logos/quidco.png" },
+  ]
+
   return (
     <>
       <div className="text-gray-900 font-serif container mx-auto p-3 mt-10 mb-5">
@@ -143,85 +160,14 @@ export default function Bio() {
           Some of my clients:
         </h3>
         <div className="-mx-3 flex flex-wrap">
-          <div className="logo w-1/4 w-full md:w-1/2 lg:w-1/4 p-3">
-            <div className="logo-background rounded border-solid border border-gray-300 h-full flex items-center justify-center p-3 bg-white">
-              <img alt="BBC Logo" src="./images/logos/bbc.png" />
+          {clients.map(client => (
+            <div key={client.name} className="logo w-1/4 w-full md:w-1/2 lg:w-1/4 p-3">
+              <div className="logo-background rounded border-solid border border-gray-300 h-full flex items-center justify-center p-3 bg-white">
+                <img className={client.className} alt={`${client.name} logo`} src={client.image} />
+              </div>
             </div>
-          </div>
-
-          <div className="logo w-1/4 w-full md:w-1/2 lg:w-1/4 p-3">
-            <div className="logo-background rounded border-solid border border-gray-300 h-full flex items-center justify-center p-3 bg-white">
-              <img alt="Featurist logo" src="./images/logos/featurist.png" />
-            </div>
-          </div>
-
-          <div className="logo w-1/4 w-full md:w-1/2 lg:w-1/4 p-3">
-            <div className="logo-background rounded border-solid border border-gray-300 h-full flex items-center justify-center p-3 bg-white">
-              <img alt="Florence logo" src="./images/logos/florence.png" />
-            </div>
-          </div>
-
-          <div className="logo w-1/4 w-full md:w-1/2 lg:w-1/4 p-3">
-            <div className="logo-background rounded border-solid border border-gray-300 h-full flex items-center justify-center p-3 bg-white">
-              <img alt="Fullsix logo" src="./images/logos/fullsix.png" />
-            </div>
-          </div>
-
-          <div className="logo w-1/4 w-full md:w-1/2 lg:w-1/4 p-3">
-            <div className="logo-background rounded border-solid border border-gray-300 h-full flex items-center justify-center p-3 bg-white">
-              <img alt="GAIN Capital logo" src="./images/logos/gain-capital.png" />
-            </div>
-          </div>
-
-          <div className="logo w-1/4 w-full md:w-1/2 lg:w-1/4 p-3">
-            <div className="logo-background rounded border-solid border border-gray-300 h-full flex items-center justify-center p-3 bg-white">
-              <img alt="GDS logo" src="./images/logos/gds.png" />
-            </div>
-          </div>
-
-          <div className="logo w-1/4 w-full md:w-1/2 lg:w-1/4 p-3">
-            <div className="logo-background rounded border-solid border border-gray-300 h-full flex items-center justify-center p-3 bg-white">
-              <img alt="Honeycomb logo" src="./images/logos/honeycomb-tv.png" />
-            </div>
-          </div>
-
-          <div className="logo w-1/4 w-full md:w-1/2 lg:w-1/4 p-3">
-            <div className="logo-background rounded border-solid border border-gray-300 h-full flex items-center justify-center p-3 bg-white">
-              <img alt="ITV logo" src="./images/logos/itv.png" />
-            </div>
-          </div>
-
-          <div className="logo w-1/4 w-full md:w-1/2 lg:w-1/4 p-3">
-            <div className="logo-background rounded border-solid border border-gray-300 h-full flex items-center justify-center p-3 bg-white">
-              <img alt="PensionWise logo" src="./images/logos/pension-wise.png" />
-            </div>
-          </div>
-
-          <div className="logo w-1/4 w-full md:w-1/2 lg:w-1/4 p-3">
-            <div className="logo-background rounded border-solid border border-gray-300 h-full flex items-center justify-center p-3 bg-white">
-              <img alt="Shopa logo" src="./images/logos/shopa.png" />
-            </div>
-          </div>
-
-          <div className="logo w-1/4 w-full md:w-1/2 lg:w-1/4 p-3">
-            <div className="logo-background rounded border-solid border border-gray-300 h-full flex items-center justify-center p-3 bg-white">
-              <img alt="Sky logo" src="./images/logos/sky.png" />
-            </div>
-          </div>
-
-          <div className="logo w-1/4 w-full md:w-1/2 lg:w-1/4 p-3">
-            <div className="logo-background rounded border-solid border border-gray-300 h-full flex items-center justify-center p-3 bg-white">
-              <img alt="ChangeLab logo" className="bg-gray-700 p-3" src="./images/logos/changelab.png" />
-            </div>
-          </div>
-
-          <div className="logo w-1/4 w-full md:w-1/2 lg:w-1/4 p-3">
-            <div className="logo-background rounded border-solid border border-gray-300 h-full flex items-center justify-center p-3 bg-white">
-              <img alt="ChangeLab logo" className="p-3" src="./images/logos/moneyhelper.png" />
-            </div>
-          </div>
+          ))}
         </div>
-
       </div>
 
       <div className="container mx-auto p-3 mb-20">

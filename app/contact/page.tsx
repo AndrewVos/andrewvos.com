@@ -6,6 +6,7 @@ export default function Hire() {
           Contact Andrew Vos
         </h1>
         <form name="contact" action="/contact/success" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
           <div className="mt-4 w-full">
             <label className=
               "block text-gray-700 mb-1 font-bold text-left" htmlFor="name">Name</label>

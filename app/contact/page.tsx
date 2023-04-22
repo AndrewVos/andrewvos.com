@@ -5,7 +5,7 @@ export default function Hire() {
         <h1 className="text-4xl text-gray-800">
           Contact Andrew Vos
         </h1>
-        <form name="contact" method="post" data-netlify="true" id="contact">
+        <form name="contact" action="/contact/success" method="POST" data-netlify="true">
           <div className="mt-4 w-full">
             <label className=
               "block text-gray-700 mb-1 font-bold text-left">Name</label>

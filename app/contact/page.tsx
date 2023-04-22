@@ -3,7 +3,7 @@ export default function Hire() {
     <div className="container mx-auto p-3 mt-10 mb-5">
       <div className="w-full lg:w-1/2 mx-auto">
         <h1 className="text-4xl text-gray-800">
-          Hire Andrew Vos
+          Contact Andrew Vos
         </h1>
         <form name="contact" method="post" data-netlify="true" id="contact">
           <div className="mt-4 w-full">

@@ -28,13 +28,13 @@ export default function Bio() {
             </h1>
           </div>
           <div>
-            <Link href="/hire" className="inline-flex items-center h-8 px-4 m-2 text-sm text-white bg-blue-500 rounded-lg">
-              Hire me
+            <Link href="/contact" className="inline-flex items-center h-8 px-4 m-2 text-sm text-white bg-blue-500 rounded-lg">
+              Check availability
             </Link>
           </div>
         </div>
         <h2 className="text-3xl text-gray-700 font-bold">
-          Full-stack Software Engineer
+          Senior Software Engineer
         </h2>
       </div>
       <div className="container mx-auto p-3 mb-5">
@@ -42,7 +42,8 @@ export default function Bio() {
           <p className="text-lg mb-3">
             I am a
             {" "}
-            <span className="bg-gray-200 px-1 text-gray-700">Senior Software Engineer</span>,
+            <span className="bg-gray-200 px-1 text-gray-700">Senior Software Engineer</span>
+            {" "}
             with over
             {" "}
             <span className="bg-gray-200 px-1 text-gray-700">15 years</span>
@@ -62,9 +63,8 @@ export default function Bio() {
           <p className="text-lg mb-3">
             For web I like to work with
             {" "}
-            <span className="bg-gray-200 px-1 text-gray-700">Rails</span>,
-            and where appropriate I like to design more complex interfaces with
-            {" "}
+            <span className="bg-gray-200 px-1 text-gray-700">Next.js</span>,
+            and
             <span className="bg-gray-200 px-1 text-gray-700">React</span>.
             I always use system tests to cover new features that I write,
             and for more complex code I write unit tests.
@@ -82,10 +82,6 @@ export default function Bio() {
             {" "}
             and others.
           </p>
-
-          <p className="text-lg mb-3 font-bold">
-            Please note that I have recently moved to Cornwall, so I am only taking on remote work.
-          </p>
         </div>
       </div>
 
@@ -100,24 +96,12 @@ export default function Bio() {
               who can get the job done on his own.
             </li>
             <li className="list-disc ml-5 text-lg">
-              You need an incredibly passionate developer to design and build
+              You need someone to design and build
               your software startup from the ground up.
             </li>
             <li className="list-disc ml-5 text-lg">
               You want someone who can hit the ground running, and start
-              delivering features in record time.
-            </li>
-            <li className="list-disc ml-5 text-lg">
-              You crave a developer who can do the whole job, from project management and UX design to frontend and backend development.
-            </li>
-            <li className="list-disc ml-5 text-lg">
-              You want me to teach you vim?
-            </li>
-            <li className="list-disc ml-5 text-lg">
-              You would like to see the occasional photo of my extremely cute dogs.
-            </li>
-            <li className="list-disc ml-5 text-lg">
-              You are just a really cool person really.
+              delivering immediately.
             </li>
           </ul>
         </div>
@@ -130,26 +114,24 @@ export default function Bio() {
         <div className="lg:w-2/3">
           <ul className="text-lg mb-3">
             <li className="list-disc ml-5 text-lg">
-              I make some pretty cool furniture out of wood. Also, I make amazing
+              I make some pretty beautiful furniture out of wood. Also, I make great
               lamps.
             </li>
+
             <li className="list-disc ml-5 text-lg">
-              Cycling and long distance cycle camping.
+              I spend as much time as possible trail running, running or cycling.
             </li>
+
             <li className="list-disc ml-5 text-lg">
-              Constantly tweaking my <a className="underline" href="https://github.com/AndrewVos/dotfiles">dotfiles</a>.
-            </li>
-            <li className="list-disc ml-5 text-lg">
-              Reading science fiction
+              I read a lot of science fiction
               {" "}
               <Link href="/books" className="underline">books</Link>.
             </li>
+
             <li className="list-disc ml-5 text-lg">
-              Creating hundreds of
+              I create loads of random code projects
               {" "}
-              <a href="http://github.com/AndrewVos" className="underline">projects</a>
-              {" "}
-              on github.
+              <a href="http://github.com/AndrewVos" className="underline">projects</a>.
             </li>
           </ul>
         </div>

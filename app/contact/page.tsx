@@ -8,20 +8,20 @@ export default function Hire() {
         <form name="contact" action="/contact/success" method="POST" data-netlify="true">
           <div className="mt-4 w-full">
             <label className=
-              "block text-gray-700 mb-1 font-bold text-left">Name</label>
-            <input name="name" type="text" className=
+              "block text-gray-700 mb-1 font-bold text-left" htmlFor="name">Name</label>
+            <input id="name" name="name" type="text" className=
               "w-full py-2 px-4 rounded-lg border" required autoFocus />
           </div>
           <div className="mt-4 w-full">
             <label className=
-              "block text-gray-700 mb-1 font-bold text-left">Email</label>
-            <input name="email" type="email" required className=
+              "block text-gray-700 mb-1 font-bold text-left" htmlFor="email">Email</label>
+            <input id="email" name="email" type="email" required className=
               "w-full py-2 px-4 rounded-lg border" />
           </div>
           <div className="mt-4 w-full">
             <label className=
-              "block text-gray-700 mb-1 font-bold text-left">Message</label>
-            <textarea name="email" className=
+              "block text-gray-700 mb-1 font-bold text-left" htmlFor="message">Message</label>
+            <textarea id="message" name="message" className=
               "w-full py-2 px-4 rounded-lg border" required></textarea>
           </div>
           <div className="mt-4 w-full">

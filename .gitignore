@@ -34,8 +34,3 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-cv/AndrewVos.aux
-cv/AndrewVos.log
-cv/AndrewVos.out
-cv/AndrewVos.html

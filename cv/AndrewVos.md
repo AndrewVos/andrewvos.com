@@ -1,37 +1,23 @@
 <div class="title">
   <h1>Andrew Vos</h1>
-  <h2>Senior full-stack developer</h2>
+  <h2>Senior full-stack javascript developer</h2>
 </div>
 
 <link href="style.css" rel="stylesheet">
 
 |                                                   |                                                         |
-|--------------------------------------------------:|:--------------------------------------------------------|
-| (079)808-57010 &#8226;                            | andrew@andrewvos.com                                    |
+| ------------------------------------------------: | :------------------------------------------------------ |
+|                            (079)808-57010 &#8226; | andrew@andrewvos.com                                    |
 | [andrewvos.com](http://www.andrewvos.com) &#8226; | [github.com/AndrewVos](http://www.github.com/AndrewVos) |
 
 ### About
 
-I am a passionate software developer with over a decade of experience.
-Ruby is my preferred language, but I enjoy golang, javascript, and some others.
+I am a software developer with over a decade of experience in the UK contractor market.
+My focus is on React, tailwindcss and JavaScript.
 
-For work I enjoy delivering simple well tested software on time and under budget.
+I enjoy delivering intuitive, accessible and well tested software.
 
-NOTE: I have recently moved to Cornwall, so I am only taking on remote work.
-
-Interests:
-
-  - Dogs
-  - Woodworking
-  - Cycling
-
-## I like working with
-
-- Ruby, JavaScript, React, HTML, Tailwind CSS, Go
-- Postgres, ~~ElasticSearch~~, ~~MongoDB~~
-- Git, ~~Mercurial~~, ~~TFS~~
-- Kakoune
-- Heroku, Ubuntu, ArchLinux, CoreOS, Docker, ~~Vagrant~~, ~~Puppet~~, ~~Chef~~
+I am very good at problem solving, refactoring, delivery optimisation, and just getting the job done.
 
 ### Experience
 
@@ -89,17 +75,20 @@ TBA
 - Major new feature development for [homemadebyyou.co.uk](homemadebyyou.co.uk)
 
 #### Featurist - _28th May 2013 to 3rd February 2015_
+
 - Wrote the shopa.com Rails app
 - Managed all the infrastructure, including extensive use of Docker, AWS, Heroku
 - Wrote many microservices (mostly in Golang) that would pull data for hundreds of millions of products from popular affiliate networks and populate ElasticSearch / Postgres databases.
 - Wrote an image server to handle millions of image requests and control the downloading/resizing of them in Go
 
 #### Sky - _24th September 2012 to 27th May 2013_
+
 - Worked across three different teams teaching BDD to developers, using Cucumber and Ruby.
 - Helped with the recruitment of a large number of staff.
 - Wrote software to enable functional testing of Android Applications (https://github.com/AndrewVos/acouchi).
 
 #### BBC News - _30th August 2011 to 20th August 2012_
+
 - Worked with the Responsive News team to help teach the use of BDD/TDD.
 - Helped with recruitment of contractors and permanent developers.
 - We redesigned the BBC News site using responsive design techniques to allow the site to work on a large range of mobile phones.
@@ -112,6 +101,7 @@ TBA
 - Worked on a REST api to list news stories by location for the News Summer Labs project.
 
 #### ITV - _14th June 2010 to 29th August 2011_
+
 - Worked on a team writing MRSS integration to allow the BBC to link to ITV videos.
 - Worked with a team of ThoughtWorks developers to bring continuous delivery to our team and also improve coding standards throughout the team.
 - Setup of a TeamCity CI server with a small build server farm. We also set up multiple build status monitors to show the state of the build and also the state of our various staging environments.
@@ -121,29 +111,19 @@ TBA
 - Worked with Akamai using their HLS streaming product to enable people with iOS devices to view streaming adaptive video.
 
 #### dotCommerce - _24th August 2009 to 13th June 2010_
+
 - Integration of our framework into pre-sliced sites and the coding of any functionality for these sites.
 
 #### eForte Limited - _5th March 2009 to 24th August 2009_
+
 - Small agency
 - Contract web development
 
 #### WickedOrange - _2008 to 2009_
+
 - Freelance web design and development
 - Wrote the very popular StartMenuEx start menu replacement for Windows.
 
 #### LandscaperPro - _2005 to 2008_
+
 - Created a profitable startup which wrote and sold landscape design software (called LandscaperPro) to the South African gardening industry.
-
-### Open Source Work
-
-- https://github.com/AndrewVos/markdown-expander
-- https://github.com/AndrewVos/ancientcitadel
-- https://github.com/AndrewVos/garrison
-- https://github.com/BBC/spassky
-- https://github.com/AndrewVos/docu
-- https://github.com/BBC-News/Wally
-- https://github.com/AndrewVos/metherd-missing
-- https://github.com/sthulbourn/anmo
-- https://github.com/AndrewVos/arduino-tools
-- https://github.com/AndrewVos/komainu
-- https://github.com/AndrewVos/oni

@@ -3,6 +3,7 @@ import Link from "next/link"
 export default function Bio() {
   const clients = [
     { name: "BBC", image: "./images/logos/bbc.png" },
+    { name: "BBC News", image: "./images/logos/bbc-news.png" },
     { name: "Featurist", image: "./images/logos/featurist.png" },
     { name: "Florence", image: "./images/logos/florence.png" },
     { name: "Fullsix", image: "./images/logos/fullsix.png" },

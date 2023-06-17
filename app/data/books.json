@@ -1,5 +1,23 @@
 [
   {
+    "title": "Sea of Tranquility",
+    "rating": 3,
+    "author": "Emily St. John Mandel",
+    "author_url": "https://www.goodreads.com/author/show/2786093.Emily_St_John_Mandel",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1626710416i/58446227.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/58446227-sea-of-tranquility"
+  },
+  {
+    "title": "Paradise-1",
+    "rating": 3,
+    "author": "David Wellington",
+    "author_url": "https://www.goodreads.com/author/show/24827.David_Wellington",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1664816324i/61634435.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/61634435-paradise-1"
+  },
+  {
     "title": "No Way",
     "rating": 5,
     "author": "S.J. Morden",

@@ -129,7 +129,7 @@ export default function Bio() {
             </li>
 
             <li className="list-disc ml-5 text-lg">
-              I create loads of random code projects
+              I create loads of random code
               {" "}
               <a href="http://github.com/AndrewVos" className="underline">projects</a>.
             </li>

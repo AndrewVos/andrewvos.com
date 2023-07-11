@@ -67,9 +67,13 @@ const retrieveBook = async () => {
       visible: true,
     });
 
+    await bookPage.waitForSelector(".BookCover img.ResponsiveImage");
+
+    const title = document.querySelector("h1[data-testid=bookTitle]").innerText;
+
     const book = await bookPage.evaluate(() => {
       return {
-        title: document.querySelector("h1[data-testid=bookTitle]").innerText,
+        title,
         rating: 0,
         author: document.querySelector(".ContributorLink__name").innerText,
         author_url: document
@@ -78,6 +82,7 @@ const retrieveBook = async () => {
         image_url: document
           .querySelector(".BookCover__image img")
           .getAttribute("src"),
+        image_path: `/images/books/${slug(title)}.jpg`,
         read_year: 2023,
       };
     });

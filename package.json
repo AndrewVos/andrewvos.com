@@ -20,7 +20,7 @@
     "classnames": "^2.3.2",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6",
-    "next": "13.1.6",
+    "next": "^13.4.10",
     "prompts": "^2.4.2",
     "puppeteer": "^19.8.5",
     "query-string": "^8.1.0",

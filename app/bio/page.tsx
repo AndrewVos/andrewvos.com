@@ -93,7 +93,7 @@ export default function Bio() {
         <div className="lg:w-2/3">
           <ul className="text-lg mb-3">
             <li className="list-disc ml-5 text-lg">
-              You're looking for a senior developer who works well in a team, or
+              You&apos;re looking for a senior developer who works well in a team, or
               who can get the job done on his own.
             </li>
             <li className="list-disc ml-5 text-lg">
@@ -144,7 +144,7 @@ export default function Bio() {
         </h3>
         <div className="-mx-3 flex flex-wrap">
           {clients.map(client => (
-            <div key={client.name} className="logo w-1/4 w-full md:w-1/2 lg:w-1/4 p-3">
+            <div key={client.name} className="logo w-full md:w-1/2 lg:w-1/4 p-3">
               <div className="logo-background rounded border-solid border border-gray-300 h-full flex items-center justify-center p-3 bg-white">
                 <img className={client.className} alt={`${client.name} logo`} src={client.image} />
               </div>

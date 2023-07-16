@@ -99,7 +99,7 @@ function groupBy<T>(arr: T[], fn: (item: T) => any) {
   }, {});
 }
 
-export default function Books({ searchParams }: {
+export default function Page({ searchParams }: {
   searchParams: { [key: string]: string | string[] | undefined }
 }) {
   let filteredBooks = books

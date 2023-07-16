@@ -17,20 +17,11 @@ type Book = {
 
 import jsonBooks from "../data/books.json";
 const books: Book[] = jsonBooks
-
 const years: number[] = books.reduce((a: number[], v: Book): number[] => {
-  if (a.includes(v.read_year)) {
-    return a
-  } else {
-    return a.concat(v.read_year)
-  }
+  return a.includes(v.read_year) ? a : a.concat(v.read_year)
 }, []).sort().reverse()
 
-type StarsProps = {
-  rating: number
-}
-
-const Stars = ({ rating }: StarsProps): JSX.Element => {
+const Stars = ({ rating }: { rating: number }): JSX.Element => {
   return <div className="space-x-1">
     {
       [1, 2, 3, 4, 5].map((n, i) => {
@@ -58,18 +49,16 @@ function Book({ book }: { book: Book }) {
   return (
     <div
       className={classNames(
-        "relative rounded border p-3 shadow-md shadow-gray-300",
+        "rounded border p-3 shadow-md shadow-gray-300",
         {
           "border-green-500": book.recommended,
-          "border-red-500": !book.rating
         }
       )}>
-      {book.recommended && (
-        <div className="absolute border border-green-500 bg-green-500 rounded px-1  top-[-13px] right-1 text-sm text-white font-bold">recommended</div>
-      )}
-      {!book.rating && (
-        <div className="absolute border border-red-500 bg-red-500 rounded px-1  top-[-13px] right-1 text-sm text-white font-bold">did not finish</div>
-      )}
+      <div className="relative">
+        {book.recommended && (
+          <div className="absolute -top-5 -right-5 border border-green-500 bg-green-500 rounded px-1 text-sm text-white font-bold">recommended</div>
+        )}
+      </div>
       <div className="flex gap-3">
         <div className="w-[100px] h-[150px]">
           <Image alt={book.title} src={book.image_path} width="100" height="150" className="min-w-[100px] max-h-[150px]" />
@@ -84,7 +73,6 @@ function Book({ book }: { book: Book }) {
           <Stars rating={book.rating} />
         </div>
       </div>
-
     </div>
   )
 }
@@ -111,6 +99,12 @@ export default function Page({ searchParams }: {
   }
   if (searchParams.filter == "recommended") {
     filteredBooks = filteredBooks.filter(b => b.recommended)
+  }
+  if (searchParams.rating) {
+    const ratingFilter = searchParams.rating ? (Array.isArray(searchParams.rating) ? searchParams.rating[0] : searchParams.rating) : null
+    if (ratingFilter) {
+      filteredBooks = filteredBooks.filter(b => b.rating.toString() == ratingFilter)
+    }
   }
 
   const booksByYear = groupBy(filteredBooks, (b) => b.read_year)
@@ -148,6 +142,12 @@ export default function Page({ searchParams }: {
               <Tab key={year} filterName="year" filter={year.toString()} title={year.toString()} />
             ))}
           </div>
+          <div className="flex flex-wrap gap-2">
+            <Tab filterName="rating" title="All ratings" />
+            {[1, 2, 3, 4, 5].map(rating => (
+              <Tab key={rating} filterName="rating" filter={rating.toString()} title={`${rating.toString()} ${rating == 1 ? "star" : "stars"}`} />
+            ))}
+          </div>
         </div>
       </div>
       <div className="container mx-auto p-3">
@@ -155,14 +155,16 @@ export default function Page({ searchParams }: {
           Found {filteredBooks.length} books
         </div>
       </div>
-      <div className="container mx-auto p-3">
-        <div className="space-y-5">
-          {
-            years.filter(y => !!booksByYear[y]).map(year => (
-              <div key={year}>
-                <div className="text-4xl text-gray-900 font-bold mb-5">
+      <div className="space-y-5">
+        {
+          years.filter(y => !!booksByYear[y]).map(year => (
+            <div key={year}>
+              <div className="sticky top-0 z-10 border-y bg-gray-50 text-4xl text-gray-900 font-bold mb-5">
+                <div className="container mx-auto p-3">
                   {year}
                 </div>
+              </div>
+              <div className="container mx-auto p-3">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
                   {booksByYear[year].map((book: Book, index: number) => (
                     <div key={index} className="flex-grow md:flex-grow-0 md:w-auto">
@@ -171,10 +173,10 @@ export default function Page({ searchParams }: {
                   ))}
                 </div>
               </div>
-            )
-            )
-          }
-        </div>
+            </div>
+          )
+          )
+        }
       </div>
     </>
   )

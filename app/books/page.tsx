@@ -1,8 +1,6 @@
-"use client"
-
-import { useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
+
 import classNames from "classnames"
 
 type Book = {
@@ -20,85 +18,116 @@ type Book = {
 import jsonBooks from "../data/books.json";
 const books: Book[] = jsonBooks
 
+const years: number[] = books.reduce((a: number[], v: Book): number[] => {
+  if (a.includes(v.read_year)) {
+    return a
+  } else {
+    return a.concat(v.read_year)
+  }
+}, []).sort().reverse()
+
 type StarsProps = {
   rating: number
 }
 
 const Stars = ({ rating }: StarsProps): JSX.Element => {
-  return <div className="text-gray-600 space-x-1">
+  return <div className="space-x-1">
     {
       [1, 2, 3, 4, 5].map((n, i) => {
-        if (rating >= n) {
-          return (
-            <svg
-              key={i}
-              width="16"
-              height="16"
-              fill="currentColor"
-              className="inline"
-              viewBox="0 0 16 16"
-            >
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-            </svg>
-          );
-        } else {
-          return (
-            <svg
-              key={i}
-              width="16"
-              height="16"
-              fill="currentColor"
-              className="inline"
-              viewBox="0 0 16 16"
-            >
-              <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.523-3.356c.329-.314.158-.888-.283-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767l-3.686 1.894.694-3.957a.565.565 0 0 0-.163-.505L1.71 6.745l4.052-.576a.525.525 0 0 0 .393-.288l1.847-3.658 1.846 3.658a.525.525 0 0 0 .393.288l4.052.575-2.906 2.77a.564.564 0 0 0-.163.506l.694 3.957-3.686-1.894a.503.503 0 0 0-.461 0z" />
-            </svg>
-          )
-        }
+        return (
+          <svg
+            key={i}
+            width="20"
+            height="20"
+            fill="currentColor"
+            className={classNames("inline", {
+              "stroke-gray-600 text-yellow-300": rating >= n,
+              "stroke-gray-600 text-white": rating < n,
+            })}
+            viewBox="0 0 16 16"
+          >
+            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+          </svg>
+        );
       })
     }
   </div>
 }
 
-type BookProps = {
-  title: string,
-  url: string,
-  rating: number,
-  recommended?: boolean,
-  image_path: string
-}
-
-function Book({ title, url, rating, recommended, image_path }: BookProps) {
+function Book({ book }: { book: Book }) {
   return (
-    <Link
-      href={url}
+    <div
       className={classNames(
-        "relative flex justify-center flex-grow sm:flex-initial rounded border p-3 shadow-md shadow-gray-300",
+        "relative rounded border p-3 shadow-md shadow-gray-300",
         {
-          "border-green-500 bg-green-100": recommended,
-          "border-red-500 bg-red-100": !rating
+          "border-green-500": book.recommended,
+          "border-red-500": !book.rating
         }
       )}>
-      {recommended && (
+      {book.recommended && (
         <div className="absolute border border-green-500 bg-green-500 rounded px-1  top-[-13px] right-1 text-sm text-white font-bold">recommended</div>
       )}
-      {!rating && (
+      {!book.rating && (
         <div className="absolute border border-red-500 bg-red-500 rounded px-1  top-[-13px] right-1 text-sm text-white font-bold">did not finish</div>
       )}
-      <div className="space-y-3">
+      <div className="flex gap-3">
         <div className="h-[150px] w-[100px]">
-          <Image alt={title} src={image_path} width="200" height="250" className="max-h-[150px]" />
+          <Image alt={book.title} src={book.image_path} width="200" height="250" className="max-h-[150px]" />
         </div>
-        <div className="">
-          <Stars rating={rating} />
+        <div className="flex-grow">
+          <div>
+            <Link className="text-xl text-gray-900 font-bold hover:underline" href={book.url} target="_blank">{book.title}</Link>
+          </div>
+          <div>
+            <Link className="text-lg text-gray-500 hover:underline" href={book.author_url} target="_blank">{book.author}</Link>
+          </div>
+          <Stars rating={book.rating} />
         </div>
       </div>
-    </Link>
+
+    </div>
   )
 }
 
-export default function Books() {
-  const [showOnlyRecommended, setShowOnlyRecommended] = useState(false)
+
+function groupBy<T>(arr: T[], fn: (item: T) => any) {
+  return arr.reduce<Record<string, T[]>>((prev, curr) => {
+    const groupKey = fn(curr);
+    const group = prev[groupKey] || [];
+    group.push(curr);
+    return { ...prev, [groupKey]: group };
+  }, {});
+}
+
+export default function Books({ searchParams }: {
+  searchParams: { [key: string]: string | string[] | undefined }
+}) {
+  let filteredBooks = books
+  if (searchParams.year) {
+    const yearFilter = searchParams.year ? (Array.isArray(searchParams.year) ? searchParams.year[0] : searchParams.year) : null
+    if (yearFilter) {
+      filteredBooks = filteredBooks.filter(b => b.read_year.toString() == yearFilter)
+    }
+  }
+  if (searchParams.filter == "recommended") {
+    filteredBooks = filteredBooks.filter(b => b.recommended)
+  }
+
+  const booksByYear = groupBy(filteredBooks, (b) => b.read_year)
+
+  const Tab = ({ filter, filterName, title }: { filterName: string, filter?: string, title: string }) => {
+    const selected = searchParams[filterName] == filter
+    return (
+      <Link
+        href={{ pathname: "/books", query: { ...searchParams, [filterName]: filter } }}
+        className={classNames("px-3 py-1 text-md rounded-lg hover:text-gray-900 hover:bg-gray-100", {
+          "bg-gray-100 text-gray-900": selected,
+          "text-gray-500": !selected
+        })}>
+        {title}
+      </Link >
+    )
+  }
 
   return (
     <>
@@ -108,20 +137,43 @@ export default function Books() {
         </h1>
       </div>
       <div className="container mx-auto p-3">
-        <div className="flex items-center">
-          <input id="default-checkbox" type="checkbox" tabIndex={-1} value="" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" checked={showOnlyRecommended} onChange={() => setShowOnlyRecommended(!showOnlyRecommended)} />
-          <label htmlFor="default-checkbox" className="ml-2 text-sm font-medium text-gray-900 select-none">
-            Show only recommended books
-          </label>
+        <div className="space-y-2">
+          <div className="flex flex-wrap gap-2">
+            <Tab filterName="filter" title="All books" />
+            <Tab filterName="filter" filter="recommended" title="Recommended books" />
+          </div>
+          <div className="flex flex-wrap gap-2">
+            <Tab filterName="year" title="All years" />
+            {years.map(year => (
+              <Tab key={year} filterName="year" filter={year.toString()} title={year.toString()} />
+            ))}
+          </div>
         </div>
       </div>
       <div className="container mx-auto p-3">
-        <div className={classNames("flex flex-wrap gap-5 group", { "is-only-recommended": showOnlyRecommended })}>
-          {books.map((book, index) => (
-            <div key={index} className={book.recommended ? "" : "group-[.is-only-recommended]:hidden"}>
-              <Book title={book.title} url={book.url} rating={book.rating} recommended={book.recommended} image_path={book.image_path} />
-            </div>
-          ))}
+        <div className="text-lg text-gray-900">
+          Found {filteredBooks.length} books
+        </div>
+      </div>
+      <div className="container mx-auto p-3">
+        <div className="space-y-5">
+          {
+            years.filter(y => !!booksByYear[y]).map(year => (
+              <div key={year}>
+                <div className="text-4xl text-gray-900 font-bold mb-5">
+                  {year}
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                  {booksByYear[year].map((book: Book, index: number) => (
+                    <div key={index} className="flex-grow md:flex-grow-0 md:w-auto">
+                      <Book book={book} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )
+            )
+          }
         </div>
       </div>
     </>

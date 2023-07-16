@@ -1,5 +1,10 @@
+import { Metadata } from 'next';
 import Link from "next/link"
 import Image from "next/image"
+
+export const metadata: Metadata = {
+  title: 'bio - andrewvos.com',
+};
 
 export default function Bio() {
   const Client = ({ name, image, className }: { name: string, image: string, className?: string }) => {

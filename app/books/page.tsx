@@ -1,7 +1,11 @@
+import { Metadata } from 'next';
 import Image from "next/image"
 import Link from "next/link"
-
 import classNames from "classnames"
+
+export const metadata: Metadata = {
+  title: 'books - andrewvos.com',
+};
 
 type Book = {
   title: string;

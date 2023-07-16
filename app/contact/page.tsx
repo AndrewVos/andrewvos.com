@@ -1,3 +1,9 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'contact - andrewvos.com',
+};
+
 export default function Hire() {
   return (
     <div className="container mx-auto p-3 mt-10 mb-5">

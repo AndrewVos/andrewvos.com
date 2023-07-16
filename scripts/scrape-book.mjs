@@ -2,6 +2,8 @@ import puppeteer from "puppeteer";
 import queryString from "query-string";
 import prompts from "prompts";
 import fs from "fs";
+import slug from "slug";
+import download from "download";
 
 const retrieveBook = async () => {
   const bookResponse = await prompts({
@@ -69,9 +71,10 @@ const retrieveBook = async () => {
 
     await bookPage.waitForSelector(".BookCover img.ResponsiveImage");
 
-    const title = document.querySelector("h1[data-testid=bookTitle]").innerText;
-
     const book = await bookPage.evaluate(() => {
+      const title = document.querySelector(
+        "h1[data-testid=bookTitle]"
+      ).innerText;
       return {
         title,
         rating: 0,
@@ -82,14 +85,15 @@ const retrieveBook = async () => {
         image_url: document
           .querySelector(".BookCover__image img")
           .getAttribute("src"),
-        image_path: `/images/books/${slug(title)}.jpg`,
-        read_year: 2023,
+        read_year: new Date().getFullYear(),
       };
     });
+
     book.url = bookChoiceResponse.value.substring(
       0,
       bookChoiceResponse.value.indexOf("?")
     );
+    book.image_path = `/images/books/${slug(book.title)}.jpg`;
 
     const data = fs.readFileSync("app/data/books.json", "utf8");
     const modified = [book].concat(JSON.parse(data));
@@ -97,6 +101,16 @@ const retrieveBook = async () => {
       "app/data/books.json",
       JSON.stringify(modified, null, "  ")
     );
+
+    if (fs.existsSync(`public${book.image_path}`)) {
+      console.log(`Already downloaded...`);
+    } else {
+      console.log(`Downloading "${book.image_url}"`);
+    }
+
+    await download(book.image_url, "public/images/books", {
+      filename: `${slug(book.title)}.jpg`,
+    });
   }
 
   await browser.close();

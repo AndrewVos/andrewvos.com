@@ -1,5 +1,136 @@
 [
   {
+    "title": "In Ascension",
+    "rating": 5,
+    "recommended": true,
+    "author": "Martin MacInnes",
+    "author_url": "https://www.goodreads.com/author/show/8337709.Martin_MacInnes",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1674231481i/81360004.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/81360004-in-ascension",
+    "image_path": "/images/books/in-ascension.jpg"
+  },
+  {
+    "title": "Slow Time Between the Stars",
+    "rating": 3,
+    "author": "John Scalzi",
+    "author_url": "https://www.goodreads.com/author/show/4763.John_Scalzi",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1687886427i/151908304.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/151908304-slow-time-between-the-stars",
+    "image_path": "/images/books/slow-time-between-the-stars.jpg"
+  },
+  {
+    "title": "Just Out of Jupiter's Reach",
+    "rating": 5,
+    "author": "Nnedi Okorafor",
+    "author_url": "https://www.goodreads.com/author/show/588356.Nnedi_Okorafor",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1687901211i/151908136.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/151908136-just-out-of-jupiter-s-reach",
+    "image_path": "/images/books/just-out-of-jupiters-reach.jpg"
+  },
+  {
+    "title": "The Long Game",
+    "rating": 4,
+    "author": "Ann Leckie",
+    "author_url": "https://www.goodreads.com/author/show/3365457.Ann_Leckie",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1687901166i/151908306.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/151908306-the-long-game",
+    "image_path": "/images/books/the-long-game.jpg"
+  },
+  {
+    "title": "Falling Bodies",
+    "rating": 3,
+    "author": "Rebecca Roanhorse",
+    "author_url": "https://www.goodreads.com/author/show/15862877.Rebecca_Roanhorse",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1686330044i/151908270.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/151908270-falling-bodies",
+    "image_path": "/images/books/falling-bodies.jpg"
+  },
+  {
+    "title": "Void",
+    "rating": 3,
+    "author": "Veronica Roth",
+    "author_url": "https://www.goodreads.com/author/show/4039811.Veronica_Roth",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1687889674i/151909273.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/151909273-void",
+    "image_path": "/images/books/void.jpg"
+  },
+  {
+    "title": "How It Unfolds",
+    "rating": 5,
+    "author": "James S.A. Corey",
+    "author_url": "https://www.goodreads.com/author/show/4192148.James_S_A_Corey",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1687871208i/151908910.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/151908910-how-it-unfolds",
+    "image_path": "/images/books/how-it-unfolds.jpg"
+  },
+  {
+    "title": "The Atlantis Gene",
+    "rating": 3,
+    "author": "A.G. Riddle",
+    "author_url": "https://www.goodreads.com/author/show/3087199.A_G_Riddle",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1435944019i/25843420.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/25843420-the-atlantis-gene",
+    "image_path": "/images/books/the-atlantis-gene.jpg"
+  },
+  {
+    "title": "The Factory of God: Hard Science Fiction",
+    "rating": 3,
+    "author": "Brandon Q. Morris",
+    "author_url": "https://www.goodreads.com/author/show/16344144.Brandon_Q_Morris",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1680279921i/124930384.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/124930384-the-factory-of-god",
+    "image_path": "/images/books/the-factory-of-god-hard-science-fiction.jpg"
+  },
+  {
+    "title": "Apothecary",
+    "rating": 5,
+    "author": "Peter Cawdron",
+    "author_url": "https://www.goodreads.com/author/show/5252525.Peter_Cawdron",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1678118823i/123192450.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/123192450-apothecary",
+    "image_path": "/images/books/apothecary.jpg"
+  },
+  {
+    "title": "Quantum Void",
+    "rating": 2,
+    "author": "Douglas Phillips",
+    "author_url": "https://www.goodreads.com/author/show/7161775.Douglas_Phillips",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1513807573i/37642819.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/37642819-quantum-void",
+    "image_path": "/images/books/quantum-void.jpg"
+  },
+  {
+    "title": "Quantum Space",
+    "rating": 4,
+    "author": "Douglas Phillips",
+    "author_url": "https://www.goodreads.com/author/show/7161775.Douglas_Phillips",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1505062767i/36216959.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/36216959-quantum-space",
+    "image_path": "/images/books/quantum-space.jpg"
+  },
+  {
+    "title": "The Ferryman",
+    "rating": 3,
+    "author": "Justin Cronin",
+    "author_url": "https://www.goodreads.com/author/show/45315.Justin_Cronin",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1659983263i/61282437.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/61282437-the-ferryman",
+    "image_path": "/images/books/the-ferryman.jpg"
+  },
+  {
     "title": "Sea of Tranquility",
     "rating": 3,
     "author": "Emily St. John Mandel",

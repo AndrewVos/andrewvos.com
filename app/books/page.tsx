@@ -71,8 +71,8 @@ function Book({ book }: { book: Book }) {
         <div className="absolute border border-red-500 bg-red-500 rounded px-1  top-[-13px] right-1 text-sm text-white font-bold">did not finish</div>
       )}
       <div className="flex gap-3">
-        <div className="h-[150px] w-[100px]">
-          <Image alt={book.title} src={book.image_path} width="200" height="250" className="max-h-[150px]" />
+        <div className="w-[100px] h-[150px]">
+          <Image alt={book.title} src={book.image_path} width="100" height="150" className="min-w-[100px] max-h-[150px]" />
         </div>
         <div className="flex-grow">
           <div>

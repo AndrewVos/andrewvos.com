@@ -1,23 +1,16 @@
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Bio() {
-  const clients = [
-    { name: "BBC", image: "./images/logos/bbc.png" },
-    { name: "BBC News", image: "./images/logos/bbc-news.png" },
-    { name: "Featurist", image: "./images/logos/featurist.png" },
-    { name: "Florence", image: "./images/logos/florence.png" },
-    { name: "Fullsix", image: "./images/logos/fullsix.png" },
-    { name: "GAIN Capital", image: "./images/logos/gain-capital.png" },
-    { name: "GDS", image: "./images/logos/gds.png" },
-    { name: "Honeycomb", image: "./images/logos/honeycomb-tv.png" },
-    { name: "ITV", image: "./images/logos/itv.png" },
-    { name: "PensionWise", image: "./images/logos/pension-wise.png" },
-    { name: "Shopa", image: "./images/logos/shopa.png" },
-    { name: "Sky", image: "./images/logos/sky.png" },
-    { name: "ChangeLab", className: "bg-gray-700 p-3", image: "./images/logos/changelab.png" },
-    { name: "MoneyHelper", className: "p-3", image: "./images/logos/moneyhelper.png" },
-    { name: "Quidco", className: "p-3", image: "./images/logos/quidco.png" },
-  ]
+  const Client = ({ name, image, className }: { name: string, image: string, className?: string }) => {
+    return (
+      <div className="logo w-full md:w-1/2 lg:w-1/4 p-3">
+        <div className="logo-background rounded border-solid border border-gray-300 h-full flex items-center justify-center p-3 bg-white">
+          <Image className={className} alt={`${name} logo`} src={image} width={500} height={500} />
+        </div>
+      </div>
+    )
+  }
 
   return (
     <>
@@ -30,7 +23,7 @@ export default function Bio() {
           </div>
           <div>
             <Link href="/contact" className="inline-flex items-center h-8 px-4 m-2 text-sm text-white bg-blue-500 rounded-lg">
-              Check availability
+              Contact
             </Link>
           </div>
         </div>
@@ -143,13 +136,21 @@ export default function Bio() {
           Some of my clients:
         </h3>
         <div className="-mx-3 flex flex-wrap">
-          {clients.map(client => (
-            <div key={client.name} className="logo w-full md:w-1/2 lg:w-1/4 p-3">
-              <div className="logo-background rounded border-solid border border-gray-300 h-full flex items-center justify-center p-3 bg-white">
-                <img className={client.className} alt={`${client.name} logo`} src={client.image} />
-              </div>
-            </div>
-          ))}
+          <Client name="BBC" image="/images/logos/bbc.png" />
+          <Client name="BBC News" image="/images/logos/bbc-news.png" />
+          <Client name="Featurist" image="/images/logos/featurist.png" />
+          <Client name="Florence" image="/images/logos/florence.png" />
+          <Client name="Fullsix" image="/images/logos/fullsix.png" />
+          <Client name="GAIN Capital" image="/images/logos/gain-capital.png" />
+          <Client name="GDS" image="/images/logos/gds.png" />
+          <Client name="Honeycomb" image="/images/logos/honeycomb-tv.png" />
+          <Client name="ITV" image="/images/logos/itv.png" />
+          <Client name="PensionWise" image="/images/logos/pension-wise.png" />
+          <Client name="Shopa" image="/images/logos/shopa.png" />
+          <Client name="Sky" image="/images/logos/sky.png" />
+          <Client name="ChangeLab" className="bg-gray-700 p-3" image="/images/logos/changelab.png" />
+          <Client name="MoneyHelper" className="p-3" image="/images/logos/moneyhelper.png" />
+          <Client name="Quidco" className="p-3" image="/images/logos/quidco.png" />
         </div>
       </div>
 

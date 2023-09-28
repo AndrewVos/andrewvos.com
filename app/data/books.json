@@ -1,5 +1,116 @@
 [
   {
+    "title": "The Cloud Roads",
+    "rating": 4,
+    "author": "Martha Wells",
+    "author_url": "https://www.goodreads.com/author/show/87305.Martha_Wells",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1317017378i/9461562.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/9461562-the-cloud-roads",
+    "image_path": "/images/books/the-cloud-roads.jpg"
+  },
+  {
+    "title": "Eversion",
+    "rating": 2,
+    "author": "Alastair Reynolds",
+    "author_url": "https://www.goodreads.com/author/show/51204.Alastair_Reynolds",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1637620277i/58727132.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/58727132-eversion",
+    "image_path": "/images/books/eversion.jpg"
+  },
+  {
+    "title": "Penitent",
+    "rating": 5,
+    "recommended": true,
+    "author": "Mark Leggatt",
+    "author_url": "https://www.goodreads.com/author/show/14124363.Mark_Leggatt",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1687184826i/179386523.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/179386523-penitent",
+    "image_path": "/images/books/penitent-longlisted-for-the-mcilvanney-prize-2023.jpg"
+  },
+  {
+    "title": "Mercury Rising",
+    "rating": 3,
+    "author": "J.B. Aspen",
+    "author_url": "https://www.goodreads.com/author/show/27444443.J_B_Aspen",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1678988224i/105484481.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/105484481-mercury-rising",
+    "image_path": "/images/books/mercury-rising.jpg"
+  },
+  {
+    "title": "Titanium Noir",
+    "rating": 4,
+    "author": "Nick Harkaway",
+    "author_url": "https://www.goodreads.com/author/show/1100593.Nick_Harkaway",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1675644837i/62052321.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/62052321-titanium-noir",
+    "image_path": "/images/books/titanium-noir.jpg"
+  },
+  {
+    "title": "Anvil Dark",
+    "rating": 3,
+    "author": "J.N. Chaney",
+    "author_url": "https://www.goodreads.com/author/show/13828892.J_N_Chaney",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1633532921i/59228785.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/59228785-anvil-dark",
+    "image_path": "/images/books/anvil-dark.jpg"
+  },
+  {
+    "title": "Red Bounty",
+    "rating": 4,
+    "author": "J.N. Chaney",
+    "author_url": "https://www.goodreads.com/author/show/13828892.J_N_Chaney",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1632281362i/59050877.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/59050877-red-bounty",
+    "image_path": "/images/books/red-bounty.jpg"
+  },
+  {
+    "title": "Backyard Starship",
+    "rating": 3,
+    "author": "J.N. Chaney",
+    "author_url": "https://www.goodreads.com/author/show/13828892.J_N_Chaney",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1628910800i/58764394.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/58764394-backyard-starship",
+    "image_path": "/images/books/backyard-starship.jpg"
+  },
+  {
+    "title": "The Greatship",
+    "rating": 3,
+    "author": "Robert Reed",
+    "author_url": "https://www.goodreads.com/author/show/57814.Robert_Reed",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1392002066i/18668102.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/18668102-the-greatship",
+    "image_path": "/images/books/the-greatship.jpg"
+  },
+  {
+    "title": "Zero Kill",
+    "rating": 3,
+    "author": "M.K. Hill",
+    "author_url": "https://www.goodreads.com/author/show/18969789.M_K_Hill",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1670512952i/63544269.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/63544269-zero-kill",
+    "image_path": "/images/books/zero-kill.jpg"
+  },
+  {
+    "title": "Witch King",
+    "rating": 5,
+    "author": "Martha Wells",
+    "author_url": "https://www.goodreads.com/author/show/87305.Martha_Wells",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1663769801i/61885085.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/61885085-witch-king",
+    "image_path": "/images/books/witch-king.jpg"
+  },
+  {
     "title": "In Ascension",
     "rating": 5,
     "recommended": true,
@@ -2986,7 +3097,6 @@
     "title": "Ringworld's Children (Ringworld, #4)",
     "url": "https://www.goodreads.com/book/show/64466.Ringworld_s_Children",
     "rating": 5,
-    "recommended": true,
     "author": "Larry Niven",
     "author_url": "https://www.goodreads.com/author/show/12534.Larry_Niven",
     "read_year": 2014,

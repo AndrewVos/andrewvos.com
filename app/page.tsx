@@ -7,17 +7,34 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div id="container" className="absolute top-0 left-0 w-full h-full flex bg-very-dark">
-      <div className="absolute top-0 left-0 w-full h-full pointer-events-none flex items-center justify-center text-center">
-        <div>
-          <h1 className="text-4xl text-gray-100">
-            Hello, I&apos;m
-            <span className="text-blue-200">{" "}Andrew Vos</span>
-          </h1>
-          <h2 className="text-3xl text-gray-100">
-            I&apos;m a full-stack software engineer
-          </h2>
-          <Link className="pointer-events-auto inline-block mt-5 p-3 text-2xl text-gray-100 border-2 border-solid border-gray-600 hover:bg-gray-800" href="/bio">Find out more</Link>
+    <div id="container" className="absolute top-0 left-0 w-full h-full flex bg-white" >
+      <div className="absolute top-0 left-0 w-full h-full flex items-center justify-center text-center">
+        <div className="space-y-12 flex flex-col items-center">
+          <div className="flex select-none animate-jump-in">
+            <div className='text-4xl font-bold text-white bg-black p-1 border-2 border-black'>
+              Andrew
+            </div>
+            <div className="text-4xl font-bold text-black p-1 border-2 border-black">
+              Vos
+            </div>
+          </div>
+          <div className="md:flex md:space-x-4 animate-jump-in animate-delay-[800ms]">
+            <div>
+              <Link href="/bio" className="text-3xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white">
+                Bio
+              </Link>
+            </div>
+            <div>
+              <Link href="/books" className="text-3xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white">
+                Books
+              </Link>
+            </div>
+            <div>
+              <Link href="/contact" className="text-3xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white">
+                Contact
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </div>

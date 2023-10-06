@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from "next/link"
 import Image from "next/image"
-
+import classNames from 'classnames';
 export const metadata: Metadata = {
   title: 'bio - andrewvos.com',
 };
@@ -9,9 +9,9 @@ export const metadata: Metadata = {
 export default function Bio() {
   const Client = ({ name, image, className }: { name: string, image: string, className?: string }) => {
     return (
-      <div className="logo w-full md:w-1/2 lg:w-1/4 p-3">
-        <div className="logo-background rounded border-solid border border-gray-300 h-full flex items-center justify-center p-3 bg-white">
-          <Image className={className} alt={`${name} logo`} src={image} width={500} height={500} />
+      <div className="logo w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-3">
+        <div className="rounded border-solid border border-gray-300 h-full flex items-center justify-center p-3 bg-white">
+          <Image className={classNames(className, "max-w-[200px]")} alt={`${name} logo`} src={image} width={500} height={500} />
         </div>
       </div>
     )

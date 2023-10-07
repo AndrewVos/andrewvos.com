@@ -3,7 +3,7 @@ import Link from "next/link"
 import Image from "next/image"
 import classNames from 'classnames';
 export const metadata: Metadata = {
-  title: 'bio - andrewvos.com',
+  title: 'Bio - andrewvos.com',
 };
 
 export default function Bio() {
@@ -19,20 +19,28 @@ export default function Bio() {
 
   return (
     <>
-      <div className="text-gray-900 font-serif container mx-auto p-3 mt-10 mb-5">
+      <div className="text-gray-900 font-serif container mx-auto p-3 mt-10 mb-5 space-y-5">
         <div className="flex">
           <div className="flex-auto">
-            <h1 className="text-4xl text-gray-800 font-bold">
-              Andrew Vos
-            </h1>
+            <div className="space-y-12 flex flex-col">
+              <h1 className="flex select-none">
+                <div className='text-4xl font-bold text-white bg-black p-1 border-2 border-black'>
+                  Andrew
+                </div>
+                <div className="text-4xl font-bold text-black p-1 border-2 border-black">
+                  Vos
+                </div>
+              </h1>
+            </div>
+
           </div>
-          <div>
-            <Link href="/contact" className="inline-flex items-center h-8 px-4 m-2 text-sm text-white bg-blue-500 rounded-lg">
+          <div className='flex items-center'>
+            <Link href="/contact" className="inline-flex items-center h-8 px-4 m-2 text-sm text-white bg-black font-bold rounded-lg">
               Contact
             </Link>
           </div>
         </div>
-        <h2 className="text-3xl text-gray-700 font-bold">
+        <h2 className="text-3xl text-black font-bold">
           Senior Full-Stack Software Engineer
         </h2>
       </div>
@@ -41,30 +49,30 @@ export default function Bio() {
           <p className="text-lg mb-3">
             I am a
             {" "}
-            <span className="bg-gray-200 px-1 text-gray-700">Senior Software Engineer</span>
+            <span className="bg-gray-200 px-1 text-black">Senior Software Engineer</span>
             {" "}
             with over
             {" "}
-            <span className="bg-gray-200 px-1 text-gray-700">15 years</span>
+            <span className="bg-gray-200 px-1 text-black">15 years</span>
             {" "}
             of experience.
           </p>
 
           <p className="text-lg mb-3">
             I create user experiences that are
-            <span className="bg-gray-200 px-1 text-gray-700">intuitive</span>,
-            <span className="bg-gray-200 px-1 text-gray-700">capable</span>,
-            <span className="bg-gray-200 px-1 text-gray-700">reliable</span>
+            <span className="bg-gray-200 px-1 text-black">intuitive</span>,
+            <span className="bg-gray-200 px-1 text-black">capable</span>,
+            <span className="bg-gray-200 px-1 text-black">reliable</span>
             and
-            <span className="bg-gray-200 px-1 text-gray-700">fast</span>.
+            <span className="bg-gray-200 px-1 text-black">fast</span>.
           </p>
 
           <p className="text-lg mb-3">
             For web I like to work with
             {" "}
-            <span className="bg-gray-200 px-1 text-gray-700">Next.js</span>,
+            <span className="bg-gray-200 px-1 text-black">Next.js</span>,
             and
-            <span className="bg-gray-200 px-1 text-gray-700">React</span>.
+            <span className="bg-gray-200 px-1 text-black">React</span>.
             I always use system tests to cover new features that I write,
             and for more complex code I write unit tests.
           </p>
@@ -72,16 +80,16 @@ export default function Bio() {
           <p className="text-lg mb-3">
             I am especially productive with
             {" "}
-            <span className="bg-gray-200 px-1 text-gray-700">Ruby</span>,
-            <span className="bg-gray-200 px-1 text-gray-700">JavaScript</span> and
-            <span className="bg-gray-200 px-1 text-gray-700">TypeScript</span>
+            <span className="bg-gray-200 px-1 text-black">Ruby</span>,
+            <span className="bg-gray-200 px-1 text-black">JavaScript</span> and
+            <span className="bg-gray-200 px-1 text-black">TypeScript</span>
             .
           </p>
         </div>
       </div>
 
       <div className="container mx-auto p-3 mb-5">
-        <h3 className="mb-5 text-2xl text-gray-700 font-bold">
+        <h3 className="mb-5 text-2xl text-black font-bold">
           Some things I am proud of:
         </h3>
         <div className="lg:w-2/3">
@@ -119,7 +127,7 @@ export default function Bio() {
 
 
       <div className="container mx-auto p-3 mb-5">
-        <h3 className="mb-5 text-2xl text-gray-700 font-bold">
+        <h3 className="mb-5 text-2xl text-black font-bold">
           Why you may want to work with me:
         </h3>
         <div className="lg:w-2/3">
@@ -141,7 +149,7 @@ export default function Bio() {
       </div>
 
       <div className="container mx-auto p-3 mb-5">
-        <h3 className="mb-5 text-2xl text-gray-700 font-bold">
+        <h3 className="mb-5 text-2xl text-black font-bold">
           Some of my interests:
         </h3>
         <div className="lg:w-2/3">
@@ -175,7 +183,7 @@ export default function Bio() {
       </div>
 
       <div className="container mx-auto p-3 mb-20">
-        <h3 className="mb-5 text-2xl text-gray-700 font-bold">
+        <h3 className="mb-5 text-2xl text-black font-bold">
           Some of my clients:
         </h3>
         <div className="-mx-3 flex flex-wrap">
@@ -198,7 +206,7 @@ export default function Bio() {
       </div>
 
       <div className="container mx-auto p-3 mb-20">
-        <a href="/AndrewVos.pdf" download className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        <a href="/AndrewVos.pdf" download className="bg-black text-white font-bold py-2 px-4 rounded">
           Download full CV here
         </a>
       </div>

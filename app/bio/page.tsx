@@ -33,7 +33,7 @@ export default function Bio() {
           </div>
         </div>
         <h2 className="text-3xl text-gray-700 font-bold">
-          Senior Software Engineer
+          Senior Full-Stack Software Engineer
         </h2>
       </div>
       <div className="container mx-auto p-3 mb-5">
@@ -70,19 +70,53 @@ export default function Bio() {
           </p>
 
           <p className="text-lg mb-3">
-            Languages that I know well include
+            I am especially productive with
             {" "}
             <span className="bg-gray-200 px-1 text-gray-700">Ruby</span>,
-            <span className="bg-gray-200 px-1 text-gray-700">JavaScript</span>,
-            <span className="bg-gray-200 px-1 text-gray-700">Python</span>,
-            <span className="bg-gray-200 px-1 text-gray-700">CSS</span>,
-            <span className="bg-gray-200 px-1 text-gray-700">HTML</span>,
-            <span className="bg-gray-200 px-1 text-gray-700">bash</span>
-            {" "}
-            and others.
+            <span className="bg-gray-200 px-1 text-gray-700">JavaScript</span> and
+            <span className="bg-gray-200 px-1 text-gray-700">TypeScript</span>
+            .
           </p>
         </div>
       </div>
+
+      <div className="container mx-auto p-3 mb-5">
+        <h3 className="mb-5 text-2xl text-gray-700 font-bold">
+          Some things I am proud of:
+        </h3>
+        <div className="lg:w-2/3">
+          <ul className="text-lg mb-3">
+            <li className="list-disc ml-5 text-lg">
+              Built full web apps from the ground up, by myself and in teams.
+            </li>
+            <li className="list-disc ml-5 text-lg">
+              Built the whole product for a startup, through multiple successful funding rounds.
+            </li>
+            <li className="list-disc ml-5 text-lg">
+              Managed deployment infrastructure for large teams.
+            </li>
+            <li className="list-disc ml-5 text-lg">
+              Optimised CI runs for performance, sometimes halving execution time.
+            </li>
+            <li className="list-disc ml-5 text-lg">
+              Managed a team of developers.
+            </li>
+            <li className="list-disc ml-5 text-lg">
+              Built software for the production line.
+            </li>
+            <li className="list-disc ml-5 text-lg">
+              Tutored teams of developers in the art of testing software.
+            </li>
+            <li className="list-disc ml-5 text-lg">
+              Managed larger projects to successful completion.
+            </li>
+            <li className="list-disc ml-5 text-lg">
+              Built software for the UK government.
+            </li>
+          </ul>
+        </div>
+      </div>
+
 
       <div className="container mx-auto p-3 mb-5">
         <h3 className="mb-5 text-2xl text-gray-700 font-bold">
@@ -119,6 +153,10 @@ export default function Bio() {
 
             <li className="list-disc ml-5 text-lg">
               I spend as much time as possible trail running, running or cycling.
+            </li>
+
+            <li className="list-disc ml-5 text-lg">
+              I am a pretty terrible surfer, but at least I try!
             </li>
 
             <li className="list-disc ml-5 text-lg">

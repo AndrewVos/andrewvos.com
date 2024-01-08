@@ -1,5 +1,115 @@
 [
   {
+    "title": "Slow Horses",
+    "rating": 4,
+    "author": "Mick Herron",
+    "author_url": "https://www.goodreads.com/author/show/1237964.Mick_Herron",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1410800211i/7929891.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/7929891-slow-horses",
+    "image_path": "/images/books/slow-horses.jpg"
+  },
+  {
+    "title": "The Future",
+    "rating": 3,
+    "author": "Naomi Alderman",
+    "author_url": "https://www.goodreads.com/author/show/118226.Naomi_Alderman",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1678895127i/123163147.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/123163147-the-future",
+    "image_path": "/images/books/the-future.jpg"
+  },
+  {
+    "title": "In the Lives of Puppets",
+    "rating": 2,
+    "author": "T.J. Klune",
+    "author_url": "https://www.goodreads.com/author/show/5073330.T_J_Klune",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1699617963i/60784549.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/60784549-in-the-lives-of-puppets",
+    "image_path": "/images/books/in-the-lives-of-puppets.jpg"
+  },
+  {
+    "title": "Big Swiss",
+    "rating": 5,
+    "author": "Jen Beagin",
+    "author_url": "https://www.goodreads.com/author/show/13923211.Jen_Beagin",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1653958990i/60701439.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/60701439-big-swiss",
+    "image_path": "/images/books/big-swiss.jpg"
+  },
+  {
+    "title": "Jade War",
+    "rating": 2,
+    "author": "Fonda Lee",
+    "author_url": "https://www.goodreads.com/author/show/7705004.Fonda_Lee",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1537885614i/41716919.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/41716919-jade-war",
+    "image_path": "/images/books/jade-war.jpg"
+  },
+  {
+    "title": "The Mountain in the Sea",
+    "rating": 3,
+    "author": "Ray Nayler",
+    "author_url": "https://www.goodreads.com/author/show/6447152.Ray_Nayler",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1648691567i/59808603.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/59808603-the-mountain-in-the-sea",
+    "image_path": "/images/books/the-mountain-in-the-sea.jpg"
+  },
+  {
+    "title": "Gallowglass",
+    "rating": 2,
+    "author": "S.J. Morden",
+    "author_url": "https://www.goodreads.com/author/show/16464187.S_J_Morden",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1607200530i/56173016.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/56173016-gallowglass",
+    "image_path": "/images/books/gallowglass.jpg"
+  },
+  {
+    "title": "Observer",
+    "rating": 2,
+    "author": "Robert Lanza",
+    "author_url": "https://www.goodreads.com/author/show/506299.Robert_Lanza",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1649854516i/60465864.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/60465864-observer",
+    "image_path": "/images/books/observer.jpg"
+  },
+  {
+    "title": "Starter Villain",
+    "rating": 2,
+    "author": "John Scalzi",
+    "author_url": "https://www.goodreads.com/author/show/4763.John_Scalzi",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1683564155i/61885029.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/61885029-starter-villain",
+    "image_path": "/images/books/starter-villain.jpg"
+  },
+  {
+    "title": "Rubicon",
+    "rating": 3,
+    "author": "J.S. Dewes",
+    "author_url": "https://www.goodreads.com/author/show/20220570.J_S_Dewes",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1667336628i/60784443.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/60784443-rubicon",
+    "image_path": "/images/books/rubicon.jpg"
+  },
+  {
+    "title": "Jade City",
+    "rating": 3,
+    "author": "Fonda Lee",
+    "author_url": "https://www.goodreads.com/author/show/7705004.Fonda_Lee",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1547625704i/43587154.jpg",
+    "read_year": 2023,
+    "url": "https://www.goodreads.com/book/show/43587154-jade-city",
+    "image_path": "/images/books/jade-city.jpg"
+  },
+  {
     "title": "The Cloud Roads",
     "rating": 4,
     "author": "Martha Wells",

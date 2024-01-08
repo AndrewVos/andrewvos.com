@@ -21,9 +21,13 @@ I am very good at problem solving, refactoring, delivery optimisation, and just 
 
 ### Experience
 
-#### MoneyHelper - _9 November 2021_ to _present_
+#### Featurist - _1st March 2023 to _30th June 2023_
 
-TBA
+- Worked on service API rebuild for Quidco.
+
+#### MoneyHelper - _9 November 2021_ to _31 March 2023_
+
+- Rebuilt money tools using React and Next.js.
 
 #### ChangeLab - _17 May 2021_ to _10 October 2021_
 

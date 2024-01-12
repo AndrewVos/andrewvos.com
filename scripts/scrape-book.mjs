@@ -23,7 +23,7 @@ const retrieveBook = async () => {
     });
 
   const browser = await puppeteer.launch({
-    headless: true,
+    headless: "new",
     defaultViewport: null,
   });
 

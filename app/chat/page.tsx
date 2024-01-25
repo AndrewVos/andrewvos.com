@@ -121,6 +121,8 @@ export default function Page() {
                         </div>
                         <video className=" " width="100%" height="100%" controls={false} autoPlay={true} muted playsInline >
                             {playingMyVideo && (<source src="/videos/me.webm" type="video/webm" />)}
+                            {playingMyVideo && (<source src="/videos/me.mp4" type="video/mp4" />)}
+
                         </video>
                     </div>
                 </div>

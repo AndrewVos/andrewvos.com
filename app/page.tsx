@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from "next/link"
+import Image from "next/image"
 
 export const metadata: Metadata = {
   title: 'andrewvos.com',
@@ -25,13 +26,20 @@ export default function Home() {
               </Link>
             </div>
             <div>
-              <Link href="/books" className="text-3xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white">
-                Books
+              <Link href="/contact" className="text-3xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white">
+                Contact
+              </Link>
+            </div>
+          </div>
+          <div className="md:flex md:space-x-4 animate-jump-in animate-delay-[800ms]">
+            <div>
+              <Link href="/books" className="text-2xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white">
+                Bookshelf
               </Link>
             </div>
             <div>
-              <Link href="/contact" className="text-3xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white">
-                Contact
+              <Link href="https://github.com/AndrewVos" className="text-2xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white">
+                Projects
               </Link>
             </div>
           </div>

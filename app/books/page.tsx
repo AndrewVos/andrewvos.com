@@ -131,7 +131,7 @@ export default function Page({ searchParams }: {
     <>
       <div className="container mx-auto p-3 mt-10 mb-5">
         <h1 className="text-4xl text-gray-800">
-          Books I&apos;ve read
+          Bookshelf
         </h1>
       </div>
       <div className="container mx-auto p-3">

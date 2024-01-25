@@ -38,6 +38,9 @@ export default function Bio() {
             <Link href="/contact" className="inline-flex items-center h-8 px-4 m-2 text-sm text-white bg-black font-bold rounded-lg">
               Contact
             </Link>
+            <Link href="/AndrewVos.pdf" download target="_blank" rel="noopener noreferrer" className="inline-flex items-center h-8 px-4 m-2 text-sm text-white bg-black font-bold rounded-lg">
+              Download CV
+            </Link>
           </div>
         </div>
         <h2 className="text-3xl text-black font-bold">
@@ -203,12 +206,6 @@ export default function Bio() {
           <Client name="MoneyHelper" className="p-3" image="/images/logos/moneyhelper.png" />
           <Client name="Quidco" className="p-3" image="/images/logos/quidco.png" />
         </div>
-      </div>
-
-      <div className="container mx-auto p-3 mb-20">
-        <a href="/AndrewVos.pdf" download className="bg-black text-white font-bold py-2 px-4 rounded">
-          Download full CV here
-        </a>
       </div>
     </>
   )

@@ -25,7 +25,7 @@ export default function Home() {
               </Link>
             </div>
             <div>
-              <Link href="/contact" className="text-3xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white">
+              <Link href="/chat" className="text-3xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white">
                 Contact
               </Link>
             </div>

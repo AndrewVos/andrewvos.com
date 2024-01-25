@@ -4,7 +4,13 @@ import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 
 const chatDelay = 10000
-const chats = [
+
+type Line = {
+    delay: number,
+    text: string | JSX.Element
+}
+
+const allLines: Line[] = [
     {
         delay: 1000,
         text: "hi",
@@ -24,29 +30,30 @@ const chats = [
 ]
 
 const Chat = () => {
-    const [chatText, setChatText] = useState([])
+    const [lines, setLines] = useState<{ user: string; text: string | JSX.Element }[]>([]);
     const [inputText, setInputText] = useState("")
 
     const div = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
-        chats.map(c => {
+        allLines.map(line => {
             setTimeout(() => {
-                setChatText((prev) => { return [...prev, { user: "Andrew Vos", text: c.text }] })
-            }, chatDelay + c.delay)
-        })
-    }, []);
+                const newLine = { user: "Andrew Vos", text: line.text }
+                setLines((prev) => ([...prev, newLine]))
+            }, chatDelay + line.delay)
+        }, [])
+    }, [])
 
     useEffect(() => {
         if (div.current) {
             div.current.scrollIntoView({ behavior: 'smooth' });
         }
-    }, [chatText])
+    }, [lines])
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault()
         if (inputText) {
-            setChatText([...chatText, { user: "You", text: inputText }])
+            setLines([...lines, { user: "You", text: inputText }])
             setInputText("")
         }
     }
@@ -55,12 +62,15 @@ const Chat = () => {
         <>
             <div className="grow flex overflow-scroll border p-2">
                 <div className="">
-                    {chatText.map((chat, index) => (
+                    {lines.map((line, index) => (
                         <div key={index} className="" ref={div}>
                             <div className="text-md text-gray-700 ">
                                 <div className="inline font-bold text-gray-700">
-                                    {chat.user}:&nbsp;
-                                </div>{chat.text}
+                                    {line.user}:&nbsp;
+                                </div>
+                                <div className="inline">
+                                    {line.text}
+                                </div>
                             </div>
                         </div>
                     ))}

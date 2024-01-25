@@ -113,25 +113,24 @@ export default function Page() {
 
     return (
         <div className="font-serif p-3  h-full flex flex-col space-y-2" >
-            <div className="grid md:grid-cols-2 gap-2">
+            <div className="grid grid-cols-2 gap-2 auto-rows-8">
                 <div className="flex justify-center items-center border bg-gray-900">
-                    <div className="relative w-full min-h-96">
+                    <div className="relative ">
                         <div className="absolute inline bottom-2 left-2 px-1 bg-gray-700 opacity-80 rounded text-white  text-sm font-bold">
                             Andrew Vos
                         </div>
-                        <video className=" " width="100%" height="100%" controls={false} autoPlay={true} muted playsInline >
+                        <video controls={false} autoPlay={true} muted playsInline >
                             {playingMyVideo && (<source src="/videos/me.webm" type="video/webm" />)}
                             {playingMyVideo && (<source src="/videos/me.mp4" type="video/mp4" />)}
-
                         </video>
                     </div>
                 </div>
                 <div className="flex justify-center items-center border bg-gray-900">
-                    <div className="relative w-full min-h-96">
+                    <div className="relative">
                         <div className="absolute bottom-2 left-2 px-1 bg-gray-700 opacity-80 rounded text-white  text-sm font-bold">
                             You
                         </div>
-                        <video id="videoElement" className=" w-full " width="100%" height="100%" controls={false} autoPlay={true} muted playsInline >
+                        <video id="videoElement" controls={false} autoPlay={true} muted playsInline >
                         </video>
                     </div>
                 </div>

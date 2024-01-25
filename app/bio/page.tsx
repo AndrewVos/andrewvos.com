@@ -35,7 +35,7 @@ export default function Bio() {
 
           </div>
           <div className='flex items-center'>
-            <Link href="/contact" className="inline-flex items-center h-8 px-4 m-2 text-sm text-white bg-black font-bold rounded-lg">
+            <Link href="/chat" className="inline-flex items-center h-8 px-4 m-2 text-sm text-white bg-black font-bold rounded-lg">
               Contact
             </Link>
             <Link href="/AndrewVos.pdf" download target="_blank" rel="noopener noreferrer" className="inline-flex items-center h-8 px-4 m-2 text-sm text-white bg-black font-bold rounded-lg">

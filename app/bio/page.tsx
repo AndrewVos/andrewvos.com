@@ -19,27 +19,26 @@ export default function Bio() {
 
   return (
     <>
-      <div className="text-gray-900 font-serif container mx-auto p-3 mt-10 mb-5 space-y-5">
-        <div className="flex">
+      <div className="text-gray-900 font-serif container mx-auto p-3 mt-1 md:mt-10 mb-5 space-y-5">
+        <div className="flex flex-wrap gap-1">
           <div className="flex-auto">
             <div className="space-y-12 flex flex-col">
               <h1 className="flex select-none">
-                <div className='text-4xl font-bold text-white bg-black p-1 border-2 border-black'>
+                <div className='text-2xl md:text-4xl font-bold text-white bg-black p-1 border-2 border-black'>
                   Andrew
                 </div>
-                <div className="text-4xl font-bold text-black p-1 border-2 border-black">
+                <div className="text-2xl md:text-4xl font-bold text-black p-1 border-2 border-black">
                   Vos
                 </div>
               </h1>
             </div>
-
           </div>
-          <div className='flex items-center'>
-            <Link href="/chat" className="inline-flex items-center h-8 px-4 m-2 text-sm text-white bg-black font-bold rounded-lg">
+          <div className='flex items-center flex-wrap gap-1'>
+            <Link href="/chat" className="px-4 py-1 text-sm text-white bg-black font-bold rounded-lg">
               Contact
             </Link>
-            <Link href="/AndrewVos.pdf" download target="_blank" rel="noopener noreferrer" className="inline-flex items-center h-8 px-4 m-2 text-sm text-white bg-black font-bold rounded-lg">
-              Download CV
+            <Link href="/AndrewVos.pdf" download target="_blank" rel="noopener noreferrer" className="px-4 py-1 text-sm text-white bg-black font-bold rounded-lg">
+              Download
             </Link>
           </div>
         </div>

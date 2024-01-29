@@ -21,7 +21,7 @@ I am very good at problem solving, refactoring, delivery optimisation, and just 
 
 ### Experience
 
-#### Featurist - _1st March 2023 to _30th June 2023_
+#### Featurist - _1st March 2023_ to _30th June 2023_
 
 - Worked on service API rebuild for Quidco.
 

@@ -1,6 +1,6 @@
 <div class="title">
   <h1>Andrew Vos</h1>
-  <h2>Senior full-stack javascript developer</h2>
+  <h2>Senior full-stack software engineer</h2>
 </div>
 
 <link href="style.css" rel="stylesheet">
@@ -13,7 +13,7 @@
 ### About
 
 I am a software developer with over a decade of experience in the UK contractor market.
-My focus is on React, tailwindcss and JavaScript.
+My focus is on Rails, React and JavaScript/TypeScript.
 
 I enjoy delivering intuitive, accessible and well tested software.
 

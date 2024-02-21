@@ -21,7 +21,7 @@ export default function Home() {
           <div className="md:flex md:space-x-4 animate-jump-in animate-delay-[800ms]">
             <div>
               <Link href="/bio" className="text-3xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white">
-                Bio
+                CV
               </Link>
             </div>
             <div>

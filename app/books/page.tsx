@@ -119,19 +119,17 @@ export default function Page({ searchParams }: {
                           <div className="absolute -top-2 -right-2 border border-green-500 bg-green-500 rounded px-1 text-xs text-white font-bold">recommended</div>
                         )}
                       </div>
-                      <div className="flex flex-col gap-3 items-center">
-                        <div className="w-[150px] h-[200px]">
-                          <Link href={book.url}>
-                            <Image
-                              alt={book.title}
-                              src={book.image_path}
-                              width="150"
-                              height="200"
-                              className="min-w-[150px] max-h-[200px] rounded-r-lg shadow shadow-black"
-                            />
-                          </Link>
-                        </div>
-
+                      <div className="flex flex-col gap-3 items-center align-items-center">
+                        <Link href={book.url} className="w-[150px] h-[200px]">
+                          {/* This shows a lot of warnings because of https://github.com/vercel/next.js/issues/47278 */}
+                          <Image
+                            alt={book.title}
+                            src={book.image_path}
+                            width={150}
+                            height={200}
+                            className="h-full w-auto rounded-r-lg shadow shadow-black mx-auto"
+                          />
+                        </Link>
                         <div className="flex justify-center items-center gap-1">
                           {[1, 2, 3, 4, 5].map((n) => (
                             <svg

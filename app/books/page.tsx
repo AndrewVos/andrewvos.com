@@ -4,7 +4,7 @@ import Link from "next/link"
 import classNames from "classnames"
 
 export const metadata: Metadata = {
-  title: 'books - andrewvos.com',
+  title: 'Bookshelf - andrewvos.com',
 };
 
 type Book = {

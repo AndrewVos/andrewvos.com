@@ -1,5 +1,127 @@
 [
   {
+    "title": "Starling House",
+    "rating": 5,
+    "recommended": true,
+    "author": "Alix E. Harrow",
+    "author_url": "https://www.goodreads.com/author/show/9823112.Alix_E_Harrow",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1682447293i/65213595.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/65213595-starling-house",
+    "image_path": "/images/books/starling-house.jpg"
+  },
+  {
+    "title": "Scorpio",
+    "rating": 3,
+    "author": "Marko Kloos",
+    "author_url": "https://www.goodreads.com/author/show/6606349.Marko_Kloos",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1686036102i/125162502.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/125162502-scorpio",
+    "image_path": "/images/books/scorpio.jpg"
+  },
+  {
+    "title": "He Who Drowned the World",
+    "rating": 4,
+    "author": "Shelley Parker-Chan",
+    "author_url": "https://www.goodreads.com/author/show/19718971.Shelley_Parker_Chan",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1675980231i/63132362.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/63132362-he-who-drowned-the-world",
+    "image_path": "/images/books/he-who-drowned-the-world.jpg"
+  },
+  {
+    "title": "She Who Became the Sun",
+    "rating": 4,
+    "author": "Shelley Parker-Chan",
+    "author_url": "https://www.goodreads.com/author/show/19718971.Shelley_Parker_Chan",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1625048838i/48727813.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/48727813-she-who-became-the-sun",
+    "image_path": "/images/books/she-who-became-the-sun.jpg"
+  },
+  {
+    "title": "Sword Catcher",
+    "rating": 3,
+    "author": "Cassandra Clare",
+    "author_url": "https://www.goodreads.com/author/show/150038.Cassandra_Clare",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1674841074i/36679274.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/36679274-sword-catcher",
+    "image_path": "/images/books/sword-catcher.jpg"
+  },
+  {
+    "title": "Nettle & Bone",
+    "rating": 3,
+    "author": "T. Kingfisher",
+    "author_url": "https://www.goodreads.com/author/show/7367300.T_Kingfisher",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1645110008i/56179377.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/56179377-nettle-bone",
+    "image_path": "/images/books/nettle-bone.jpg"
+  },
+  {
+    "title": "The Four Winds",
+    "rating": 5,
+    "recommended": true,
+    "author": "Kristin Hannah",
+    "author_url": "https://www.goodreads.com/author/show/54493.Kristin_Hannah",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1594925043i/53138081.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/53138081-the-four-winds",
+    "image_path": "/images/books/the-four-winds.jpg"
+  },
+  {
+    "title": "Lessons in Chemistry",
+    "rating": 4,
+    "author": "Bonnie Garmus",
+    "author_url": "https://www.goodreads.com/author/show/21370624.Bonnie_Garmus",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1634748496i/58065033.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/58065033-lessons-in-chemistry",
+    "image_path": "/images/books/lessons-in-chemistry.jpg"
+  },
+  {
+    "title": "Piranesi",
+    "rating": 3,
+    "author": "Susanna Clarke",
+    "author_url": "https://www.goodreads.com/author/show/8842.Susanna_Clarke",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1609095173i/50202953.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/50202953-piranesi",
+    "image_path": "/images/books/piranesi.jpg"
+  },
+  {
+    "title": "A Darker Shade of Magic",
+    "rating": 3,
+    "author": "V.E. Schwab",
+    "author_url": "https://www.goodreads.com/author/show/7168230.V_E_Schwab",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1400322851i/22055262.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/22055262-a-darker-shade-of-magic",
+    "image_path": "/images/books/a-darker-shade-of-magic.jpg"
+  },
+  {
+    "title": "Iron Flame",
+    "rating": 3,
+    "author": "Rebecca Yarros",
+    "author_url": "https://www.goodreads.com/author/show/7539785.Rebecca_Yarros",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1706724269i/90202302.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/90202302-iron-flame",
+    "image_path": "/images/books/iron-flame.jpg"
+  },
+  {
+    "title": "Fourth Wing",
+    "rating": 3,
+    "author": "Rebecca Yarros",
+    "author_url": "https://www.goodreads.com/author/show/7539785.Rebecca_Yarros",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1701980900i/61431922.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/61431922-fourth-wing",
+    "image_path": "/images/books/fourth-wing.jpg"
+  },
+  {
     "title": "Slow Horses",
     "rating": 4,
     "author": "Mick Herron",

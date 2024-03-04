@@ -110,48 +110,24 @@ export default function Bio() {
         </h3>
         <div className="lg:w-2/3">
           <ul className="text-lg mb-3 text-gray-700">
-            <li className="list-disc ml-5 text-lg">
-              {["Ruby", "TypeScript", "JavaScript", "Go"].map((language) => (
-                <>
-                  <span className='font-bold'>{language}</span> ({calculateExperience(language)} years),&nbsp;
-                </>
-              ))}
-            </li>
-            <li className="list-disc ml-5 text-lg">
-              {["Ruby on Rails", "Next.js"].map((language) => (
-                <>
-                  <span className='font-bold'>{language}</span> ({calculateExperience(language)} years),&nbsp;
-                </>
-              ))}
-            </li>
-            <li className="list-disc ml-5 text-lg">
-              {["React", "Tailwind CSS"].map((language) => (
-                <>
-                  <span className='font-bold'>{language}</span> ({calculateExperience(language)} years),&nbsp;
-                </>
-              ))}
-            </li>
-            <li className="list-disc ml-5 text-lg">
-              {["Postgres", "MySQL"].map((language) => (
-                <>
-                  <span className='font-bold'>{language}</span> ({calculateExperience(language)} years),&nbsp;
-                </>
-              ))}
-            </li>
-            <li className="list-disc ml-5 text-lg">
-              {["CSS", "HTML"].map((language) => (
-                <>
-                  <span className='font-bold'>{language}</span> ({calculateExperience(language)} years),&nbsp;
-                </>
-              ))}
-            </li>
-            <li className="list-disc ml-5 text-lg">
-              {["Unit Testing", "Acceptance Testing"].map((language) => (
-                <>
-                  <span className='font-bold'>{language}</span> ({calculateExperience(language)} years),&nbsp;
-                </>
-              ))}
-            </li>
+            {[
+              ["Ruby", "TypeScript", "JavaScript", "Go"],
+              ["Ruby on Rails", "Next.js"],
+              ["React", "Tailwind CSS"],
+              ["Postgres", "MySQL"],
+              ["CSS", "HTML"],
+              ["Unit Testing", "Acceptance Testing"],
+            ].map((techs, index) => (
+              <li key={index} className="list-disc ml-5 text-lg">
+                {techs.map((tech, index) => (
+                  <>
+                    <span className='font-bold'>{tech} </span>
+                    <span>({calculateExperience(tech)} years)</span>
+                    {index !== techs.length - 1 && ", "}
+                  </>
+                ))}
+              </li>
+            ))}
           </ul>
         </div >
       </div >
@@ -251,7 +227,7 @@ export default function Bio() {
 
       <div className="container mx-auto p-3 mb-20">
         <h3 className="mb-5 text-2xl text-black font-bold">
-          Experience:
+          Work Experience:
         </h3>
         <div className="space-y-12">
           {cv.experiences.map((experience, index) => (

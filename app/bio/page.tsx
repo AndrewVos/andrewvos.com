@@ -53,7 +53,7 @@ export default function Bio() {
           </div>
         </div>
         <h2 className="text-3xl text-black font-bold">
-          Senior Full-Stack Software Engineer
+          Senior Full-Stack Rails Engineer
         </h2>
       </div>
 

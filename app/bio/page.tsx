@@ -132,6 +132,13 @@ export default function Bio() {
               ))}
             </li>
             <li className="list-disc ml-5 text-lg">
+              {["Postgres", "MySQL"].map((language) => (
+                <>
+                  <span className='font-bold'>{language}</span> ({calculateExperience(language)} years),&nbsp;
+                </>
+              ))}
+            </li>
+            <li className="list-disc ml-5 text-lg">
               {["CSS", "HTML"].map((language) => (
                 <>
                   <span className='font-bold'>{language}</span> ({calculateExperience(language)} years),&nbsp;

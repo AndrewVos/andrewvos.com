@@ -480,18 +480,18 @@ const experiences: Experience[] = [
     from: parseDate("2015-10-04"),
     to: parseDate("2016-05-25"),
     description:
-      "At GDS we were tasked with building the Service Manual site and a CMS for managing all the service manual content.",
+      "At GDS we were tasked with building the GOV.UK Service Manual site and a CMS for managing all the service manual content.",
     things: [
-      "Built the Service Manual site with a team of content editors",
+      "Built the GOV.UK Service Manual site with a team of content editors",
       "Built a CMS for managing all the content",
     ],
     links: [
       {
-        title: "GDS Service Manual",
+        title: "GOV.UK Service Manual",
         href: "https://www.gov.uk/service-manual",
       },
       {
-        title: "Source for Service Manual",
+        title: "Source for GOV.UK Service Manual",
         href: "https://github.com/alphagov/service-manual-publisher",
       },
     ],

@@ -90,7 +90,7 @@ export default function Bio() {
 
           <p className="text-lg mb-3">
             For web I like to work with&nbsp;
-            <span className="font-bold">Next.js</span> or <span className="font-bold">Rails</span>.
+            <span className="font-bold">Rails</span> or <span className="font-bold">Next.js</span>.
 
             I always use system tests to cover new features that I write, and for more complex code I write unit tests.
           </p>

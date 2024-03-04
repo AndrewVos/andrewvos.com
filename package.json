@@ -10,7 +10,7 @@
     "scrape-book": "node scripts/scrape-book.mjs",
     "renew-book-thumbnails": "node scripts/renew-book-thumbnails.mjs",
     "build-cv": "node ./scripts/build-cv.js",
-    "postbuild": "node ./scripts/build-cv.js"
+    "postbuild": "npx puppeteer browsers install chrome && node ./scripts/build-cv.js"
   },
   "dependencies": {
     "@next/font": "13.1.6",

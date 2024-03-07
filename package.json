@@ -22,6 +22,7 @@
     "date-fns": "^3.3.1",
     "eslint": "8.34.0",
     "eslint-config-next": "^13.4.10",
+    "focus-trap-react": "^10.2.3",
     "image-size": "^1.1.1",
     "next": "^13.4.10",
     "prompts": "^2.4.2",

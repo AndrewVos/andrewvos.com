@@ -1,65 +1,40 @@
-import { useCallback, useState } from "react"
+import FocusTrap from "focus-trap-react"
+import { createRef, useState } from "react"
+import Draggable from 'react-draggable'
 
-const Window = ({ x, y, title, children }) => {
-    const [position, setPosition] = useState({
-        x,
-        y,
-        dragging: false,
-        dragStartX: null,
-        dragStartY: null,
-    })
-
+const Window = ({ title, children }) => {
     const [visible, setVisible] = useState(true)
+    const [hasFocus, setHasFocus] = useState(false)
 
+    const windowRef = createRef()
     const handleCloseClick = () => {
         setVisible(false)
     }
 
-    if (!visible) {
-        return
-    }
-
-    const handleMouseDown = (e) => {
-        e.preventDefault();
-        setPosition({ x: position.y, y: position.y, dragging: true, dragStartX: e.clientX, dragStartY: e.clientY })
-    }
-
-    const handleMouseMove = (e) => {
-        e.preventDefault();
-
-        if (position.dragging) {
-            setPosition(() => ({
-                x: position.x - (position.dragStartX - e.clientX),
-                y: position.y - (position.dragStartY - e.clientY),
-                dragging: position.dragging,
-                dragStartX: e.clientX,
-                dragStartY: e.clientY
-            }))
-        }
-    }
-
-    const handleMouseUp = (e) => {
-        e.preventDefault();
-
-        setPosition({
-            x: position.x,
-            y: position.y,
-            dragging: false,
-        })
-    }
+    // if (!visible) {
+    //     return
+    // }
 
     return (
-        <div className='bg-white border p-3 rounded absolute w-2/4' style={{ top: `${position.y}px`, left: `${position.x}px` }}>
-            <div className="flex border-b">
-                <h1 className='grow text-md font-bold p-3 cursor-move' onMouseDown={handleMouseDown} onMouseUp={handleMouseUp} onMouseMove={handleMouseMove}>{title}</h1>
-                <button className="flex items-center px-3" onClick={handleCloseClick}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M20 6.91L17.09 4L12 9.09L6.91 4L4 6.91L9.09 12L4 17.09L6.91 20L12 14.91L17.09 20L20 17.09L14.91 12z"></path></svg>
-                </button>
-            </div>
-            <div>
-                {children}
-            </div>
-        </div >
+        <>
+            <Draggable handle=".drag-handle" bounds="parent">
+                <div onBlur={() => setHasFocus(false)} onFocus={() => setHasFocus(true)} ref={windowRef} onClick={() => setHasFocus(true)} className='bg-white border rounded w-2/4 focus:border-black' tabIndex={0} >
+                    <FocusTrap active={hasFocus} focusTrapOptions={{ clickOutsideDeactivates: true, allowOutsideClick: true }} >
+                        <div>
+                            <div className="flex border-b">
+                                <h1 onClick={() => windowRef.current.focus()} className='drag-handle grow text-md font-bold p-3 cursor-move'>{title}</h1>
+                                <button className="flex items-center px-3" onClick={handleCloseClick} tabIndex={-1}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M20 6.91L17.09 4L12 9.09L6.91 4L4 6.91L9.09 12L4 17.09L6.91 20L12 14.91L17.09 20L20 17.09L14.91 12z"></path></svg>
+                                </button>
+                            </div>
+                            <div className="p-3">
+                                {children}
+                            </div>
+                        </div>
+                    </FocusTrap>
+                </div >
+            </Draggable >
+        </>
     )
 }
 

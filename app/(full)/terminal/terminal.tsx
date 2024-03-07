@@ -68,7 +68,7 @@ const dirname = (path: string) => {
 }
 
 
-export default function Terminal({ x, y, onFocus }) {
+export default function Terminal() {
     const [lines, setLines] = useState([
         "UNAUTHORIZED ACCESS TO THIS DEVICE IS PROHIBITED",
         "You must have explicit, authorized permission to access or configure this device. Unauthorized attempts and actions to access or use this system may result in civil and/or criminal penalties. All activities performed on this device are logged and monitored."
@@ -117,7 +117,7 @@ export default function Terminal({ x, y, onFocus }) {
     }
 
     return (
-        <Window title="Terminal" x={x} y={y} onFocus={onFocus}>
+        <Window title="Terminal">
             <div className='text-lg font-mono p-3'>
                 <div className="">
                     {lines.map((line, i) =>

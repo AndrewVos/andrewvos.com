@@ -93,7 +93,7 @@ export default function Bio() {
             Highly skilled Rails Engineer with {cv.yearsOfExperience} years of experience in full stack software engineering.
           </p>
           <p>
-            Outside of work, I am passionate about woodworking, trail running, parenting, and immersing myself in literature. An avid surfer, I thrive on challenges both in and out of the tech world, bringing a well-rounded perspective to every endeavor.
+            Outside of work, I am passionate about woodworking, trail running, parenting, and immersing myself in literature. An avid surfer, I thrive on challenges both in and out of the tech world, bringing a well-rounded perspective to every endeavour.
           </p>
         </Prose>
 

@@ -34,6 +34,7 @@ type Experience = {
   description?: string;
   things?: string[];
   links?: { title: string; href: string }[];
+  agency?: { name: string; image: string };
   tech: {
     ["Go"]: boolean;
     ["CSS"]: boolean;
@@ -78,6 +79,10 @@ const experiences: Experience[] = [
     from: parseDate("2023-03-01"),
     to: parseDate("2023-06-30"),
     description: "Worked with Featurist on the QuidCo site rewrite.",
+    agency: {
+      name: "Featurist",
+      image: "/images/logos/featurist.png",
+    },
     things: [
       "Worked on the QuidCo site rewrite.",
       "Rebuilt a vital high-traffic API without downtime using nginx to proxy requests to the old and new API.",
@@ -292,6 +297,10 @@ const experiences: Experience[] = [
     from: parseDate("2018-02-05"),
     to: parseDate("2019-03-17"),
     description: "Built a subscription managment system for Sam's Club",
+    agency: {
+      name: "Featurist",
+      image: "/images/logos/featurist.png",
+    },
     things: [
       "Built a system that allowed customers to buy recurring subscriptions for contact lenses in the US",
     ],
@@ -387,6 +396,10 @@ const experiences: Experience[] = [
     to: parseDate("2017-06-02"),
     description:
       "Working with a Featurist team we designed and built an app that would allow people to exchange many different currencies.",
+    agency: {
+      name: "Featurist",
+      image: "/images/logos/featurist.png",
+    },
     things: ["Built the foreignexchange.com money transfer service"],
     tech: {
       Go: false,
@@ -624,6 +637,10 @@ const experiences: Experience[] = [
     to: parseDate("2015-02-03"),
     description:
       "My first time working with Featurist, a software development agency built up of friends from ITV and BBC. We were tasked with building all the software for Shopa, an app that would give cashback to users who bought products through our website.",
+    agency: {
+      name: "Featurist",
+      image: "/images/logos/featurist.png",
+    },
     things: [
       "Wrote the shopa.com Rails app",
       "Managed all the infrastructure, including extensive use of Docker, AWS, Heroku",

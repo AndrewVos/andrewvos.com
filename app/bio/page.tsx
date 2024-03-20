@@ -175,10 +175,18 @@ export default function Bio() {
           <div className="space-y-12">
             {cv.experiences.map((experience, index) => (
               <div key={index} className="">
-                <div className='mb-5'>
+                <div className='flex items-center gap-5 mb-5'>
+                  {experience.agency && (
+                    <div>
+                      <Image className="max-w-[200px]" priority alt={`${experience.agency.name} logo`} src={experience.agency.image} width={500} height={500} />
+                    </div>
+                  )}
+                  {experience.agency && (
+                    <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path fill="currentColor" d="M4 15V9h8V4.16L19.84 12L12 19.84V15z"></path></svg>
+                  )}
                   {experience.image ? (
                     <div>
-                      <Image className="max-w-[200px] p-3  border" priority alt={`${experience.name} logo`} src={experience.image} width={500} height={500} />
+                      <Image className="max-w-[200px]" priority alt={`${experience.name} logo`} src={experience.image} width={500} height={500} />
                     </div>
                   ) : (
                     <h4 className='inline-block px-3 py-1 border'>

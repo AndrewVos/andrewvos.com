@@ -178,10 +178,7 @@ export default function Bio() {
                 <div className='mb-5'>
                   {experience.image ? (
                     <div>
-                      <Image className="print:hidden max-w-[200px] p-3  border" alt={`${experience.name} logo`} src={experience.image} width={500} height={500} />
-                      <h4 className='hidden print:inline-block px-3 py-1 border'>
-                        {experience.name}
-                      </h4>
+                      <Image className="max-w-[200px] p-3  border" priority alt={`${experience.name} logo`} src={experience.image} width={500} height={500} />
                     </div>
                   ) : (
                     <h4 className='inline-block px-3 py-1 border'>

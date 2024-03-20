@@ -9,8 +9,8 @@
     "lint": "next lint",
     "scrape-book": "node scripts/scrape-book.mjs",
     "renew-book-thumbnails": "node scripts/renew-book-thumbnails.mjs",
-    "build-cv": "node ./scripts/build-cv.js",
-    "postbuild": "npx puppeteer browsers install chrome && node ./scripts/build-cv.js"
+    "build-cv": "npx puppeteer browsers install chrome && node ./scripts/build-cv.js",
+    "postbuild": "start-server-and-test start http://localhost:3000 build-cv"
   },
   "dependencies": {
     "@next/font": "13.1.6",
@@ -39,6 +39,7 @@
     "postcss": "^8.4.21",
     "puppeteer": "^22.1.0",
     "slug": "^8.2.2",
+    "start-server-and-test": "^2.0.3",
     "tailwindcss": "^3.2.6"
   }
 }

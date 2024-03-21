@@ -139,6 +139,7 @@ const cv: CV = {
   achievements: [
     "Founded and built all the software for a profitable startup.",
     "Had my software featured in a print technology magazine.",
+    "My work was featured in Wired magazine.",
     "Part of the team that rebuilt the BBC News website from the ground up.",
     "Built software for use in a large factory, which is still in use today.",
     "Successfully managed and lead teams of developers.",

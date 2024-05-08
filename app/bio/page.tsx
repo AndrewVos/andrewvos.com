@@ -166,8 +166,14 @@ export default function Bio() {
                 </div>
 
                 <div className=''>
-                  <div className='text-lg font-bold text-gray-700 mb-5'>
-                    {formatDate(experience.from)} to {experience.to ? formatDate(experience.to) : 'Present'}
+                  <div className='mb-5 space-x-2'>
+                    <span className='text-lg border-blue-400 bg-blue-100 text-blue-700 font-bold px-2'>
+                      {experience.type}
+                    </span>
+                    <span className='font-bold text-gray-700 text-lg'>
+                      {formatDate(experience.from)} to {experience.to ? formatDate(experience.to) : 'Present'}
+                    </span>
+
                   </div>
 
                   <div>

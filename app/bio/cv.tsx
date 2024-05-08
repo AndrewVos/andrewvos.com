@@ -28,6 +28,7 @@ const parseDate = (date: string) => {
 
 type Experience = {
   name: string;
+  type: "contract" | "permanent" | "contract & permanent" | "freelance",
   hidden: boolean,
   image?: string;
   from: Date;
@@ -144,6 +145,7 @@ const cv: CV = {
   experience: [
     {
       name: "Quidco",
+      type: "contract",
       hidden: false,
       image: "/images/logos/quidco.png",
       from: parseDate("2023-03-01"),
@@ -196,6 +198,7 @@ const cv: CV = {
     },
     {
       name: "MoneyHelper",
+      type: "contract",
       hidden: false,
       image: "/images/logos/moneyhelper.png",
       from: parseDate("2021-11-09"),
@@ -274,6 +277,7 @@ const cv: CV = {
     },
     {
       name: "ChangeLab",
+      type: "contract",
       hidden: false,
       image: "/images/logos/changelab.png",
       from: parseDate("2021-05-17"),
@@ -320,6 +324,7 @@ const cv: CV = {
     },
     {
       name: "Florence",
+      type: "contract & permanent",
       hidden: false,
       image: "/images/logos/florence.png",
       from: parseDate("2020-03-23"),
@@ -373,6 +378,7 @@ const cv: CV = {
     },
     {
       name: "Indigo Lighthouse",
+      type: "contract",
       hidden: false,
       image: "/images/logos/indigo-lighthouse.png",
       from: parseDate("2018-02-05"),
@@ -424,6 +430,7 @@ const cv: CV = {
     },
     {
       name: "Honeycomb",
+      type: "contract",
       hidden: false,
       image: "/images/logos/honeycomb-tv.png",
       from: parseDate("2017-07-24"),
@@ -475,6 +482,7 @@ const cv: CV = {
     },
     {
       name: "GAIN Capital",
+      type: "contract",
       hidden: false,
       image: "/images/logos/gain-capital.png",
       from: parseDate("2017-01-23"),
@@ -525,6 +533,7 @@ const cv: CV = {
     },
     {
       name: "PensionWise",
+      type: "contract",
       hidden: false,
       image: "/images/logos/pension-wise.png",
       from: parseDate("2016-09-20"),
@@ -577,6 +586,7 @@ const cv: CV = {
     },
     {
       name: "GDS",
+      type: "contract",
       hidden: false,
       image: "/images/logos/gds.png",
       from: parseDate("2015-10-04"),
@@ -636,6 +646,7 @@ const cv: CV = {
     },
     {
       name: "Featurist",
+      type: "contract",
       hidden: false,
       image: "/images/logos/featurist.png",
       from: parseDate("2015-09-02"),
@@ -681,6 +692,7 @@ const cv: CV = {
     },
     {
       name: "Fullsix",
+      type: "contract",
       hidden: false,
       image: "/images/logos/fullsix.png",
       from: parseDate("2015-06-29"),
@@ -726,6 +738,7 @@ const cv: CV = {
     },
     {
       name: "Shopa",
+      type: "contract",
       hidden: false,
       image: "/images/logos/shopa.png",
       from: parseDate("2013-05-28"),
@@ -781,6 +794,7 @@ const cv: CV = {
     },
     {
       name: "Sky",
+      type: "contract",
       hidden: false,
       image: "/images/logos/sky.png",
       from: parseDate("2012-09-24"),
@@ -829,6 +843,7 @@ const cv: CV = {
     },
     {
       name: "BBC News",
+      type: "contract",
       hidden: false,
       image: "/images/logos/bbc-news.png",
       from: parseDate("2011-08-30"),
@@ -884,6 +899,7 @@ const cv: CV = {
     },
     {
       name: "ITV",
+      type: "permanent",
       hidden: false,
       image: "/images/logos/itv.png",
       from: parseDate("2010-06-14"),
@@ -939,6 +955,7 @@ const cv: CV = {
     },
     {
       name: "dotCommerce",
+      type: "permanent",
       hidden: true,
       from: parseDate("2009-08-24"),
       to: parseDate("2010-06-13"),
@@ -986,6 +1003,7 @@ const cv: CV = {
     },
     {
       name: "eForte Limited",
+      type: "permanent",
       hidden: true,
       from: parseDate("2009-03-05"),
       to: parseDate("2009-08-24"),
@@ -1033,6 +1051,7 @@ const cv: CV = {
     },
     {
       name: "WickedOrange",
+      type: "freelance",
       hidden: true,
       from: parseDate("2008-01-01"),
       to: parseDate("2009-01-01"),
@@ -1076,6 +1095,7 @@ const cv: CV = {
     },
     {
       name: "LandscaperPro",
+      type: "permanent",
       hidden: true,
       from: parseDate("2005-01-01"),
       to: parseDate("2008-01-01"),

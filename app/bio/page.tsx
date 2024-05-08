@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from "next/link"
 import Image from "next/image"
-import { differenceInDays, format } from 'date-fns';
+import { differenceInDays, format, formatDistance } from 'date-fns';
 import cv from "./cv"
 
 export const metadata: Metadata = {
@@ -172,6 +172,9 @@ export default function Bio() {
                     </span>
                     <span className='font-bold text-gray-700 text-lg'>
                       {formatDate(experience.from)} to {experience.to ? formatDate(experience.to) : 'Present'}
+                      {cv.showExperienceLength && (
+                        <span>&nbsp;{formatDistance(experience.from, experience.to)}</span>
+                      )}
                     </span>
 
                   </div>

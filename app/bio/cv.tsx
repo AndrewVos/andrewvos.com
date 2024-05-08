@@ -90,6 +90,7 @@ type CV = {
   summary: JSX.Element;
   contact: Contact;
   showSkillGroupingYears: boolean,
+  showExperienceLength: boolean,
   skillGrouping: string[][];
   softSkills: string[];
   achievements: string[];
@@ -114,6 +115,7 @@ const cv: CV = {
     urlTitle: "andrewvos.com",
   },
   showSkillGroupingYears: false,
+  showExperienceLength: false,
   skillGrouping: [
     ["Ruby", "TypeScript", "JavaScript", "Go"],
     ["Ruby on Rails", "Next.js"],
@@ -328,7 +330,7 @@ const cv: CV = {
       hidden: false,
       image: "/images/logos/florence.png",
       from: parseDate("2020-03-23"),
-      to: parseDate("2020-05-18"),
+      to: parseDate("2021-05-06"),
       description:
         "Started out on a contract to design nationalcareforce.co.uk, then designed and built other apps.",
       things: [

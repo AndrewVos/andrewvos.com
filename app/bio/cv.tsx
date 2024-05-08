@@ -939,7 +939,7 @@ const cv: CV = {
     },
     {
       name: "dotCommerce",
-      hidden: false,
+      hidden: true,
       from: parseDate("2009-08-24"),
       to: parseDate("2010-06-13"),
       description:

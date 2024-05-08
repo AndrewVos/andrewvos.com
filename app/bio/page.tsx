@@ -153,7 +153,13 @@ export default function Bio() {
           <div className="space-y-12">
             {cv.experience.filter(e => !e.hidden).map((experience, index) => (
               <div key={index} className="">
-                <div className='mb-5'>
+                <div className='mb-5 flex gap-5'>
+                  {experience.agency && (
+                    <div>
+                      <Image className="max-w-full sm:max-w-[200px]" priority alt={`${experience.agency.name} logo`} src={experience.agency.image} width={500} height={500} />
+                    </div>
+                  )}
+
                   {experience.image ? (
                     <div>
                       <Image className="max-w-full sm:max-w-[200px]" priority alt={`${experience.name} logo`} src={experience.image} width={500} height={500} />

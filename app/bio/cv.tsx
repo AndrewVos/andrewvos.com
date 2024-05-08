@@ -28,6 +28,7 @@ const parseDate = (date: string) => {
 
 type Experience = {
   name: string;
+  hidden: boolean,
   image?: string;
   from: Date;
   to: Date;
@@ -87,6 +88,7 @@ type CV = {
   title: string;
   summary: JSX.Element;
   contact: Contact;
+  showSkillGroupingYears: boolean,
   skillGrouping: string[][];
   softSkills: string[];
   achievements: string[];
@@ -96,20 +98,12 @@ type CV = {
 const cv: CV = {
   firstName: "Andrew",
   lastName: "Vos",
-  title: "Senior Full-Stack Rails Engineer",
+  title: "Senior Full-Stack Software Engineer",
   summary: (
-    <>
-      <p>
-        Highly skilled Rails Engineer with {differenceInYears(new Date(), parseDate("2005-01-01"))} years of
-        experience in full stack software engineering.
-      </p>
-      <p>
-        Outside of work, I am passionate about woodworking, trail running,
-        parenting, and immersing myself in literature. An avid surfer, I thrive
-        on challenges both in and out of the tech world, bringing a well-rounded
-        perspective to every endeavour.
-      </p>
-    </>
+    <p>
+      Senior Software Engineer focusing on building web apps with Rails, Next.js, React, Ruby, TypeScript and JavaScript.
+      I have a strong background in building and maintaining software for startups and large companies.
+    </p>
   ),
   contact: {
     phone: "07980857010",
@@ -118,6 +112,7 @@ const cv: CV = {
     url: "https://andrewvos.com",
     urlTitle: "andrewvos.com",
   },
+  showSkillGroupingYears: false,
   skillGrouping: [
     ["Ruby", "TypeScript", "JavaScript", "Go"],
     ["Ruby on Rails", "Next.js"],
@@ -149,6 +144,7 @@ const cv: CV = {
   experience: [
     {
       name: "Quidco",
+      hidden: false,
       image: "/images/logos/quidco.png",
       from: parseDate("2023-03-01"),
       to: parseDate("2023-06-30"),
@@ -200,6 +196,7 @@ const cv: CV = {
     },
     {
       name: "MoneyHelper",
+      hidden: false,
       image: "/images/logos/moneyhelper.png",
       from: parseDate("2021-11-09"),
       to: parseDate("2023-03-31"),
@@ -277,6 +274,7 @@ const cv: CV = {
     },
     {
       name: "ChangeLab",
+      hidden: false,
       image: "/images/logos/changelab.png",
       from: parseDate("2021-05-17"),
       to: parseDate("2021-10-10"),
@@ -322,6 +320,7 @@ const cv: CV = {
     },
     {
       name: "Florence",
+      hidden: false,
       image: "/images/logos/florence.png",
       from: parseDate("2020-03-23"),
       to: parseDate("2020-05-18"),
@@ -374,6 +373,7 @@ const cv: CV = {
     },
     {
       name: "Indigo Lighthouse",
+      hidden: false,
       image: "/images/logos/indigo-lighthouse.png",
       from: parseDate("2018-02-05"),
       to: parseDate("2019-03-17"),
@@ -424,6 +424,7 @@ const cv: CV = {
     },
     {
       name: "Honeycomb",
+      hidden: false,
       image: "/images/logos/honeycomb-tv.png",
       from: parseDate("2017-07-24"),
       to: parseDate("2017-12-15"),
@@ -474,6 +475,7 @@ const cv: CV = {
     },
     {
       name: "GAIN Capital",
+      hidden: false,
       image: "/images/logos/gain-capital.png",
       from: parseDate("2017-01-23"),
       to: parseDate("2017-06-02"),
@@ -523,6 +525,7 @@ const cv: CV = {
     },
     {
       name: "PensionWise",
+      hidden: false,
       image: "/images/logos/pension-wise.png",
       from: parseDate("2016-09-20"),
       to: parseDate("2017-01-20"),
@@ -574,6 +577,7 @@ const cv: CV = {
     },
     {
       name: "GDS",
+      hidden: false,
       image: "/images/logos/gds.png",
       from: parseDate("2015-10-04"),
       to: parseDate("2016-05-25"),
@@ -632,6 +636,7 @@ const cv: CV = {
     },
     {
       name: "Featurist",
+      hidden: false,
       image: "/images/logos/featurist.png",
       from: parseDate("2015-09-02"),
       to: parseDate("2015-09-09"),
@@ -676,6 +681,7 @@ const cv: CV = {
     },
     {
       name: "Fullsix",
+      hidden: false,
       image: "/images/logos/fullsix.png",
       from: parseDate("2015-06-29"),
       to: parseDate("2015-08-19"),
@@ -720,6 +726,7 @@ const cv: CV = {
     },
     {
       name: "Shopa",
+      hidden: false,
       image: "/images/logos/shopa.png",
       from: parseDate("2013-05-28"),
       to: parseDate("2015-02-03"),
@@ -774,6 +781,7 @@ const cv: CV = {
     },
     {
       name: "Sky",
+      hidden: false,
       image: "/images/logos/sky.png",
       from: parseDate("2012-09-24"),
       to: parseDate("2013-05-27"),
@@ -821,6 +829,7 @@ const cv: CV = {
     },
     {
       name: "BBC News",
+      hidden: false,
       image: "/images/logos/bbc-news.png",
       from: parseDate("2011-08-30"),
       to: parseDate("2012-08-20"),
@@ -875,6 +884,7 @@ const cv: CV = {
     },
     {
       name: "ITV",
+      hidden: false,
       image: "/images/logos/itv.png",
       from: parseDate("2010-06-14"),
       to: parseDate("2011-08-29"),
@@ -929,6 +939,7 @@ const cv: CV = {
     },
     {
       name: "dotCommerce",
+      hidden: false,
       from: parseDate("2009-08-24"),
       to: parseDate("2010-06-13"),
       description:
@@ -975,6 +986,7 @@ const cv: CV = {
     },
     {
       name: "eForte Limited",
+      hidden: true,
       from: parseDate("2009-03-05"),
       to: parseDate("2009-08-24"),
       description:
@@ -1021,6 +1033,7 @@ const cv: CV = {
     },
     {
       name: "WickedOrange",
+      hidden: true,
       from: parseDate("2008-01-01"),
       to: parseDate("2009-01-01"),
       things: ["Founded and ran a freelance web development agency."],
@@ -1063,6 +1076,7 @@ const cv: CV = {
     },
     {
       name: "LandscaperPro",
+      hidden: true,
       from: parseDate("2005-01-01"),
       to: parseDate("2008-01-01"),
       description:

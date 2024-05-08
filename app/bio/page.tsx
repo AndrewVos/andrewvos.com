@@ -108,11 +108,11 @@ export default function Bio() {
               {cv.skillGrouping.map((techs, index) => (
                 <li key={index}>
                   {techs.map((tech, index) => (
-                    <>
-                      <strong>{tech} </strong>
-                      <span>({calculateExperience(tech)} years)</span>
+                    <span key={index}>
+                      <strong>{tech}</strong>
+                      {cv.showSkillGroupingYears && (<span> ({calculateExperience(tech)} years)</span>)}
                       {index !== techs.length - 1 && ", "}
-                    </>
+                    </span>
                   ))}
                 </li>
               ))}
@@ -151,7 +151,7 @@ export default function Bio() {
             Experience
           </h3>
           <div className="space-y-12">
-            {cv.experience.map((experience, index) => (
+            {cv.experience.filter(e => !e.hidden).map((experience, index) => (
               <div key={index} className="">
                 <div className='mb-5'>
                   {experience.image ? (

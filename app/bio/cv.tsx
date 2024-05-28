@@ -89,6 +89,7 @@ type CV = {
   title: string;
   summary: JSX.Element;
   contact: Contact;
+  useHacks: boolean;
   showSkillGroupingYears: boolean,
   showExperienceLength: boolean,
   skillGrouping: string[][];
@@ -114,6 +115,7 @@ const cv: CV = {
     url: "https://andrewvos.com",
     urlTitle: "andrewvos.com",
   },
+  useHacks: true,
   showSkillGroupingYears: false,
   showExperienceLength: false,
   skillGrouping: [

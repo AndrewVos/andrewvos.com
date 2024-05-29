@@ -28,14 +28,17 @@ const parseDate = (date: string) => {
 
 type Experience = {
   name: string;
-  type: "contract" | "permanent" | "contract & permanent" | "freelance",
   hidden: boolean,
-  image?: string;
   from: Date;
-  to: Date;
+  to?: Date;
   description?: string;
   things?: string[];
   links?: { title: string; href: string }[];
+}
+
+type WorkExperience = Experience & {
+  image?: string;
+  type: "contract" | "permanent" | "contract & permanent" | "freelance",
   agency?: { name: string; image: string };
   tech: {
     ["Go"]: boolean;
@@ -73,8 +76,14 @@ type Experience = {
     ["ElasticSearch"]: boolean;
     ["Tailwind CSS"]: boolean;
     ["Bootstrap"]: boolean;
+    ["Midjourney"]: boolean;
+    ["ChatGPT"]: boolean;
+    ["AI"]: boolean;
   };
 };
+
+type Break = Experience & {
+}
 
 type Contact = {
   phone?: string;
@@ -96,7 +105,7 @@ type CV = {
   skillGrouping: string[][];
   softSkills: string[];
   achievements: string[];
-  experience: Experience[];
+  experience: (WorkExperience | Break)[];
 };
 
 const cv: CV = {
@@ -149,6 +158,61 @@ const cv: CV = {
   ],
   experience: [
     {
+      name: "Andrew Vos Limited",
+      type: "freelance",
+      hidden: false,
+      image: "/images/logos/andrew-vos-limited.png",
+      from: parseDate("2024-01-01"),
+      description: "Building a colouring app/game for iOS using AI for generating images and text content.",
+      tech: {
+        Go: false,
+        CSS: true,
+        HTML: true,
+        TypeScript: true,
+        Ruby: false,
+        "Node.js": true,
+        Java: false,
+        JavaScript: true,
+        "C#": false,
+        PHP: false,
+        Bash: false,
+        Docker: false,
+        AWS: false,
+        Azure: false,
+        "Digital Ocean": false,
+        Heroku: false,
+        React: true,
+        "Next.js": true,
+        "Ruby on Rails": false,
+        "ASP.NET": false,
+        Android: false,
+        iOS: true,
+        Agile: false,
+        "Load Testing": false,
+        "Continuous Delivery": false,
+        "Continuous Integration": false,
+        "Unit Testing": false,
+        "Acceptance Testing": false,
+        Postgres: false,
+        MySQL: false,
+        MSSQL: false,
+        GraphQL: false,
+        ElasticSearch: false,
+        "Tailwind CSS": true,
+        Bootstrap: false,
+        AI: true,
+        Midjourney: true,
+        ChatGPT: true,
+      }
+    },
+    {
+      name: "Career Break",
+      from: parseDate("2023-07-01"),
+      to: parseDate("2024-01-01"),
+      description: "Taking a break to work on personal projects and travel.",
+      hidden: false,
+    },
+    {
       name: "Quidco",
       type: "contract",
       hidden: false,
@@ -200,6 +264,9 @@ const cv: CV = {
         ElasticSearch: false,
         "Tailwind CSS": false,
         Bootstrap: false,
+        AI: false,
+        Midjourney: false,
+        ChatGPT: false,
       },
     },
     {
@@ -233,7 +300,7 @@ const cv: CV = {
         },
         {
           title: "Compare Accounts",
-          href: "https://tools.moneyhelper.org.uk/en/compare-accounts",
+          href: "https://tools.moneyhelper.org.uk/en/use-our-compare-bank-account-fees-and-charges-tool",
         },
         {
           title: "Debt Advice Locator",
@@ -280,6 +347,9 @@ const cv: CV = {
         ElasticSearch: false,
         "Tailwind CSS": true,
         Bootstrap: true,
+        AI: false,
+        Midjourney: false,
+        ChatGPT: false,
       },
     },
     {
@@ -328,6 +398,9 @@ const cv: CV = {
         ElasticSearch: false,
         "Tailwind CSS": false,
         Bootstrap: false,
+        AI: false,
+        Midjourney: false,
+        ChatGPT: false,
       },
     },
     {
@@ -383,6 +456,9 @@ const cv: CV = {
         ElasticSearch: false,
         "Tailwind CSS": true,
         Bootstrap: true,
+        AI: false,
+        Midjourney: false,
+        ChatGPT: false,
       },
     },
     {
@@ -436,6 +512,9 @@ const cv: CV = {
         ElasticSearch: false,
         "Tailwind CSS": false,
         Bootstrap: false,
+        AI: false,
+        Midjourney: false,
+        ChatGPT: false,
       },
     },
     {
@@ -489,6 +568,9 @@ const cv: CV = {
         ElasticSearch: false,
         "Tailwind CSS": false,
         Bootstrap: false,
+        AI: false,
+        Midjourney: false,
+        ChatGPT: false,
       },
     },
     {
@@ -541,6 +623,9 @@ const cv: CV = {
         ElasticSearch: false,
         "Tailwind CSS": false,
         Bootstrap: true,
+        AI: false,
+        Midjourney: false,
+        ChatGPT: false,
       },
     },
     {
@@ -595,6 +680,9 @@ const cv: CV = {
         ElasticSearch: false,
         "Tailwind CSS": false,
         Bootstrap: false,
+        AI: false,
+        Midjourney: false,
+        ChatGPT: false,
       },
     },
     {
@@ -656,6 +744,9 @@ const cv: CV = {
         ElasticSearch: false,
         "Tailwind CSS": false,
         Bootstrap: false,
+        AI: false,
+        Midjourney: false,
+        ChatGPT: false,
       },
     },
     {
@@ -703,6 +794,9 @@ const cv: CV = {
         ElasticSearch: false,
         "Tailwind CSS": false,
         Bootstrap: true,
+        AI: false,
+        Midjourney: false,
+        ChatGPT: false,
       },
     },
     {
@@ -750,6 +844,9 @@ const cv: CV = {
         ElasticSearch: false,
         "Tailwind CSS": false,
         Bootstrap: true,
+        AI: false,
+        Midjourney: false,
+        ChatGPT: false,
       },
     },
     {
@@ -807,6 +904,9 @@ const cv: CV = {
         ElasticSearch: true,
         "Tailwind CSS": false,
         Bootstrap: true,
+        AI: false,
+        Midjourney: false,
+        ChatGPT: false,
       },
     },
     {
@@ -857,6 +957,9 @@ const cv: CV = {
         ElasticSearch: false,
         "Tailwind CSS": false,
         Bootstrap: false,
+        AI: false,
+        Midjourney: false,
+        ChatGPT: false,
       },
     },
     {
@@ -914,6 +1017,9 @@ const cv: CV = {
         ElasticSearch: false,
         "Tailwind CSS": false,
         Bootstrap: false,
+        AI: false,
+        Midjourney: false,
+        ChatGPT: false,
       },
     },
     {
@@ -971,6 +1077,9 @@ const cv: CV = {
         ElasticSearch: false,
         "Tailwind CSS": false,
         Bootstrap: false,
+        AI: false,
+        Midjourney: false,
+        ChatGPT: false,
       },
     },
     {
@@ -1020,6 +1129,9 @@ const cv: CV = {
         ElasticSearch: false,
         "Tailwind CSS": false,
         Bootstrap: false,
+        AI: false,
+        Midjourney: false,
+        ChatGPT: false,
       },
     },
     {
@@ -1069,6 +1181,9 @@ const cv: CV = {
         ElasticSearch: false,
         "Tailwind CSS": false,
         Bootstrap: false,
+        AI: false,
+        Midjourney: false,
+        ChatGPT: false,
       },
     },
     {
@@ -1114,6 +1229,9 @@ const cv: CV = {
         ElasticSearch: false,
         "Tailwind CSS": false,
         Bootstrap: false,
+        AI: false,
+        Midjourney: false,
+        ChatGPT: false,
       },
     },
     {
@@ -1163,6 +1281,9 @@ const cv: CV = {
         ElasticSearch: true,
         "Tailwind CSS": true,
         Bootstrap: true,
+        AI: false,
+        Midjourney: false,
+        ChatGPT: false,
       },
     },
   ]

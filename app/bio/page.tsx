@@ -19,9 +19,11 @@ export default function Bio() {
     let days = 0
 
     cv.experience.forEach(experience => {
+      if (!("tech" in experience)) return
+
       Object.entries(experience.tech).forEach(([key, usedTech]: [string, boolean]) => {
         if (key == tech && usedTech) {
-          days = days + differenceInDays(experience.to, experience.from)
+          days = days + differenceInDays(experience.to || new Date(), experience.from)
         }
       })
     })
@@ -132,7 +134,6 @@ export default function Bio() {
             </ul>
           </Prose>
         )}
-
         {cv.achievements && (
           <Prose>
             <h3>
@@ -154,13 +155,13 @@ export default function Bio() {
             {cv.experience.filter(e => !e.hidden).map((experience, index) => (
               <div key={index} className="">
                 <div className='mb-5 flex gap-5'>
-                  {experience.agency && (
+                  {"agency" in experience && experience.agency && (
                     <div>
                       <Image className="max-w-full sm:max-w-[200px]" priority alt={`${experience.agency.name} logo`} src={experience.agency.image} width={500} height={500} />
                     </div>
                   )}
 
-                  {experience.image ? (
+                  {"image" in experience && experience.image ? (
                     <div>
                       <Image className="max-w-full sm:max-w-[200px]" priority alt={`${experience.name} logo`} src={experience.image} width={500} height={500} />
                     </div>
@@ -173,16 +174,17 @@ export default function Bio() {
 
                 <div className=''>
                   <div className='mb-5 space-x-2'>
-                    <span className='text-lg border-blue-400 bg-blue-100 text-blue-700 font-bold px-2'>
-                      {experience.type}
-                    </span>
+                    {"type" in experience && experience.type && (
+                      <span className='text-lg border-blue-400 bg-blue-100 text-blue-700 font-bold px-2'>
+                        {experience.type}
+                      </span>
+                    )}
                     <span className='font-bold text-gray-700 text-lg'>
                       {formatDate(experience.from)} to {experience.to ? formatDate(experience.to) : 'Present'}
-                      {cv.showExperienceLength && (
+                      {cv.showExperienceLength && experience.to && (
                         <span>&nbsp;{formatDistance(experience.from, experience.to)}</span>
                       )}
                     </span>
-
                   </div>
 
                   <div>
@@ -212,7 +214,7 @@ export default function Bio() {
                       </ul>
                     )}
 
-                    {experience.tech && (
+                    {"tech" in experience && experience.tech && (
                       <div>
                         {
                           Object.entries(experience.tech).map(([key, value]) => (

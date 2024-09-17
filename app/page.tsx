@@ -25,9 +25,10 @@ export default function Home() {
               </Link>
             </div>
             <div>
-              <Link href="/chat" className="text-3xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white">
+              <Link className='text-3xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white' href="mailto:andrew@andrewvos.com">Contact</Link>
+              {/* <Link href="/chat" className="text-3xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white">
                 Contact
-              </Link>
+              </Link> */}
             </div>
           </div>
           <div className="md:flex md:space-x-4 animate-jump-in animate-delay-[800ms]">

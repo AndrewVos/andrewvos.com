@@ -25,7 +25,9 @@ export default function Home() {
               </Link>
             </div>
             <div>
-              <Link className='text-3xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white' href="mailto:andrew@andrewvos.com">Contact</Link>
+              <Link className='text-3xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white' href="mailto:andrew@andrewvos.com">
+                Contact
+              </Link>
               {/* <Link href="/chat" className="text-3xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white">
                 Contact
               </Link> */}
@@ -34,7 +36,7 @@ export default function Home() {
           <div className="md:flex md:space-x-4 animate-jump-in animate-delay-[800ms]">
             <div>
               <Link href="/books" className="text-2xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white">
-                Bookshelf
+                Book Reviews
               </Link>
             </div>
             <div>
@@ -42,6 +44,18 @@ export default function Home() {
                 Projects
               </Link>
             </div>
+          </div>
+          <div className="md:flex md:space-x-4 animate-jump-in animate-delay-[800ms]">
+            <div className='text-2xl uppercase font-bold px-1 text-gray-700'>
+              Games
+            </div>
+
+            <Link href="https://color.vos.lol" className="text-2xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white">
+              Color
+            </Link>
+            <Link href="https://stackable.vos.lol" className="text-2xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white">
+              Stackable
+            </Link>
           </div>
         </div>
       </div>

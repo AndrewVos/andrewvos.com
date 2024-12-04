@@ -1,5 +1,215 @@
 [
   {
+    "title": "Primordial Threat",
+    "rating": 4,
+    "author": "M.A. Rothman",
+    "author_url": "https://www.goodreads.com/author/show/18215409.M_A_Rothman",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1671511183i/72402603.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/72402603-primordial-threat",
+    "image_path": "/images/books/primordial-threat.jpg"
+  },
+  {
+    "title": "Beacon 23",
+    "rating": 4,
+    "author": "Hugh Howey",
+    "author_url": "https://www.goodreads.com/author/show/3064305.Hugh_Howey",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1444683708i/26771521.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/26771521-beacon-23",
+    "image_path": "/images/books/beacon-23.jpg"
+  },
+  {
+    "title": "The Light of All That Falls",
+    "rating": 3,
+    "author": "James Islington",
+    "author_url": "https://www.goodreads.com/author/show/8427407.James_Islington",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1506350738i/36111098.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/36111098-the-light-of-all-that-falls",
+    "image_path": "/images/books/the-light-of-all-that-falls.jpg"
+  },
+  {
+    "title": "An Echo of Things to Come",
+    "rating": 3,
+    "author": "James Islington",
+    "author_url": "https://www.goodreads.com/author/show/8427407.James_Islington",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1487139774i/32498052.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/32498052-an-echo-of-things-to-come",
+    "image_path": "/images/books/an-echo-of-things-to-come.jpg"
+  },
+  {
+    "title": "The Shadow of What Was Lost",
+    "rating": 3,
+    "author": "James Islington",
+    "author_url": "https://www.goodreads.com/author/show/8427407.James_Islington",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1680459592i/22878967.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/22878967-the-shadow-of-what-was-lost",
+    "image_path": "/images/books/the-shadow-of-what-was-lost.jpg"
+  },
+  {
+    "title": "The Will of the Many",
+    "rating": 4,
+    "author": "James Islington",
+    "author_url": "https://www.goodreads.com/author/show/8427407.James_Islington",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1670363463i/58416952.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/58416952-the-will-of-the-many",
+    "image_path": "/images/books/the-will-of-the-many.jpg"
+  },
+  {
+    "title": "Remarkably Bright Creatures",
+    "rating": 5,
+    "author": "Shelby Van Pelt",
+    "author_url": "https://www.goodreads.com/author/show/21374195.Shelby_Van_Pelt",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1651600548i/58733693.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/58733693-remarkably-bright-creatures",
+    "image_path": "/images/books/remarkably-bright-creatures.jpg"
+  },
+  {
+    "title": "The Alchemist",
+    "rating": 3,
+    "author": "Paulo Coelho",
+    "author_url": "https://www.goodreads.com/author/show/566.Paulo_Coelho",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1654371463i/18144590.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/18144590-the-alchemist",
+    "image_path": "/images/books/the-alchemist.jpg"
+  },
+  {
+    "title": "The Adventures of Amina al-Sirafi",
+    "rating": 3,
+    "author": "Shannon Chakraborty",
+    "author_url": "https://www.goodreads.com/author/show/22491259.Shannon_Chakraborty",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1663869260i/61294937.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/61294937-the-adventures-of-amina-al-sirafi",
+    "image_path": "/images/books/the-adventures-of-amina-al-sirafi.jpg"
+  },
+  {
+    "title": "The Painted Man",
+    "rating": 1,
+    "author": "Peter V. Brett",
+    "author_url": "https://www.goodreads.com/author/show/1405152.Peter_V_Brett",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1217594228i/3322866.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/3322866-the-painted-man",
+    "image_path": "/images/books/the-painted-man.jpg"
+  },
+  {
+    "title": "Black Sun",
+    "rating": 4,
+    "author": "Rebecca Roanhorse",
+    "author_url": "https://www.goodreads.com/author/show/15862877.Rebecca_Roanhorse",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1601212809i/50892360.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/50892360-black-sun",
+    "image_path": "/images/books/black-sun.jpg"
+  },
+  {
+    "title": "The Housemaid",
+    "rating": 4,
+    "author": "Freida McFadden",
+    "author_url": "https://www.goodreads.com/author/show/7244758.Freida_McFadden",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1646534743i/60556912.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/60556912-the-housemaid",
+    "image_path": "/images/books/the-housemaid.jpg"
+  },
+  {
+    "title": "Yellowface",
+    "rating": 3,
+    "author": "R.F. Kuang",
+    "author_url": "https://www.goodreads.com/author/show/16820001.R_F_Kuang",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1671336608i/62047984.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/62047984-yellowface",
+    "image_path": "/images/books/yellowface.jpg"
+  },
+  {
+    "title": "Death's End",
+    "rating": 2,
+    "author": "Liu Cixin",
+    "author_url": "https://www.goodreads.com/author/show/5780686.Liu_Cixin",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1430330507i/25451264.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/25451264-death-s-end",
+    "image_path": "/images/books/deaths-end.jpg"
+  },
+  {
+    "title": "The Dark Forest",
+    "rating": 3,
+    "author": "Liu Cixin",
+    "author_url": "https://www.goodreads.com/author/show/5780686.Liu_Cixin",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1412064931i/23168817.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/23168817-the-dark-forest",
+    "image_path": "/images/books/the-dark-forest.jpg"
+  },
+  {
+    "title": "The Three-Body Problem",
+    "rating": 4,
+    "author": "Liu Cixin",
+    "author_url": "https://www.goodreads.com/author/show/5780686.Liu_Cixin",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1415428227i/20518872.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/20518872-the-three-body-problem",
+    "image_path": "/images/books/the-three-body-problem.jpg"
+  },
+  {
+    "title": "Relic",
+    "rating": 3,
+    "author": "Alan Dean Foster",
+    "author_url": "https://www.goodreads.com/author/show/11735.Alan_Dean_Foster",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1517523611i/36960178.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/36960178-relic",
+    "image_path": "/images/books/relic.jpg"
+  },
+  {
+    "title": "The Shadow of the Gods",
+    "rating": 3,
+    "author": "John Gwynne",
+    "author_url": "https://www.goodreads.com/author/show/5898355.John_Gwynne",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1610375894i/52694527.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/52694527-the-shadow-of-the-gods",
+    "image_path": "/images/books/the-shadow-of-the-gods.jpg"
+  },
+  {
+    "title": "Spinning Silver",
+    "rating": 3,
+    "author": "Naomi Novik",
+    "author_url": "https://www.goodreads.com/author/show/8730.Naomi_Novik",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1513872748i/36896898.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/36896898-spinning-silver",
+    "image_path": "/images/books/spinning-silver.jpg"
+  },
+  {
+    "title": "The Goblin Emperor",
+    "rating": 3,
+    "author": "Katherine Addison",
+    "author_url": "https://www.goodreads.com/author/show/6949698.Katherine_Addison",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1373039517i/17910048.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/17910048-the-goblin-emperor",
+    "image_path": "/images/books/the-goblin-emperor.jpg"
+  },
+  {
+    "title": "Spaceman of Bohemia",
+    "rating": 5,
+    "author": "Jaroslav Kalfar",
+    "author_url": "https://www.goodreads.com/author/show/6942198.Jaroslav_Kalfar",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1475854047i/29567845.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/29567845-spaceman-of-bohemia",
+    "image_path": "/images/books/spaceman-of-bohemia.jpg"
+  },
+  {
     "title": "Starling House",
     "rating": 5,
     "recommended": true,

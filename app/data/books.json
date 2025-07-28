@@ -1,5 +1,359 @@
 [
   {
+    "title": "The Motorcycle Diaries: Notes on a Latin American Journey",
+    "rating": 1,
+    "author": "Ernesto Che Guevara",
+    "author_url": "https://www.goodreads.com/author/show/76172.Ernesto_Che_Guevara",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1354902593i/172732.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/172732.The_Motorcycle_Diaries",
+    "image_path": "/images/books/the-motorcycle-diaries-notes-on-a-latin-american-journey.jpg"
+  },
+  {
+    "title": "The Hike",
+    "rating": 3,
+    "author": "Lucy Clarke",
+    "author_url": "https://www.goodreads.com/author/show/6905137.Lucy_Clarke",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1669914638i/61424779.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/61424779-the-hike",
+    "image_path": "/images/books/the-hike.jpg"
+  },
+  {
+    "title": "Between Two Fires",
+    "rating": 1,
+    "author": "Christopher Buehlman",
+    "author_url": "https://www.goodreads.com/author/show/4712375.Christopher_Buehlman",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1710293039i/13543121.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/13543121-between-two-fires",
+    "image_path": "/images/books/between-two-fires.jpg"
+  },
+  {
+    "title": "The Fox Wife",
+    "rating": 3,
+    "author": "Yangsze Choo",
+    "author_url": "https://www.goodreads.com/author/show/6547911.Yangsze_Choo",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1688161442i/127278666.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/127278666-the-fox-wife",
+    "image_path": "/images/books/the-fox-wife.jpg"
+  },
+  {
+    "title": "The Dead Cat Tail Assassins",
+    "rating": 3,
+    "author": "P. Djèlí Clark",
+    "author_url": "https://www.goodreads.com/author/show/15117586.P_Dj_l_Clark",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1684868626i/127305606.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/127305606-the-dead-cat-tail-assassins",
+    "image_path": "/images/books/the-dead-cat-tail-assassins.jpg"
+  },
+  {
+    "title": "Outland",
+    "rating": 3,
+    "author": "Dennis E. Taylor",
+    "author_url": "https://www.goodreads.com/author/show/12130438.Dennis_E_Taylor",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1420705827i/24292598.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/24292598-outland",
+    "image_path": "/images/books/outland.jpg"
+  },
+  {
+    "title": "The Greatship",
+    "rating": 3,
+    "author": "Robert Reed",
+    "author_url": "https://www.goodreads.com/author/show/57814.Robert_Reed",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1392002066i/18668102.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/18668102-the-greatship",
+    "image_path": "/images/books/the-greatship.jpg"
+  },
+  {
+    "title": "Adrift: Seventy-Six Days Lost at Sea",
+    "rating": 4,
+    "author": "Steven Callahan",
+    "author_url": "https://www.goodreads.com/author/show/63760.Steven_Callahan",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1356596323i/121410.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/121410.Adrift",
+    "image_path": "/images/books/adrift-seventy-six-days-lost-at-sea.jpg"
+  },
+  {
+    "title": "The Fourth Consort",
+    "rating": 3,
+    "author": "Edward Ashton",
+    "author_url": "https://www.goodreads.com/author/show/10864410.Edward_Ashton",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1716862128i/211003694.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/211003694-the-fourth-consort",
+    "image_path": "/images/books/the-fourth-consort.jpg"
+  },
+  {
+    "title": "Ninth House",
+    "rating": 3,
+    "author": "Leigh Bardugo",
+    "author_url": "https://www.goodreads.com/author/show/4575289.Leigh_Bardugo",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1553102141i/43263680.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/43263680-ninth-house",
+    "image_path": "/images/books/ninth-house.jpg"
+  },
+  {
+    "title": "Tesla and the Pyramid",
+    "rating": 4,
+    "author": "Jenner Brown",
+    "author_url": "https://www.goodreads.com/author/show/53154519.Jenner_Brown",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1731835246i/221592339.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/221592339-tesla-and-the-pyramid",
+    "image_path": "/images/books/tesla-and-the-pyramid.jpg"
+  },
+  {
+    "title": "Machine Vendetta",
+    "rating": 3,
+    "author": "Alastair Reynolds",
+    "author_url": "https://www.goodreads.com/author/show/51204.Alastair_Reynolds",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1675082567i/75593499.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/75593499-machine-vendetta",
+    "image_path": "/images/books/machine-vendetta.jpg"
+  },
+  {
+    "title": "Elysium Fire",
+    "rating": 3,
+    "author": "Alastair Reynolds",
+    "author_url": "https://www.goodreads.com/author/show/51204.Alastair_Reynolds",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1504724986i/35601772.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/35601772-elysium-fire",
+    "image_path": "/images/books/elysium-fire.jpg"
+  },
+  {
+    "title": "Aurora Rising",
+    "rating": 4,
+    "author": "Alastair Reynolds",
+    "author_url": "https://www.goodreads.com/author/show/51204.Alastair_Reynolds",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1501066815i/35830705.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/35830705-aurora-rising",
+    "image_path": "/images/books/aurora-rising.jpg"
+  },
+  {
+    "title": "Zen and the Art of Motorcycle Maintenance: An Inquiry Into Values",
+    "rating": 5,
+    "author": "Robert M. Pirsig",
+    "author_url": "https://www.goodreads.com/author/show/401.Robert_M_Pirsig",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1410136019i/629.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/629.Zen_and_the_Art_of_Motorcycle_Maintenance",
+    "image_path": "/images/books/zen-and-the-art-of-motorcycle-maintenance-an-inquiry-into-values.jpg",
+    "recommended": true
+  },
+  {
+    "title": "The Once and Future Witches",
+    "rating": 3,
+    "author": "Alix E. Harrow",
+    "author_url": "https://www.goodreads.com/author/show/9823112.Alix_E_Harrow",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1582634494i/49504061.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/49504061-the-once-and-future-witches",
+    "image_path": "/images/books/the-once-and-future-witches.jpg"
+  },
+  {
+    "title": "Galatea",
+    "rating": 2,
+    "author": "Madeline Miller",
+    "author_url": "https://www.goodreads.com/author/show/176372.Madeline_Miller",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1708135971i/18162954.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/18162954-galatea",
+    "image_path": "/images/books/galatea.jpg"
+  },
+  {
+    "title": "Circe",
+    "rating": 5,
+    "author": "Madeline Miller",
+    "author_url": "https://www.goodreads.com/author/show/176372.Madeline_Miller",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1565909496i/35959740.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/35959740-circe",
+    "image_path": "/images/books/circe.jpg"
+  },
+  {
+    "title": "The Song of Achilles",
+    "rating": 4,
+    "author": "Madeline Miller",
+    "author_url": "https://www.goodreads.com/author/show/176372.Madeline_Miller",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1357177533i/13623848.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/13623848-the-song-of-achilles",
+    "image_path": "/images/books/the-song-of-achilles.jpg"
+  },
+  {
+    "title": "White Death",
+    "rating": 2,
+    "author": "Clive Cussler",
+    "author_url": "https://www.goodreads.com/author/show/18411.Clive_Cussler",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1415585941i/85736.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/85736.White_Death",
+    "image_path": "/images/books/white-death.jpg"
+  },
+  {
+    "title": "Fire Ice",
+    "rating": 3,
+    "author": "Clive Cussler",
+    "author_url": "https://www.goodreads.com/author/show/18411.Clive_Cussler",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1390013774i/97595.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/97595.Fire_Ice",
+    "image_path": "/images/books/fire-ice.jpg"
+  },
+  {
+    "title": "Blue Gold",
+    "rating": 3,
+    "author": "Clive Cussler",
+    "author_url": "https://www.goodreads.com/author/show/18411.Clive_Cussler",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348810769i/823939.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/823939.Blue_Gold",
+    "image_path": "/images/books/blue-gold.jpg"
+  },
+  {
+    "title": "Serpent",
+    "rating": 3,
+    "author": "Clive Cussler",
+    "author_url": "https://www.goodreads.com/author/show/18411.Clive_Cussler",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1351390241i/41709.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/41709.Serpent",
+    "image_path": "/images/books/serpent.jpg"
+  },
+  {
+    "title": "The Shining City",
+    "rating": 3,
+    "author": "Michael Robertson",
+    "author_url": "https://www.goodreads.com/author/show/7102623.Michael_Robertson",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1711131969i/210271530.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/210271530-the-shining-city",
+    "image_path": "/images/books/the-shining-city.jpg"
+  },
+  {
+    "title": "Revolution",
+    "rating": 3,
+    "author": "Michael Robertson",
+    "author_url": "https://www.goodreads.com/author/show/7102623.Michael_Robertson",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1696950526i/198608991.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/198608991-revolution",
+    "image_path": "/images/books/revolution.jpg"
+  },
+  {
+    "title": "An Interesting Alliance",
+    "rating": 3,
+    "author": "Michael Robertson",
+    "author_url": "https://www.goodreads.com/author/show/7102623.Michael_Robertson",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1682979760i/141784422.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/141784422-an-interesting-alliance",
+    "image_path": "/images/books/an-interesting-alliance.jpg"
+  },
+  {
+    "title": "Blackout",
+    "rating": 3,
+    "author": "Michael Robertson",
+    "author_url": "https://www.goodreads.com/author/show/7102623.Michael_Robertson",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1674069144i/80079794.jpg",
+    "read_year": 2025,
+    "url": "https://www.goodreads.com/book/show/80079794-blackout",
+    "image_path": "/images/books/blackout.jpg"
+  },
+  {
+    "title": "This World of Corpses",
+    "rating": 3,
+    "author": "Michael Robertson",
+    "author_url": "https://www.goodreads.com/author/show/7102623.Michael_Robertson",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1668116475i/63273121.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/63273121-this-world-of-corpses",
+    "image_path": "/images/books/this-world-of-corpses.jpg"
+  },
+  {
+    "title": "Trapped",
+    "rating": 3,
+    "author": "Michael Robertson",
+    "author_url": "https://www.goodreads.com/author/show/7102623.Michael_Robertson",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1650319657i/60839823.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/60839823-trapped",
+    "image_path": "/images/books/trapped.jpg"
+  },
+  {
+    "title": "It Only Takes One",
+    "rating": 3,
+    "author": "Michael Robertson",
+    "author_url": "https://www.goodreads.com/author/show/7102623.Michael_Robertson",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1636587173i/59588761.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/59588761-it-only-takes-one",
+    "image_path": "/images/books/it-only-takes-one.jpg"
+  },
+  {
+    "title": "Extinction",
+    "rating": 3,
+    "author": "Douglas Preston",
+    "author_url": "https://www.goodreads.com/author/show/12577.Douglas_Preston",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1684819571i/65213662.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/65213662-extinction",
+    "image_path": "/images/books/extinction.jpg"
+  },
+  {
+    "title": "Moon of the Turning Leaves",
+    "rating": 5,
+    "author": "Waubgeshig Rice",
+    "author_url": "https://www.goodreads.com/author/show/5129022.Waubgeshig_Rice",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1697721497i/167067538.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/167067538-moon-of-the-turning-leaves",
+    "image_path": "/images/books/moon-of-the-turning-leaves.jpg",
+    "recommended": true
+  },
+  {
+    "title": "I Hope This Finds You Well",
+    "rating": 5,
+    "author": "Natalie Sue",
+    "author_url": "https://www.goodreads.com/author/show/22714951.Natalie_Sue",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1729545169i/200987323.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/200987323-i-hope-this-finds-you-well",
+    "image_path": "/images/books/i-hope-this-finds-you-well.jpg",
+    "recommended": true
+  },
+  {
+    "title": "Moon of the Crusted Snow",
+    "rating": 5,
+    "author": "Waubgeshig Rice",
+    "author_url": "https://www.goodreads.com/author/show/5129022.Waubgeshig_Rice",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1521066996i/39082248.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/39082248-moon-of-the-crusted-snow",
+    "image_path": "/images/books/moon-of-the-crusted-snow.jpg",
+    "recommended": true
+  },
+  {
+    "title": "Freedom's Last Gasp: A Hard Science Fiction Thriller",
+    "rating": 3,
+    "author": "M.A. Rothman",
+    "author_url": "https://www.goodreads.com/author/show/18215409.M_A_Rothman",
+    "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1579505947i/50550758.jpg",
+    "read_year": 2024,
+    "url": "https://www.goodreads.com/book/show/50550758-freedom-s-last-gasp",
+    "image_path": "/images/books/freedoms-last-gasp-a-hard-science-fiction-thriller.jpg"
+  },
+  {
     "title": "Primordial Threat",
     "rating": 4,
     "author": "M.A. Rothman",
@@ -67,7 +421,8 @@
     "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1651600548i/58733693.jpg",
     "read_year": 2024,
     "url": "https://www.goodreads.com/book/show/58733693-remarkably-bright-creatures",
-    "image_path": "/images/books/remarkably-bright-creatures.jpg"
+    "image_path": "/images/books/remarkably-bright-creatures.jpg",
+    "recommended": true
   },
   {
     "title": "The Alchemist",
@@ -207,7 +562,8 @@
     "image_url": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1475854047i/29567845.jpg",
     "read_year": 2024,
     "url": "https://www.goodreads.com/book/show/29567845-spaceman-of-bohemia",
-    "image_path": "/images/books/spaceman-of-bohemia.jpg"
+    "image_path": "/images/books/spaceman-of-bohemia.jpg",
+    "recommended": true
   },
   {
     "title": "Starling House",

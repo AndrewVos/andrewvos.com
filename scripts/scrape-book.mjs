@@ -21,10 +21,11 @@ const retrieveBook = async () => {
     queryString.stringify({
       query: bookResponse.value,
     });
+  console.log(url);
 
   const browser = await puppeteer.launch({
-    headless: "new",
-    defaultViewport: null,
+    headless: false,
+    // defaultViewport: null,
   });
 
   const searchPage = await browser.newPage();
@@ -34,13 +35,13 @@ const retrieveBook = async () => {
 
   const results = await searchPage.evaluate(() => {
     const links = [...document.querySelectorAll(".tableList a.bookTitle")];
-
     return links.map((link) => ({
       title: link.text.trim(),
       href: `https://www.goodreads.com${link.getAttribute("href")}`,
     }));
   });
 
+  console.log(results);
   if (results.length === 0) {
     console.error("No results");
     process.exit(1);

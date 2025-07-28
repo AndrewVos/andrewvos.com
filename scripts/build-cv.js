@@ -1,14 +1,22 @@
 const puppeteer = require("puppeteer");
+const chromium = require("@sparticuz/chromium");
 
 (async () => {
+  const viewport = {
+    deviceScaleFactor: 1,
+    hasTouch: false,
+    height: 1080,
+    isLandscape: true,
+    isMobile: false,
+    width: 1920,
+  };
   const browser = await puppeteer.launch({
-    headless: true,
-    args: [
-      "--no-sandbox",
-      "--disable-setuid-sandbox",
-      "--font-render-hinting=none",
-    ],
+    args: puppeteer.defaultArgs({ args: chromium.args, headless: "shell" }),
+    defaultViewport: viewport,
+    executablePath: await chromium.executablePath(),
+    headless: "shell",
   });
+
   const page = await browser.newPage();
 
   // https://stackoverflow.com/a/61278565

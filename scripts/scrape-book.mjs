@@ -1,118 +1,134 @@
-import puppeteer from "puppeteer";
+import { chromium } from "playwright";
 import queryString from "query-string";
-import prompts from "prompts";
+import inquirer from "inquirer";
 import fs from "fs";
 import slug from "slug";
 import download from "download";
 
-const retrieveBook = async () => {
-  const bookResponse = await prompts({
-    type: "text",
-    name: "value",
-    message: "Search for a book",
-  });
+const GOODREADS_URL = "https://www.goodreads.com";
 
-  if (!bookResponse.value) {
-    return;
-  }
-
+const searchBooks = async (query) => {
   const url =
-    "https://www.goodreads.com/search?" +
+    `${GOODREADS_URL}/search?` +
     queryString.stringify({
-      query: bookResponse.value,
+      query,
     });
-  console.log(url);
 
-  const browser = await puppeteer.launch({
-    headless: false,
-    // defaultViewport: null,
-  });
+  const response = await fetch(url);
+  const html = await response.text();
+  return [...html.matchAll(/<a class="bookTitle" href="([^"]+)">([\s\S]*?)<\/a>/g)]
+    .map(([, href, titleHtml]) => ({
+      title: titleHtml.replace(/<[^>]*>/g, "").trim(),
+      value: `${GOODREADS_URL}${href}`,
+    }))
+    .filter((result) => result.title)
+    .slice(0, 20);
+};
 
-  const searchPage = await browser.newPage();
-  await searchPage.goto(url, {
-    waitUntil: "domcontentloaded",
-  });
-
-  const results = await searchPage.evaluate(() => {
-    const links = [...document.querySelectorAll(".tableList a.bookTitle")];
-    return links.map((link) => ({
-      title: link.text.trim(),
-      href: `https://www.goodreads.com${link.getAttribute("href")}`,
-    }));
-  });
-
-  console.log(results);
-  if (results.length === 0) {
-    console.error("No results");
-    process.exit(1);
-  }
-
-  const bookChoiceResponse = await prompts([
+const retrieveBook = async () => {
+  const { searchQuery } = await inquirer.prompt([
     {
-      type: "select",
-      name: "value",
-      message: "Choose a result",
-      choices: results.map((r) => ({
-        title: r.title,
-        value: r.href,
-      })),
-      initial: 0,
+      type: "input",
+      name: "searchQuery",
+      message: "Search for a book",
     },
   ]);
 
-  if (bookChoiceResponse.value) {
-    const bookPage = await browser.newPage();
-    await bookPage.goto(bookChoiceResponse.value, {
-      waitUntil: "domcontentloaded",
-    });
-
-    await bookPage.waitForSelector("h1[data-testid=bookTitle]", {
-      visible: true,
-    });
-
-    await bookPage.waitForSelector(".BookCover img.ResponsiveImage");
-
-    const book = await bookPage.evaluate(() => {
-      const title = document.querySelector(
-        "h1[data-testid=bookTitle]"
-      ).innerText;
-      return {
-        title,
-        rating: 0,
-        author: document.querySelector(".ContributorLink__name").innerText,
-        author_url: document
-          .querySelector("a.ContributorLink")
-          .getAttribute("href"),
-        image_url: document
-          .querySelector(".BookCover__image img")
-          .getAttribute("src"),
-        read_year: new Date().getFullYear(),
-      };
-    });
-
-    book.url = bookChoiceResponse.value.substring(
-      0,
-      bookChoiceResponse.value.indexOf("?")
-    );
-    book.image_path = `/images/books/${slug(book.title)}.jpg`;
-
-    const data = fs.readFileSync("app/data/books.json", "utf8");
-    const modified = [book].concat(JSON.parse(data));
-    fs.writeFileSync(
-      "app/data/books.json",
-      JSON.stringify(modified, null, "  ")
-    );
-
-    if (fs.existsSync(`public${book.image_path}`)) {
-      console.log(`Already downloaded...`);
-    } else {
-      console.log(`Downloading "${book.image_url}"`);
-    }
-
-    await download(book.image_url, "public/images/books", {
-      filename: `${slug(book.title)}.jpg`,
-    });
+  if (!searchQuery?.trim()) {
+    return;
   }
+
+  let results;
+  try {
+    results = await searchBooks(searchQuery.trim());
+  } catch (error) {
+    console.error(`Search failed: ${error.message}`);
+    return;
+  }
+
+  if (results.length === 0) {
+    console.error("No results");
+    return;
+  }
+
+  const { selectedBookUrl } = await inquirer.prompt([
+    {
+      type: "list",
+      name: "selectedBookUrl",
+      message: "Choose a result",
+      choices: results.map((result) => ({
+        name: result.title,
+        value: result.value,
+      })),
+    },
+  ]);
+
+  if (!selectedBookUrl) {
+    return;
+  }
+
+  const { rating } = await inquirer.prompt([
+    {
+      type: "list",
+      name: "rating",
+      message: "Choose a star rating",
+      choices: [1, 2, 3, 4, 5].map((starCount) => ({
+        name: `${"★".repeat(starCount)}${"☆".repeat(5 - starCount)} (${starCount})`,
+        value: starCount,
+      })),
+      default: 5,
+    },
+  ]);
+
+  const browser = await chromium.launch({
+    headless: false,
+  });
+
+  const bookPage = await browser.newPage();
+  await bookPage.goto(selectedBookUrl, {
+    waitUntil: "domcontentloaded",
+  });
+
+  await bookPage.waitForSelector("h1[data-testid=bookTitle]", {
+    visible: true,
+  });
+
+  await bookPage.waitForSelector(".BookCover img.ResponsiveImage");
+
+  const book = await bookPage.evaluate(() => {
+    const title = document.querySelector(
+      "h1[data-testid=bookTitle]"
+    ).innerText;
+    return {
+      title,
+      rating: 0,
+      author: document.querySelector(".ContributorLink__name").innerText,
+      author_url: document.querySelector("a.ContributorLink").getAttribute("href"),
+      image_url: document.querySelector(".BookCover__image img").getAttribute("src"),
+      read_year: new Date().getFullYear(),
+    };
+  });
+
+  book.url = selectedBookUrl.split("?")[0];
+  book.rating = rating;
+  book.image_path = `/images/books/${slug(book.title)}.jpg`;
+
+  const data = fs.readFileSync("app/data/books.json", "utf8");
+  const modified = [book].concat(JSON.parse(data));
+  fs.writeFileSync(
+    "app/data/books.json",
+    JSON.stringify(modified, null, "  ")
+  );
+
+  if (fs.existsSync(`public${book.image_path}`)) {
+    console.log(`Already downloaded...`);
+  } else {
+    console.log(`Downloading "${book.image_url}"`);
+  }
+
+  await download(book.image_url, "public/images/books", {
+    filename: `${slug(book.title)}.jpg`,
+  });
 
   await browser.close();
 };
@@ -120,16 +136,16 @@ const retrieveBook = async () => {
 for (;;) {
   await retrieveBook();
 
-  const continueResponse = await prompts({
-    type: "toggle",
-    name: "value",
-    message: "Would you like to do another?",
-    initial: true,
-    active: "yes",
-    inactive: "no",
-  });
+  const { shouldContinue } = await inquirer.prompt([
+    {
+      type: "confirm",
+      name: "shouldContinue",
+      message: "Would you like to do another?",
+      default: true,
+    },
+  ]);
 
-  if (!continueResponse.value) {
+  if (!shouldContinue) {
     break;
   }
 }

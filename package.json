@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "scrape-book": "node scripts/scrape-book.mjs",
-    "renew-book-thumbnails": "node scripts/renew-book-thumbnails.mjs",
-    "build-cv": "npx puppeteer browsers install chrome && node ./scripts/build-cv.js",
-    "postbuild": "start-server-and-test start http://localhost:3000 build-cv"
+    "dev": "bun --bun next dev",
+    "build": "bun --bun next build",
+    "start": "bun --bun next start",
+    "lint": "bun --bun next lint",
+    "scrape-book": "bun run scripts/scrape-book.mjs",
+    "renew-book-thumbnails": "bun run scripts/renew-book-thumbnails.mjs",
+    "build-cv": "bunx puppeteer browsers install chrome && bun run ./scripts/build-cv.js",
+    "postbuild": "bunx start-server-and-test start http://localhost:3000 build-cv"
   },
   "dependencies": {
     "@next/font": "13.1.6",

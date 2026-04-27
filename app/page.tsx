@@ -45,9 +45,6 @@ export default function Home() {
             <Link href="https://color.vos.lol" className="text-2xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white">
               Color
             </Link>
-            <Link href="https://stackable.vos.lol" className="text-2xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white">
-              Stackable
-            </Link>
           </div>
         </div>
       </div>

@@ -52,6 +52,15 @@ describe("Bun server", () => {
     expect(styles.status).toBe(200);
     expect(styles.headers.get("content-type")).toContain("text/css");
   });
+
+  test("serves the built CV PDF", async () => {
+    const response = await fetch(`${baseUrl}/AndrewVos.pdf`);
+    const pdf = await response.text();
+
+    expect(response.status).toBe(200);
+    expect(response.headers.get("content-type")).toContain("application/pdf");
+    expect(pdf.startsWith("%PDF")).toBe(true);
+  });
 });
 
 async function waitForServer() {

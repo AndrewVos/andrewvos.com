@@ -160,6 +160,15 @@ const retrieveBook = async () => {
     },
   ]);
 
+  const { shouldRecommend } = await inquirer.prompt([
+    {
+      type: "confirm",
+      name: "shouldRecommend",
+      message: "Should this book be recommended?",
+      default: false,
+    },
+  ]);
+
   const browser = await chromium.launch({
     headless: false,
   });
@@ -192,6 +201,9 @@ const retrieveBook = async () => {
   book.rating = rating;
   book.read_year = readYear;
   book.image_path = `/images/books/${slug(book.title)}.jpg`;
+  if (shouldRecommend) {
+    book.recommended = true;
+  }
 
   const data = fs.readFileSync("app/data/books.json", "utf8");
   const modified = [book].concat(JSON.parse(data));

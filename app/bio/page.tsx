@@ -1,12 +1,6 @@
-import { Metadata } from 'next';
-import Link from "next/link"
-import Image from "next/image"
+import { Image, Link } from "../components"
 import { differenceInDays, format, formatDistance } from 'date-fns';
 import cv from "./cv"
-
-export const metadata: Metadata = {
-  title: 'Bio - andrewvos.com',
-};
 
 // Icons from here: https://icones.netlify.app/collection/mdi
 

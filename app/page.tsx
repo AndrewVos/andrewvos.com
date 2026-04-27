@@ -1,9 +1,4 @@
-import { Metadata } from 'next';
-import Link from "next/link"
-
-export const metadata: Metadata = {
-  title: 'andrewvos.com',
-};
+import { Link } from "./components"
 
 export default function Home() {
   return (
@@ -28,9 +23,6 @@ export default function Home() {
               <Link className='text-3xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white' href="mailto:andrew@andrewvos.com">
                 Contact
               </Link>
-              {/* <Link href="/chat" className="text-3xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white">
-                Contact
-              </Link> */}
             </div>
           </div>
           <div className="md:flex md:space-x-4 animate-jump-in animate-delay-[800ms]">
@@ -52,9 +44,6 @@ export default function Home() {
 
             <Link href="https://color.vos.lol" className="text-2xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white">
               Color
-            </Link>
-            <Link href="https://stackable.vos.lol" className="text-2xl uppercase font-bold px-1 hover:bg-black hover:text-white active:bg-black active:text-white">
-              Stackable
             </Link>
           </div>
         </div>

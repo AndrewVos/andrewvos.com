@@ -4,6 +4,7 @@ import inquirer from "inquirer";
 import fs from "fs";
 import slug from "slug";
 import download from "download";
+import { spawnSync } from "node:child_process";
 
 const GOODREADS_URL = "https://www.goodreads.com";
 
@@ -86,6 +87,17 @@ export const searchBooks = async (query) => {
   const response = await fetch(url);
   const html = await response.text();
   return parseSearchResults(html);
+};
+
+const rebuildClientBundle = () => {
+  console.log("Rebuilding client bundle...");
+  const result = spawnSync("bun", ["run", "build:client"], {
+    stdio: "inherit",
+  });
+
+  if (result.status !== 0) {
+    throw new Error("Failed to rebuild client bundle");
+  }
 };
 
 const retrieveBook = async () => {
@@ -199,6 +211,7 @@ const retrieveBook = async () => {
     "app/data/books.json",
     JSON.stringify(modified, null, "  ")
   );
+  rebuildClientBundle();
 
   if (fs.existsSync(`public${book.image_path}`)) {
     console.log(`Already downloaded...`);

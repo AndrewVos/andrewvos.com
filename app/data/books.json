@@ -1,5 +1,155 @@
 [
   {
+    "title": "The Lost World",
+    "rating": 3,
+    "author": "Michael Crichton",
+    "author_url": "https://www.goodreads.com/author/show/5194.Michael_Crichton",
+    "image_url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1386864575i/8650.jpg",
+    "url": "https://www.goodreads.com/book/show/8650.The_Lost_World",
+    "read_year": 2026,
+    "image_path": "/images/books/the-lost-world.jpg"
+  },
+  {
+    "title": "Jurassic Park by Michael Crichton Summary & Study Guide",
+    "rating": 4,
+    "author": "BookRags",
+    "author_url": "https://www.goodreads.com/author/show/4819027.BookRags",
+    "image_url": "https://dryofg8nmyqjw.cloudfront.net/images/no-cover.png",
+    "url": "https://www.goodreads.com/book/show/12868793-jurassic-park-by-michael-crichton-summary-study-guide",
+    "read_year": 2026,
+    "image_path": "/images/books/jurassic-park-by-michael-crichton-summary-study-guide.jpg"
+  },
+  {
+    "title": "Queen Demon",
+    "rating": 4,
+    "author": "Martha Wells",
+    "author_url": "https://www.goodreads.com/author/show/87305.Martha_Wells",
+    "image_url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1728497586i/217388171.jpg",
+    "url": "https://www.goodreads.com/book/show/217388171-queen-demon",
+    "read_year": 2026,
+    "image_path": "/images/books/queen-demon.jpg"
+  },
+  {
+    "title": "Primeval Fire",
+    "rating": 4,
+    "author": "C.T. Rwizi",
+    "author_url": "https://www.goodreads.com/author/show/20001283.C_T_Rwizi",
+    "image_url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1653328244i/58404366.jpg",
+    "url": "https://www.goodreads.com/book/show/58404366-primeval-fire",
+    "read_year": 2026,
+    "image_path": "/images/books/primeval-fire.jpg"
+  },
+  {
+    "title": "Requiem Moon",
+    "rating": 4,
+    "author": "C.T. Rwizi",
+    "author_url": "https://www.goodreads.com/author/show/20001283.C_T_Rwizi",
+    "image_url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1605155206i/53903537.jpg",
+    "url": "https://www.goodreads.com/book/show/53903537-requiem-moon",
+    "read_year": 2026,
+    "image_path": "/images/books/requiem-moon.jpg"
+  },
+  {
+    "title": "Scarlet Odyssey",
+    "rating": 3,
+    "author": "C.T. Rwizi",
+    "author_url": "https://www.goodreads.com/author/show/20001283.C_T_Rwizi",
+    "image_url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1591119963i/51072332.jpg",
+    "url": "https://www.goodreads.com/book/show/51072332-scarlet-odyssey",
+    "read_year": 2026,
+    "image_path": "/images/books/scarlet-odyssey.jpg"
+  },
+  {
+    "title": "Butter",
+    "rating": 4,
+    "author": "Asako Yuzuki",
+    "author_url": "https://www.goodreads.com/author/show/14071697.Asako_Yuzuki",
+    "image_url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1698348373i/200776812.jpg",
+    "url": "https://www.goodreads.com/book/show/200776812-butter",
+    "read_year": 2026,
+    "image_path": "/images/books/butter.jpg"
+  },
+  {
+    "title": "A Deepness in the Sky",
+    "rating": 3,
+    "author": "Vernor Vinge",
+    "author_url": "https://www.goodreads.com/author/show/44037.Vernor_Vinge",
+    "image_url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1217218691i/226004.jpg",
+    "url": "https://www.goodreads.com/book/show/226004.A_Deepness_in_the_Sky",
+    "read_year": 2026,
+    "image_path": "/images/books/a-deepness-in-the-sky.jpg"
+  },
+  {
+    "title": "A Fire Upon the Deep",
+    "rating": 3,
+    "author": "Vernor Vinge",
+    "author_url": "https://www.goodreads.com/author/show/44037.Vernor_Vinge",
+    "image_url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1728332458i/77711.jpg",
+    "url": "https://www.goodreads.com/book/show/77711.A_Fire_Upon_the_Deep",
+    "read_year": 2026,
+    "image_path": "/images/books/a-fire-upon-the-deep.jpg"
+  },
+  {
+    "title": "The Last Devil to Die",
+    "rating": 3,
+    "author": "Richard Osman",
+    "author_url": "https://www.goodreads.com/author/show/6173710.Richard_Osman",
+    "image_url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1680740298i/62226126.jpg",
+    "url": "https://www.goodreads.com/book/show/62226126-the-last-devil-to-die",
+    "read_year": 2025,
+    "image_path": "/images/books/the-last-devil-to-die.jpg"
+  },
+  {
+    "title": "The Bullet That Missed",
+    "rating": 4,
+    "author": "Richard Osman",
+    "author_url": "https://www.goodreads.com/author/show/6173710.Richard_Osman",
+    "image_url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1649424135i/58957615.jpg",
+    "url": "https://www.goodreads.com/book/show/58957615-the-bullet-that-missed",
+    "read_year": 2025,
+    "image_path": "/images/books/the-bullet-that-missed.jpg"
+  },
+  {
+    "title": "One Perfect Couple",
+    "rating": 4,
+    "author": "Ruth Ware",
+    "author_url": "https://www.goodreads.com/author/show/9013543.Ruth_Ware",
+    "image_url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1701877131i/199798953.jpg",
+    "url": "https://www.goodreads.com/book/show/199798953-one-perfect-couple",
+    "read_year": 2025,
+    "image_path": "/images/books/one-perfect-couple.jpg"
+  },
+  {
+    "title": "Dissolution",
+    "rating": 3,
+    "author": "Nicholas Binge",
+    "author_url": "https://www.goodreads.com/author/show/20135530.Nicholas_Binge",
+    "image_url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1728084015i/215362027.jpg",
+    "url": "https://www.goodreads.com/book/show/215362027-dissolution",
+    "read_year": 2025,
+    "image_path": "/images/books/dissolution.jpg"
+  },
+  {
+    "title": "The Black Cloud",
+    "rating": 3,
+    "author": "Fred Hoyle",
+    "author_url": "https://www.goodreads.com/author/show/199992.Fred_Hoyle",
+    "image_url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1457534017i/1246118.jpg",
+    "url": "https://www.goodreads.com/book/show/1246118.The_Black_Cloud",
+    "read_year": 2025,
+    "image_path": "/images/books/the-black-cloud.jpg"
+  },
+  {
+    "title": "The Buffalo Hunter Hunter",
+    "rating": 4,
+    "author": "Stephen Graham Jones",
+    "author_url": "https://www.goodreads.com/author/show/96300.Stephen_Graham_Jones",
+    "image_url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1719446747i/214565614.jpg",
+    "url": "https://www.goodreads.com/book/show/214565614-the-buffalo-hunter-hunter",
+    "read_year": 2025,
+    "image_path": "/images/books/the-buffalo-hunter-hunter.jpg"
+  },
+  {
     "title": "The Motorcycle Diaries: Notes on a Latin American Journey",
     "rating": 1,
     "author": "Ernesto Che Guevara",

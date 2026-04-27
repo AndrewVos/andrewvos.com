@@ -23,9 +23,6 @@ describe("Bun server", () => {
     ["/", "andrewvos.com", "Andrew"],
     ["/books?filter=recommended", "Bookshelf - andrewvos.com", "Bookshelf"],
     ["/bio", "Bio - andrewvos.com", "Senior Full-Stack Software Engineer"],
-    ["/chat", "Chat - andrewvos.com", "Type your message here"],
-    ["/contact", "Contact - andrewvos.com", "Contact Andrew Vos"],
-    ["/contact/success", "Success - andrewvos.com", "Thanks for your enquiry."],
   ])("renders %s", async (path, title, content) => {
     const response = await fetch(`${baseUrl}${path}`);
     const html = await response.text();
@@ -37,6 +34,12 @@ describe("Bun server", () => {
 
   test("returns not found for removed API routes", async () => {
     const response = await fetch(`${baseUrl}/api/hello`);
+
+    expect(response.status).toBe(404);
+  });
+
+  test.each(["/chat", "/contact", "/contact/success"])("returns not found for removed page %s", async (path) => {
+    const response = await fetch(`${baseUrl}${path}`);
 
     expect(response.status).toBe(404);
   });

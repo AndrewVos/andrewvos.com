@@ -2,9 +2,6 @@ import React from "react";
 import Home from "../app/page";
 import Books from "../app/books/page";
 import Bio from "../app/bio/page";
-import Chat from "../app/chat/page";
-import Contact from "../app/contact/page";
-import ContactSuccess from "../app/contact/success/page";
 
 export type SearchParams = Record<string, string | string[] | undefined>;
 
@@ -26,19 +23,6 @@ export const routes: Record<string, AppRoute> = {
   "/bio": {
     title: "Bio - andrewvos.com",
     render: () => <Bio />,
-  },
-  "/chat": {
-    title: "Chat - andrewvos.com",
-    fullHeight: true,
-    render: () => <Chat />,
-  },
-  "/contact": {
-    title: "Contact - andrewvos.com",
-    render: () => <Contact />,
-  },
-  "/contact/success": {
-    title: "Success - andrewvos.com",
-    render: () => <ContactSuccess />,
   },
 };
 

@@ -1,9 +1,3 @@
-import { Metadata } from 'next';
-
-export const metadata: Metadata = {
-    title: 'Success - andrewvos.com',
-};
-
 export default function Success() {
     return (
         <div className="container mx-auto p-3 mt-10 mb-5">

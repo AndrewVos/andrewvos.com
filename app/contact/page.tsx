@@ -1,9 +1,4 @@
-import { Metadata } from 'next';
-import Link from 'next/link';
-
-export const metadata: Metadata = {
-  title: 'Contact - andrewvos.com',
-};
+import { Link } from '../components';
 
 export default function Hire() {
   return (

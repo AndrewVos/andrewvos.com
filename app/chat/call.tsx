@@ -1,6 +1,6 @@
 'use client'
 
-import Link from "next/link"
+import { Link } from "../components"
 import { useEffect, useRef, useState } from "react"
 
 const chatDelay = 12000
@@ -111,7 +111,7 @@ export default function Call() {
                     console.log("Something went wrong!");
                 });
         }
-    })
+    }, [])
 
     return (
         <div className="font-serif p-3 h-full flex flex-col space-y-3" >

@@ -4,17 +4,5 @@
   "installCommand": "bun install --frozen-lockfile",
   "buildCommand": "bun run vercel-build",
   "outputDirectory": "dist",
-  "cleanUrls": true,
-  "rewrites": [
-    {
-      "source": "/AndrewVos.pdf",
-      "destination": "/api/cv"
-    }
-  ],
-  "functions": {
-    "api/cv.ts": {
-      "maxDuration": 30,
-      "memory": 1024
-    }
-  }
+  "cleanUrls": true
 }

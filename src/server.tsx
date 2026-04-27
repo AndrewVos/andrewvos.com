@@ -20,18 +20,6 @@ Bun.serve({
       return Response.json({ name: "John Doe" });
     }
 
-    if (url.pathname === "/AndrewVos.pdf") {
-      const { generateCvPdf } = await import("./pdf");
-      const pdf = await generateCvPdf(new URL("/bio", request.url).toString());
-
-      return new Response(new Uint8Array(pdf), {
-        headers: {
-          "Content-Disposition": 'attachment; filename="AndrewVos.pdf"',
-          "Content-Type": "application/pdf",
-        },
-      });
-    }
-
     const staticResponse = await serveStatic(url.pathname);
     if (staticResponse) return staticResponse;
 

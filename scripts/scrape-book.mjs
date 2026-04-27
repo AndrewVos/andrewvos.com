@@ -115,6 +115,23 @@ const retrieveBook = async () => {
     },
   ]);
 
+  const currentYear = new Date().getFullYear();
+  const { readYear } = await inquirer.prompt([
+    {
+      type: "input",
+      name: "readYear",
+      message: "Year read",
+      default: currentYear,
+      filter: Number,
+      validate: (value) => {
+        const year = Number(value);
+        return Number.isInteger(year) && year >= 1000 && year <= 9999
+          ? true
+          : "Enter a four-digit year";
+      },
+    },
+  ]);
+
   const browser = await chromium.launch({
     headless: false,
   });
@@ -140,12 +157,12 @@ const retrieveBook = async () => {
       author: document.querySelector(".ContributorLink__name").innerText,
       author_url: document.querySelector("a.ContributorLink").getAttribute("href"),
       image_url: document.querySelector(".BookCover__image img").getAttribute("src"),
-      read_year: new Date().getFullYear(),
     };
   });
 
   book.url = selectedBookUrl.split("?")[0];
   book.rating = rating;
+  book.read_year = readYear;
   book.image_path = `/images/books/${slug(book.title)}.jpg`;
 
   const data = fs.readFileSync("app/data/books.json", "utf8");

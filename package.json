@@ -7,10 +7,12 @@
     "build": "bun run build:css && bun run build:client",
     "build:client": "bun build ./src/client.tsx --outdir=public/build --target=browser --minify",
     "build:css": "tailwindcss -i ./app/globals.css -o ./public/build/styles.css --minify",
+    "build:static": "bun src/static.tsx",
     "check": "tsc --noEmit",
     "lint": "bun run check",
     "start": "bun src/server.tsx",
-    "test": "bun run check && bun run build && bun test",
+    "test": "bun run check && bun run build && bun run build:static && bun test",
+    "vercel-build": "bun run build && bun run build:static",
     "scrape-book": "bun scripts/scrape-book.mjs",
     "renew-book-thumbnails": "bun scripts/renew-book-thumbnails.mjs",
     "build-cv": "bunx puppeteer browsers install chrome && bun ./scripts/build-cv.js"

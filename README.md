@@ -16,8 +16,9 @@ Open [http://localhost:3000](http://localhost:3000).
 ```bash
 bun run check
 bun run build
+bun run vercel-build
 bun run test
 bun run start
 ```
 
-`bun run test` typechecks, builds the Tailwind and browser assets, then smoke-tests the Bun server routes.
+`bun run test` typechecks, builds the Tailwind, browser, and static Vercel assets, then smoke-tests the Bun server routes.

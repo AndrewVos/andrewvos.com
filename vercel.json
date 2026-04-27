@@ -5,5 +5,5 @@
   "buildCommand": "bun run vercel-build",
   "outputDirectory": "dist",
   "cleanUrls": true,
-  "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
+  "rewrites": [{ "source": "/(.*)", "destination": "/index" }]
 }

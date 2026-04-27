@@ -1,5 +1,8 @@
 import { describe, expect, test } from "bun:test";
-import { parseSearchResults } from "../scripts/scrape-book.mjs";
+import {
+  formatSearchResultChoice,
+  parseSearchResults,
+} from "../scripts/scrape-book.mjs";
 
 describe("book scraper", () => {
   test("parses Goodreads search result links with extra attributes", () => {
@@ -14,10 +17,22 @@ describe("book scraper", () => {
 
     expect(parseSearchResults(html)).toEqual([
       {
+        author: "Frank Herbert",
         title: "Dune (Dune, #1)",
-        value:
-          "https://www.goodreads.com/book/show/44767458-dune?from_search=true&rank=1",
+        value: "https://www.goodreads.com/book/show/44767458-dune",
       },
     ]);
+  });
+
+  test("formats search choices with author and Goodreads link", () => {
+    expect(
+      formatSearchResultChoice({
+        author: "Frank Herbert",
+        title: "Dune (Dune, #1)",
+        value: "https://www.goodreads.com/book/show/44767458-dune",
+      })
+    ).toBe(
+      "Dune (Dune, #1) by Frank Herbert - https://www.goodreads.com/book/show/44767458-dune"
+    );
   });
 });

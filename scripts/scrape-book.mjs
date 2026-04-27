@@ -29,24 +29,52 @@ const getAttribute = (tag, name) => {
   return match?.[2];
 };
 
-export const parseSearchResults = (html) =>
-  [...html.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi)]
-    .map(([, attributes, titleHtml]) => {
-      const className = getAttribute(attributes, "class") ?? "";
-      const href = getAttribute(attributes, "href");
+const stripTags = (html) => decodeHtml(html.replace(/<[^>]*>/g, "")).trim();
 
-      if (!className.split(/\s+/).includes("bookTitle") || !href) {
+const hasClass = (attributes, className) =>
+  (getAttribute(attributes, "class") ?? "").split(/\s+/).includes(className);
+
+const parseAnchors = (html) =>
+  [...html.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi)].map((match) => ({
+    attributes: match[1],
+    html: match[2],
+    index: match.index,
+    endIndex: match.index + match[0].length,
+  }));
+
+export const formatSearchResultChoice = (result) =>
+  `${result.title}${result.author ? ` by ${result.author}` : ""} - ${result.value}`;
+
+export const parseSearchResults = (html) => {
+  const anchors = parseAnchors(html);
+  const bookAnchors = anchors.filter((anchor) => hasClass(anchor.attributes, "bookTitle"));
+
+  return bookAnchors
+    .map((anchor, index) => {
+      const href = getAttribute(anchor.attributes, "href");
+      const nextBookIndex = bookAnchors[index + 1]?.index ?? html.length;
+      const resultHtml = html.slice(anchor.endIndex, nextBookIndex);
+      const authorAnchor = parseAnchors(resultHtml).find((resultAnchor) =>
+        hasClass(resultAnchor.attributes, "authorName")
+      );
+
+      if (!href) {
         return;
       }
 
+      const url = new URL(decodeHtml(href), GOODREADS_URL);
+      url.search = "";
+
       return {
-        title: decodeHtml(titleHtml.replace(/<[^>]*>/g, "")).trim(),
-        value: new URL(decodeHtml(href), GOODREADS_URL).toString(),
+        title: stripTags(anchor.html),
+        author: authorAnchor ? stripTags(authorAnchor.html) : undefined,
+        value: url.toString(),
       };
     })
     .filter(Boolean)
     .filter((result) => result.title)
     .slice(0, 20);
+};
 
 export const searchBooks = async (query) => {
   const url =
@@ -92,7 +120,7 @@ const retrieveBook = async () => {
       name: "selectedBookUrl",
       message: "Choose a result",
       choices: results.map((result) => ({
-        name: result.title,
+        name: formatSearchResultChoice(result),
         value: result.value,
       })),
     },

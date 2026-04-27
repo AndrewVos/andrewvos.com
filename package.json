@@ -14,8 +14,7 @@
     "test": "bun run check && bun run build && bun run build:static && bun test",
     "vercel-build": "bun run build && bun run build:static",
     "scrape-book": "bun scripts/scrape-book.mjs",
-    "renew-book-thumbnails": "bun scripts/renew-book-thumbnails.mjs",
-    "build-cv": "bunx puppeteer browsers install chrome && bun ./scripts/build-cv.js"
+    "renew-book-thumbnails": "bun scripts/renew-book-thumbnails.mjs"
   },
   "dependencies": {
     "@sparticuz/chromium": "^131.0.1",
@@ -37,7 +36,6 @@
     "@types/node": "^20.11.17",
     "autoprefixer": "^10.4.13",
     "download": "^8.0.0",
-    "md-to-pdf": "^5.2.4",
     "postcss": "^8.4.21",
     "puppeteer": "^22.1.0",
     "slug": "^8.2.2",

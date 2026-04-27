@@ -5,5 +5,16 @@
   "buildCommand": "bun run vercel-build",
   "outputDirectory": "dist",
   "cleanUrls": true,
-  "bunVersion": "1.x"
+  "rewrites": [
+    {
+      "source": "/AndrewVos.pdf",
+      "destination": "/api/cv"
+    }
+  ],
+  "functions": {
+    "api/cv.ts": {
+      "maxDuration": 30,
+      "memory": 1024
+    }
+  }
 }

@@ -5,12 +5,12 @@
   "scripts": {
     "dev": "bun --hot src/index.ts",
     "start": "NODE_ENV=production bun src/index.ts",
-    "build": "bun run build.ts && cp -r ./public ./dist/public",
+    "build": "bun run build:cv && bun run build.ts && cp -R ./public/. ./dist/",
     "build:cv": "bun src/build-cv.ts",
     "check": "tsc --noEmit",
     "lint": "bun run check",
-    "test": "bun run check && bun run build && bun run build:cv && bun test",
-    "vercel-build": "bun run build && bun run build:cv",
+    "test": "bun run check && bun run build && bun test",
+    "vercel-build": "bun run build",
     "scrape-book": "bun scripts/scrape-book.mjs",
     "renew-book-thumbnails": "bun scripts/renew-book-thumbnails.mjs"
   },

@@ -7,7 +7,48 @@ import download from "download";
 
 const GOODREADS_URL = "https://www.goodreads.com";
 
-const searchBooks = async (query) => {
+const decodeHtml = (html) =>
+  html.replace(/&(#\d+|#x[\da-f]+|amp|lt|gt|quot|apos);/gi, (entity, value) => {
+    if (value[0] === "#") {
+      const radix = value[1]?.toLowerCase() === "x" ? 16 : 10;
+      const codePoint = parseInt(value.replace(/^#x?/i, ""), radix);
+      return Number.isNaN(codePoint) ? entity : String.fromCodePoint(codePoint);
+    }
+
+    return {
+      amp: "&",
+      lt: "<",
+      gt: ">",
+      quot: "\"",
+      apos: "'",
+    }[value.toLowerCase()] ?? entity;
+  });
+
+const getAttribute = (tag, name) => {
+  const match = tag.match(new RegExp(`\\s${name}=(["'])(.*?)\\1`, "i"));
+  return match?.[2];
+};
+
+export const parseSearchResults = (html) =>
+  [...html.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi)]
+    .map(([, attributes, titleHtml]) => {
+      const className = getAttribute(attributes, "class") ?? "";
+      const href = getAttribute(attributes, "href");
+
+      if (!className.split(/\s+/).includes("bookTitle") || !href) {
+        return;
+      }
+
+      return {
+        title: decodeHtml(titleHtml.replace(/<[^>]*>/g, "")).trim(),
+        value: new URL(decodeHtml(href), GOODREADS_URL).toString(),
+      };
+    })
+    .filter(Boolean)
+    .filter((result) => result.title)
+    .slice(0, 20);
+
+export const searchBooks = async (query) => {
   const url =
     `${GOODREADS_URL}/search?` +
     queryString.stringify({
@@ -16,13 +57,7 @@ const searchBooks = async (query) => {
 
   const response = await fetch(url);
   const html = await response.text();
-  return [...html.matchAll(/<a class="bookTitle" href="([^"]+)">([\s\S]*?)<\/a>/g)]
-    .map(([, href, titleHtml]) => ({
-      title: titleHtml.replace(/<[^>]*>/g, "").trim(),
-      value: `${GOODREADS_URL}${href}`,
-    }))
-    .filter((result) => result.title)
-    .slice(0, 20);
+  return parseSearchResults(html);
 };
 
 const retrieveBook = async () => {
@@ -133,19 +168,21 @@ const retrieveBook = async () => {
   await browser.close();
 };
 
-for (;;) {
-  await retrieveBook();
+if (import.meta.main) {
+  for (;;) {
+    await retrieveBook();
 
-  const { shouldContinue } = await inquirer.prompt([
-    {
-      type: "confirm",
-      name: "shouldContinue",
-      message: "Would you like to do another?",
-      default: true,
-    },
-  ]);
+    const { shouldContinue } = await inquirer.prompt([
+      {
+        type: "confirm",
+        name: "shouldContinue",
+        message: "Would you like to do another?",
+        default: true,
+      },
+    ]);
 
-  if (!shouldContinue) {
-    break;
+    if (!shouldContinue) {
+      break;
+    }
   }
 }

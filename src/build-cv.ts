@@ -2,7 +2,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import PDFDocument from "pdfkit";
 import React from "react";
 import { format } from "date-fns";
-import cv from "../app/bio/cv";
+import cv from "./cv";
 
 type Link = { title: string; href: string };
 type Experience = {

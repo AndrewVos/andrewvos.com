@@ -16,10 +16,6 @@ Bun.serve({
       return new Response("Method Not Allowed", { status: 405 });
     }
 
-    if (url.pathname === "/api/hello") {
-      return Response.json({ name: "John Doe" });
-    }
-
     const staticResponse = await serveStatic(url.pathname);
     if (staticResponse) return staticResponse;
 

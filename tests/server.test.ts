@@ -35,11 +35,10 @@ describe("Bun server", () => {
     expect(html).toContain(content);
   });
 
-  test("serves the existing API route", async () => {
+  test("returns not found for removed API routes", async () => {
     const response = await fetch(`${baseUrl}/api/hello`);
 
-    expect(response.status).toBe(200);
-    expect(await response.json()).toEqual({ name: "John Doe" });
+    expect(response.status).toBe(404);
   });
 
   test("serves public assets and built client assets", async () => {

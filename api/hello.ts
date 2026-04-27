@@ -1,3 +1,3 @@
-export function GET() {
-  return Response.json({ name: "John Doe" });
+export default function handler(_request: any, response: any) {
+  response.status(200).json({ name: "John Doe" });
 }

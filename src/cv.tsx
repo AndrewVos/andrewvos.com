@@ -38,7 +38,7 @@ type Experience = {
 
 type WorkExperience = Experience & {
   image?: string;
-  type: "contract" | "permanent" | "contract & permanent" | "freelance",
+  type?: "contract" | "permanent" | "contract & permanent" | "freelance",
   agency?: { name: string; image: string };
   tech: {
     ["Go"]: boolean;
@@ -114,8 +114,10 @@ const cv: CV = {
   title: "Senior Full-Stack Software Engineer",
   summary: (
     <p>
-      Senior Software Engineer focusing on building web apps with Rails, Next.js, React, Ruby, TypeScript and JavaScript.
-      I have a strong background in building and maintaining software for startups and large companies.
+      Hands-on technical lead and full-stack engineer experienced in building customer-facing products,
+      integrating complex backend systems, and improving software delivery. Recent work spans grocery
+      commerce APIs, loyalty integrations, release automation, and production investigation.
+      Strong background in Rails, React, Next.js, Ruby, and TypeScript across startups and large organisations.
     </p>
   ),
   contact: {
@@ -152,11 +154,64 @@ const cv: CV = {
     "My work was featured in Wired magazine.",
     "Part of the team that rebuilt the BBC News website from the ground up.",
     "Built software for use in a large factory, which is still in use today.",
-    "Successfully managed and lead teams of developers.",
+    "Successfully managed and led teams of developers.",
     "Designed, built, and maintained the software for a  very well funded startup, through multiple successful funding rounds.",
     "Tutored teams of developers in the art of testing software.",
   ],
   experience: [
+    {
+      name: "Naveo Commerce",
+      hidden: false,
+      from: parseDate("2024-08-16"),
+      description: "Development and technical delivery for a grocery commerce platform serving multiple grocery retailers, spanning customer APIs, loyalty integrations, and order processing.",
+      things: [
+        "Built release automation connecting service versions, Jira tickets, deployment changes, and client release notes across multiple customer environments.",
+        "Developed automated integration tests covering personalised vouchers from basket evaluation through order orchestration and creation, including guest and registered customers.",
+        "Built tooling to investigate order and payment inconsistencies across legacy commerce services and the Unified Order Service.",
+        "Integrated Helm and Terraform into deployment tooling for AWS environments.",
+        "Created shared tooling and documented workflows for AI-assisted investigation, testing, and release preparation.",
+      ],
+      tech: {
+        Go: false,
+        CSS: false,
+        HTML: false,
+        TypeScript: true,
+        Ruby: false,
+        "Node.js": true,
+        Java: false,
+        JavaScript: false,
+        "C#": false,
+        PHP: false,
+        Bash: true,
+        Docker: true,
+        AWS: true,
+        Azure: false,
+        "Digital Ocean": false,
+        Heroku: false,
+        React: false,
+        "Next.js": false,
+        "Ruby on Rails": false,
+        "ASP.NET": false,
+        Android: false,
+        iOS: false,
+        Agile: false,
+        "Load Testing": false,
+        "Continuous Delivery": true,
+        "Continuous Integration": true,
+        "Unit Testing": false,
+        "Acceptance Testing": true,
+        Postgres: false,
+        MySQL: false,
+        MSSQL: false,
+        GraphQL: false,
+        ElasticSearch: false,
+        "Tailwind CSS": false,
+        Bootstrap: false,
+        AI: true,
+        Midjourney: false,
+        ChatGPT: false,
+      }
+    },
     {
       name: "Andrew Vos Limited",
       type: "freelance",
@@ -277,7 +332,7 @@ const cv: CV = {
       from: parseDate("2021-11-09"),
       to: parseDate("2023-03-31"),
       description:
-        "Lead a team of developers to rewrite money management tools (apps) to make them more intuitive, accessible, and beautiful.",
+        "Led a team of developers to rewrite money management tools (apps) to make them more intuitive, accessible, and beautiful.",
       things: [
         "Designed and built many money tools for the UK government.",
         "Presented and championed the moving of many projects out of a failing AEM (Adobe Experience Manager) system to Next.js and TypeScript.",

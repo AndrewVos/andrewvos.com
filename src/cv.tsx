@@ -28,22 +28,20 @@ const parseDate = (date: string) => {
 
 type Experience = {
   name: string;
-  hidden: boolean,
+  hidden: boolean;
   from: Date;
   to?: Date;
   description?: string;
   things?: string[];
   links?: { title: string; href: string }[];
-}
+};
 
 type WorkExperience = Experience & {
   image?: string;
-  type: "contract" | "permanent" | "contract & permanent" | "freelance",
+  type?: "contract" | "permanent" | "contract & permanent" | "freelance";
   agency?: { name: string; image: string };
   tech: {
     ["Go"]: boolean;
-    ["CSS"]: boolean;
-    ["HTML"]: boolean;
     ["TypeScript"]: boolean;
     ["Ruby"]: boolean;
     ["Node.js"]: boolean;
@@ -51,8 +49,6 @@ type WorkExperience = Experience & {
     ["JavaScript"]: boolean;
     ["C#"]: boolean;
     ["PHP"]: boolean;
-    ["Bash"]: boolean;
-    ["Docker"]: boolean;
     ["AWS"]: boolean;
     ["Azure"]: boolean;
     ["Digital Ocean"]: boolean;
@@ -63,27 +59,17 @@ type WorkExperience = Experience & {
     ["ASP.NET"]: boolean;
     ["Android"]: boolean;
     ["iOS"]: boolean;
-    ["Agile"]: boolean;
-    ["Load Testing"]: boolean;
-    ["Continuous Delivery"]: boolean;
-    ["Continuous Integration"]: boolean;
-    ["Unit Testing"]: boolean;
-    ["Acceptance Testing"]: boolean;
     ["Postgres"]: boolean;
     ["MySQL"]: boolean;
     ["MSSQL"]: boolean;
     ["GraphQL"]: boolean;
     ["ElasticSearch"]: boolean;
     ["Tailwind CSS"]: boolean;
-    ["Bootstrap"]: boolean;
-    ["Midjourney"]: boolean;
-    ["ChatGPT"]: boolean;
     ["AI"]: boolean;
   };
 };
 
-type Break = Experience & {
-}
+type Break = Experience & {};
 
 type Contact = {
   phone?: string;
@@ -100,8 +86,8 @@ type CV = {
   summary: JSX.Element;
   contact: Contact;
   useHacks: boolean;
-  showSkillGroupingYears: boolean,
-  showExperienceLength: boolean,
+  showSkillGroupingYears: boolean;
+  showExperienceLength: boolean;
   skillGrouping: string[][];
   softSkills: string[];
   achievements: string[];
@@ -114,8 +100,12 @@ const cv: CV = {
   title: "Senior Full-Stack Software Engineer",
   summary: (
     <p>
-      Senior Software Engineer focusing on building web apps with Rails, Next.js, React, Ruby, TypeScript and JavaScript.
-      I have a strong background in building and maintaining software for startups and large companies.
+      Hands-on technical lead and full-stack engineer with experience leading
+      teams, building products, and working directly with clients. Recent work
+      focuses on software for large grocery retailers, scaling and modernising
+      legacy infrastructure, and delivering greenfield projects. Strong
+      background in Rails, React, Next.js, Ruby, and TypeScript across startups
+      and large organisations.
     </p>
   ),
   contact: {
@@ -133,8 +123,6 @@ const cv: CV = {
     ["Ruby on Rails", "Next.js"],
     ["React", "Tailwind CSS"],
     ["Postgres", "MySQL"],
-    ["CSS", "HTML"],
-    ["Unit Testing", "Acceptance Testing"],
   ],
   softSkills: [
     "Problem-solving skills and critical thinking.",
@@ -147,27 +135,70 @@ const cv: CV = {
     "Emotional intelligence.",
   ],
   achievements: [
+    "Built the Service Design Manual at GDS, which still guides modern web development today.",
     "Founded and built all the software for a profitable startup.",
     "Had my software featured in a print technology magazine.",
     "My work was featured in Wired magazine.",
     "Part of the team that rebuilt the BBC News website from the ground up.",
-    "Built software for use in a large factory, which is still in use today.",
-    "Successfully managed and lead teams of developers.",
-    "Designed, built, and maintained the software for a  very well funded startup, through multiple successful funding rounds.",
-    "Tutored teams of developers in the art of testing software.",
+    "Built software for use in a large factory, which is still in use twenty years later.",
+    "Successfully managed and led many teams of developers.",
+    "Designed, built, and maintained the software for a very well funded startup, through multiple successful funding rounds.",
+    "Tutored teams of developers in the art of testing software at the BBC.",
+    "Designed a product that you've used at least once this week...",
   ],
   experience: [
+    {
+      name: "Naveo Commerce",
+      hidden: false,
+      from: parseDate("2024-08-16"),
+      description:
+        "Hands-on technical leadership and product development for large grocery retailers, working directly with clients to turn business needs into software.",
+      things: [
+        "Led engineering teams building and evolving grocery commerce products, guiding technical decisions and delivery.",
+        "Worked directly with clients to understand their needs, shape product requirements, and deliver software for their businesses.",
+        "Scaled legacy infrastructure and optimised API performance to support growing demand.",
+        "Modernised development tooling and migrated infrastructure to improve maintainability and software delivery.",
+        "Supported sales teams in winning client contracts by helping shape technical solutions.",
+        "Built greenfield products alongside the ongoing development and modernisation of established systems.",
+      ],
+      tech: {
+        Go: true,
+        TypeScript: true,
+        Ruby: true,
+        "Node.js": true,
+        Java: false,
+        JavaScript: true,
+        "C#": false,
+        PHP: false,
+        AWS: true,
+        Azure: true,
+        "Digital Ocean": true,
+        Heroku: false,
+        React: true,
+        "Next.js": true,
+        "Ruby on Rails": false,
+        "ASP.NET": false,
+        Android: true,
+        iOS: true,
+        Postgres: true,
+        MySQL: false,
+        MSSQL: false,
+        GraphQL: true,
+        ElasticSearch: true,
+        "Tailwind CSS": true,
+        AI: true,
+      },
+    },
     {
       name: "Andrew Vos Limited",
       type: "freelance",
       hidden: false,
       image: "/images/logos/andrew-vos-limited.png",
       from: parseDate("2024-01-01"),
-      description: "Building a colouring app/game for iOS using AI for generating images and text content.",
+      description:
+        "Building a colouring app/game for iOS using AI for generating images and text content.",
       tech: {
         Go: false,
-        CSS: true,
-        HTML: true,
         TypeScript: true,
         Ruby: false,
         "Node.js": true,
@@ -175,8 +206,6 @@ const cv: CV = {
         JavaScript: true,
         "C#": false,
         PHP: false,
-        Bash: false,
-        Docker: false,
         AWS: false,
         Azure: false,
         "Digital Ocean": false,
@@ -187,23 +216,14 @@ const cv: CV = {
         "ASP.NET": false,
         Android: false,
         iOS: true,
-        Agile: false,
-        "Load Testing": false,
-        "Continuous Delivery": false,
-        "Continuous Integration": false,
-        "Unit Testing": false,
-        "Acceptance Testing": false,
         Postgres: false,
         MySQL: false,
         MSSQL: false,
         GraphQL: false,
         ElasticSearch: false,
         "Tailwind CSS": true,
-        Bootstrap: false,
         AI: true,
-        Midjourney: true,
-        ChatGPT: true,
-      }
+      },
     },
     {
       name: "Career Break",
@@ -230,8 +250,6 @@ const cv: CV = {
       ],
       tech: {
         Go: false,
-        CSS: true,
-        HTML: true,
         TypeScript: false,
         Ruby: false,
         "Node.js": true,
@@ -239,8 +257,6 @@ const cv: CV = {
         JavaScript: true,
         "C#": false,
         PHP: false,
-        Bash: true,
-        Docker: true,
         AWS: true,
         Azure: false,
         "Digital Ocean": false,
@@ -251,22 +267,14 @@ const cv: CV = {
         "ASP.NET": false,
         Android: false,
         iOS: false,
-        Agile: false,
-        "Load Testing": true,
-        "Continuous Delivery": false,
-        "Continuous Integration": false,
-        "Unit Testing": true,
-        "Acceptance Testing": true,
+
         Postgres: false,
         MySQL: false,
         MSSQL: false,
         GraphQL: true,
         ElasticSearch: false,
         "Tailwind CSS": false,
-        Bootstrap: false,
         AI: false,
-        Midjourney: false,
-        ChatGPT: false,
       },
     },
     {
@@ -277,7 +285,7 @@ const cv: CV = {
       from: parseDate("2021-11-09"),
       to: parseDate("2023-03-31"),
       description:
-        "Lead a team of developers to rewrite money management tools (apps) to make them more intuitive, accessible, and beautiful.",
+        "Led a team of developers to rewrite money management tools (apps) to make them more intuitive, accessible, and beautiful.",
       things: [
         "Designed and built many money tools for the UK government.",
         "Presented and championed the moving of many projects out of a failing AEM (Adobe Experience Manager) system to Next.js and TypeScript.",
@@ -313,8 +321,6 @@ const cv: CV = {
       ],
       tech: {
         Go: false,
-        CSS: true,
-        HTML: true,
         TypeScript: true,
         Ruby: true,
         "Node.js": true,
@@ -322,8 +328,6 @@ const cv: CV = {
         JavaScript: true,
         "C#": false,
         PHP: false,
-        Bash: true,
-        Docker: false,
         AWS: false,
         Azure: true,
         "Digital Ocean": false,
@@ -334,22 +338,14 @@ const cv: CV = {
         "ASP.NET": false,
         Android: false,
         iOS: false,
-        Agile: true,
-        "Load Testing": true,
-        "Continuous Delivery": true,
-        "Continuous Integration": true,
-        "Unit Testing": true,
-        "Acceptance Testing": true,
+
         Postgres: true,
         MySQL: false,
         MSSQL: false,
         GraphQL: false,
         ElasticSearch: false,
         "Tailwind CSS": true,
-        Bootstrap: true,
         AI: false,
-        Midjourney: false,
-        ChatGPT: false,
       },
     },
     {
@@ -364,8 +360,6 @@ const cv: CV = {
       things: ["Added new features to video conferencing software."],
       tech: {
         Go: false,
-        CSS: true,
-        HTML: true,
         TypeScript: false,
         Ruby: true,
         "Node.js": true,
@@ -373,8 +367,6 @@ const cv: CV = {
         JavaScript: true,
         "C#": false,
         PHP: false,
-        Bash: true,
-        Docker: false,
         AWS: false,
         Azure: false,
         "Digital Ocean": false,
@@ -385,22 +377,14 @@ const cv: CV = {
         "ASP.NET": false,
         Android: false,
         iOS: false,
-        Agile: true,
-        "Load Testing": false,
-        "Continuous Delivery": false,
-        "Continuous Integration": false,
-        "Unit Testing": true,
-        "Acceptance Testing": true,
+
         Postgres: true,
         MySQL: false,
         MSSQL: false,
         GraphQL: false,
         ElasticSearch: false,
         "Tailwind CSS": false,
-        Bootstrap: false,
         AI: false,
-        Midjourney: false,
-        ChatGPT: false,
       },
     },
     {
@@ -417,13 +401,10 @@ const cv: CV = {
         "Built staffsmarter.co.uk, a care provider resource manager app that allowed clients to manage their staff shifts.",
         "Built Florence Rota, an easier to use version of staffsmarter.co.uk. This app included a drag and drop interface that allowed clients to easily manage staff allocation to shifts with a fully functional calendar.",
       ],
-      links: [
-        { title: "Florence Rota", href: "https://rota.florence.co.uk" },
-      ],
+      links: [{ title: "Florence Rota", href: "https://rota.florence.co.uk" }],
       tech: {
         Go: false,
-        CSS: true,
-        HTML: true,
+
         TypeScript: true,
         Ruby: true,
         "Node.js": true,
@@ -431,8 +412,7 @@ const cv: CV = {
         JavaScript: true,
         "C#": false,
         PHP: false,
-        Bash: true,
-        Docker: false,
+
         AWS: false,
         Azure: false,
         "Digital Ocean": false,
@@ -443,22 +423,14 @@ const cv: CV = {
         "ASP.NET": false,
         Android: false,
         iOS: false,
-        Agile: true,
-        "Load Testing": false,
-        "Continuous Delivery": true,
-        "Continuous Integration": true,
-        "Unit Testing": true,
-        "Acceptance Testing": true,
+
         Postgres: true,
         MySQL: false,
         MSSQL: false,
         GraphQL: false,
         ElasticSearch: false,
         "Tailwind CSS": true,
-        Bootstrap: true,
         AI: false,
-        Midjourney: false,
-        ChatGPT: false,
       },
     },
     {
@@ -478,8 +450,7 @@ const cv: CV = {
       ],
       tech: {
         Go: false,
-        CSS: true,
-        HTML: true,
+
         TypeScript: false,
         Ruby: false,
         "Node.js": true,
@@ -487,8 +458,7 @@ const cv: CV = {
         JavaScript: true,
         "C#": false,
         PHP: false,
-        Bash: true,
-        Docker: false,
+
         AWS: true,
         Azure: false,
         "Digital Ocean": false,
@@ -499,22 +469,14 @@ const cv: CV = {
         "ASP.NET": false,
         Android: false,
         iOS: false,
-        Agile: true,
-        "Load Testing": false,
-        "Continuous Delivery": true,
-        "Continuous Integration": true,
-        "Unit Testing": true,
-        "Acceptance Testing": true,
+
         Postgres: true,
         MySQL: false,
         MSSQL: false,
         GraphQL: false,
         ElasticSearch: false,
         "Tailwind CSS": false,
-        Bootstrap: false,
         AI: false,
-        Midjourney: false,
-        ChatGPT: false,
       },
     },
     {
@@ -534,8 +496,7 @@ const cv: CV = {
       ],
       tech: {
         Go: false,
-        CSS: true,
-        HTML: true,
+
         TypeScript: false,
         Ruby: true,
         "Node.js": true,
@@ -543,8 +504,7 @@ const cv: CV = {
         JavaScript: true,
         "C#": false,
         PHP: false,
-        Bash: true,
-        Docker: true,
+
         AWS: true,
         Azure: false,
         "Digital Ocean": false,
@@ -555,22 +515,14 @@ const cv: CV = {
         "ASP.NET": false,
         Android: false,
         iOS: false,
-        Agile: true,
-        "Load Testing": false,
-        "Continuous Delivery": true,
-        "Continuous Integration": true,
-        "Unit Testing": true,
-        "Acceptance Testing": true,
+
         Postgres: true,
         MySQL: false,
         MSSQL: false,
         GraphQL: false,
         ElasticSearch: false,
         "Tailwind CSS": false,
-        Bootstrap: false,
         AI: false,
-        Midjourney: false,
-        ChatGPT: false,
       },
     },
     {
@@ -589,8 +541,7 @@ const cv: CV = {
       things: ["Built the foreignexchange.com money transfer service"],
       tech: {
         Go: false,
-        CSS: true,
-        HTML: true,
+
         TypeScript: false,
         Ruby: true,
         "Node.js": true,
@@ -598,8 +549,7 @@ const cv: CV = {
         JavaScript: true,
         "C#": false,
         PHP: false,
-        Bash: true,
-        Docker: false,
+
         AWS: false,
         Azure: false,
         "Digital Ocean": false,
@@ -610,22 +560,15 @@ const cv: CV = {
         "ASP.NET": false,
         Android: false,
         iOS: false,
-        Agile: true,
-        "Load Testing": false,
-        "Continuous Delivery": true,
-        "Continuous Integration": true,
-        "Unit Testing": true,
-        "Acceptance Testing": true,
+
         Postgres: true,
         MySQL: false,
         MSSQL: false,
         GraphQL: false,
         ElasticSearch: false,
         "Tailwind CSS": false,
-        Bootstrap: true,
+
         AI: false,
-        Midjourney: false,
-        ChatGPT: false,
       },
     },
     {
@@ -646,8 +589,7 @@ const cv: CV = {
       ],
       tech: {
         Go: false,
-        CSS: true,
-        HTML: true,
+
         TypeScript: false,
         Ruby: true,
         "Node.js": false,
@@ -655,8 +597,7 @@ const cv: CV = {
         JavaScript: true,
         "C#": false,
         PHP: false,
-        Bash: true,
-        Docker: false,
+
         AWS: false,
         Azure: false,
         "Digital Ocean": false,
@@ -667,22 +608,15 @@ const cv: CV = {
         "ASP.NET": false,
         Android: false,
         iOS: false,
-        Agile: false,
-        "Load Testing": false,
-        "Continuous Delivery": true,
-        "Continuous Integration": true,
-        "Unit Testing": true,
-        "Acceptance Testing": true,
+
         Postgres: true,
         MySQL: false,
         MSSQL: false,
         GraphQL: false,
         ElasticSearch: false,
         "Tailwind CSS": false,
-        Bootstrap: false,
+
         AI: false,
-        Midjourney: false,
-        ChatGPT: false,
       },
     },
     {
@@ -710,8 +644,7 @@ const cv: CV = {
       ],
       tech: {
         Go: false,
-        CSS: true,
-        HTML: true,
+
         TypeScript: false,
         Ruby: true,
         "Node.js": true,
@@ -719,8 +652,7 @@ const cv: CV = {
         JavaScript: true,
         "C#": false,
         PHP: false,
-        Bash: true,
-        Docker: false,
+
         AWS: true,
         Azure: false,
         "Digital Ocean": false,
@@ -731,22 +663,15 @@ const cv: CV = {
         "ASP.NET": false,
         Android: false,
         iOS: false,
-        Agile: true,
-        "Load Testing": false,
-        "Continuous Delivery": true,
-        "Continuous Integration": true,
-        "Unit Testing": true,
-        "Acceptance Testing": true,
+
         Postgres: true,
         MySQL: false,
         MSSQL: false,
         GraphQL: false,
         ElasticSearch: false,
         "Tailwind CSS": false,
-        Bootstrap: false,
+
         AI: false,
-        Midjourney: false,
-        ChatGPT: false,
       },
     },
     {
@@ -760,8 +685,7 @@ const cv: CV = {
         "Short contract rewriting a site for a large pharmaceutical company.",
       tech: {
         Go: false,
-        CSS: true,
-        HTML: true,
+
         TypeScript: false,
         Ruby: true,
         "Node.js": false,
@@ -769,8 +693,7 @@ const cv: CV = {
         JavaScript: true,
         "C#": false,
         PHP: false,
-        Bash: true,
-        Docker: false,
+
         AWS: false,
         Azure: false,
         "Digital Ocean": false,
@@ -781,22 +704,15 @@ const cv: CV = {
         "ASP.NET": false,
         Android: false,
         iOS: false,
-        Agile: false,
-        "Load Testing": false,
-        "Continuous Delivery": true,
-        "Continuous Integration": true,
-        "Unit Testing": true,
-        "Acceptance Testing": true,
+
         Postgres: true,
         MySQL: false,
         MSSQL: false,
         GraphQL: false,
         ElasticSearch: false,
         "Tailwind CSS": false,
-        Bootstrap: true,
+
         AI: false,
-        Midjourney: false,
-        ChatGPT: false,
       },
     },
     {
@@ -810,8 +726,7 @@ const cv: CV = {
         "A contract role doing feature work for Tesco on their homemadebyyou.co.uk project.",
       tech: {
         Go: false,
-        CSS: true,
-        HTML: true,
+
         TypeScript: false,
         Ruby: true,
         "Node.js": false,
@@ -819,8 +734,7 @@ const cv: CV = {
         JavaScript: true,
         "C#": false,
         PHP: false,
-        Bash: true,
-        Docker: false,
+
         AWS: false,
         Azure: false,
         "Digital Ocean": false,
@@ -831,22 +745,15 @@ const cv: CV = {
         "ASP.NET": false,
         Android: false,
         iOS: false,
-        Agile: true,
-        "Load Testing": false,
-        "Continuous Delivery": false,
-        "Continuous Integration": false,
-        "Unit Testing": true,
-        "Acceptance Testing": true,
+
         Postgres: true,
         MySQL: false,
         MSSQL: false,
         GraphQL: false,
         ElasticSearch: false,
         "Tailwind CSS": false,
-        Bootstrap: true,
+
         AI: false,
-        Midjourney: false,
-        ChatGPT: false,
       },
     },
     {
@@ -870,8 +777,7 @@ const cv: CV = {
       ],
       tech: {
         Go: true,
-        CSS: true,
-        HTML: true,
+
         TypeScript: false,
         Ruby: true,
         "Node.js": true,
@@ -879,8 +785,7 @@ const cv: CV = {
         JavaScript: true,
         "C#": false,
         PHP: false,
-        Bash: true,
-        Docker: true,
+
         AWS: true,
         Azure: false,
         "Digital Ocean": true,
@@ -891,22 +796,15 @@ const cv: CV = {
         "ASP.NET": false,
         Android: false,
         iOS: false,
-        Agile: true,
-        "Load Testing": true,
-        "Continuous Delivery": true,
-        "Continuous Integration": true,
-        "Unit Testing": true,
-        "Acceptance Testing": true,
+
         Postgres: true,
         MySQL: false,
         MSSQL: false,
         GraphQL: false,
         ElasticSearch: true,
         "Tailwind CSS": false,
-        Bootstrap: true,
+
         AI: false,
-        Midjourney: false,
-        ChatGPT: false,
       },
     },
     {
@@ -923,8 +821,7 @@ const cv: CV = {
       ],
       tech: {
         Go: false,
-        CSS: true,
-        HTML: true,
+
         TypeScript: false,
         Ruby: true,
         "Node.js": false,
@@ -932,8 +829,7 @@ const cv: CV = {
         JavaScript: true,
         "C#": false,
         PHP: false,
-        Bash: true,
-        Docker: false,
+
         AWS: false,
         Azure: false,
         "Digital Ocean": false,
@@ -944,22 +840,15 @@ const cv: CV = {
         "ASP.NET": false,
         Android: true,
         iOS: true,
-        Agile: true,
-        "Load Testing": true,
-        "Continuous Delivery": false,
-        "Continuous Integration": false,
-        "Unit Testing": true,
-        "Acceptance Testing": true,
+
         Postgres: false,
         MySQL: false,
         MSSQL: false,
         GraphQL: false,
         ElasticSearch: false,
         "Tailwind CSS": false,
-        Bootstrap: false,
+
         AI: false,
-        Midjourney: false,
-        ChatGPT: false,
       },
     },
     {
@@ -983,8 +872,7 @@ const cv: CV = {
       ],
       tech: {
         Go: false,
-        CSS: true,
-        HTML: true,
+
         TypeScript: false,
         Ruby: true,
         "Node.js": false,
@@ -992,8 +880,7 @@ const cv: CV = {
         JavaScript: true,
         "C#": false,
         PHP: true,
-        Bash: true,
-        Docker: true,
+
         AWS: false,
         Azure: false,
         "Digital Ocean": false,
@@ -1004,22 +891,15 @@ const cv: CV = {
         "ASP.NET": false,
         Android: true,
         iOS: true,
-        Agile: true,
-        "Load Testing": true,
-        "Continuous Delivery": true,
-        "Continuous Integration": true,
-        "Unit Testing": true,
-        "Acceptance Testing": true,
+
         Postgres: false,
         MySQL: true,
         MSSQL: false,
         GraphQL: false,
         ElasticSearch: false,
         "Tailwind CSS": false,
-        Bootstrap: false,
+
         AI: false,
-        Midjourney: false,
-        ChatGPT: false,
       },
     },
     {
@@ -1043,8 +923,7 @@ const cv: CV = {
       ],
       tech: {
         Go: false,
-        CSS: true,
-        HTML: true,
+
         TypeScript: false,
         Ruby: true,
         "Node.js": false,
@@ -1052,8 +931,7 @@ const cv: CV = {
         JavaScript: true,
         "C#": true,
         PHP: true,
-        Bash: true,
-        Docker: false,
+
         AWS: true,
         Azure: false,
         "Digital Ocean": false,
@@ -1064,22 +942,15 @@ const cv: CV = {
         "ASP.NET": true,
         Android: false,
         iOS: false,
-        Agile: true,
-        "Load Testing": false,
-        "Continuous Delivery": true,
-        "Continuous Integration": true,
-        "Unit Testing": true,
-        "Acceptance Testing": true,
+
         Postgres: true,
         MySQL: false,
         MSSQL: true,
         GraphQL: false,
         ElasticSearch: false,
         "Tailwind CSS": false,
-        Bootstrap: false,
+
         AI: false,
-        Midjourney: false,
-        ChatGPT: false,
       },
     },
     {
@@ -1095,8 +966,7 @@ const cv: CV = {
       ],
       tech: {
         Go: false,
-        CSS: true,
-        HTML: true,
+
         TypeScript: false,
         Ruby: false,
         "Node.js": false,
@@ -1104,8 +974,7 @@ const cv: CV = {
         JavaScript: true,
         "C#": true,
         PHP: false,
-        Bash: false,
-        Docker: false,
+
         AWS: false,
         Azure: false,
         "Digital Ocean": false,
@@ -1116,22 +985,15 @@ const cv: CV = {
         "ASP.NET": true,
         Android: false,
         iOS: false,
-        Agile: true,
-        "Load Testing": false,
-        "Continuous Delivery": false,
-        "Continuous Integration": false,
-        "Unit Testing": false,
-        "Acceptance Testing": false,
+
         Postgres: false,
         MySQL: false,
         MSSQL: true,
         GraphQL: false,
         ElasticSearch: false,
         "Tailwind CSS": false,
-        Bootstrap: false,
+
         AI: false,
-        Midjourney: false,
-        ChatGPT: false,
       },
     },
     {
@@ -1147,8 +1009,7 @@ const cv: CV = {
       ],
       tech: {
         Go: false,
-        CSS: true,
-        HTML: true,
+
         TypeScript: false,
         Ruby: false,
         "Node.js": false,
@@ -1156,8 +1017,7 @@ const cv: CV = {
         JavaScript: true,
         "C#": false,
         PHP: true,
-        Bash: false,
-        Docker: false,
+
         AWS: false,
         Azure: false,
         "Digital Ocean": false,
@@ -1168,22 +1028,15 @@ const cv: CV = {
         "ASP.NET": false,
         Android: false,
         iOS: false,
-        Agile: false,
-        "Load Testing": false,
-        "Continuous Delivery": false,
-        "Continuous Integration": false,
-        "Unit Testing": true,
-        "Acceptance Testing": false,
+
         Postgres: false,
         MySQL: true,
         MSSQL: false,
         GraphQL: false,
         ElasticSearch: false,
         "Tailwind CSS": false,
-        Bootstrap: false,
+
         AI: false,
-        Midjourney: false,
-        ChatGPT: false,
       },
     },
     {
@@ -1195,8 +1048,7 @@ const cv: CV = {
       things: ["Founded and ran a freelance web development agency."],
       tech: {
         Go: false,
-        CSS: true,
-        HTML: true,
+
         TypeScript: false,
         Ruby: false,
         "Node.js": false,
@@ -1204,8 +1056,7 @@ const cv: CV = {
         JavaScript: true,
         "C#": true,
         PHP: true,
-        Bash: false,
-        Docker: false,
+
         AWS: false,
         Azure: false,
         "Digital Ocean": false,
@@ -1216,22 +1067,15 @@ const cv: CV = {
         "ASP.NET": false,
         Android: false,
         iOS: false,
-        Agile: false,
-        "Load Testing": false,
-        "Continuous Delivery": false,
-        "Continuous Integration": false,
-        "Unit Testing": false,
-        "Acceptance Testing": false,
+
         Postgres: false,
         MySQL: true,
         MSSQL: false,
         GraphQL: false,
         ElasticSearch: false,
         "Tailwind CSS": false,
-        Bootstrap: false,
+
         AI: false,
-        Midjourney: false,
-        ChatGPT: false,
       },
     },
     {
@@ -1247,8 +1091,7 @@ const cv: CV = {
       ],
       tech: {
         Go: true,
-        CSS: true,
-        HTML: true,
+
         TypeScript: true,
         Ruby: true,
         "Node.js": false,
@@ -1256,8 +1099,7 @@ const cv: CV = {
         JavaScript: true,
         "C#": true,
         PHP: true,
-        Bash: true,
-        Docker: true,
+
         AWS: true,
         Azure: true,
         "Digital Ocean": true,
@@ -1268,25 +1110,18 @@ const cv: CV = {
         "ASP.NET": true,
         Android: true,
         iOS: true,
-        Agile: true,
-        "Load Testing": true,
-        "Continuous Delivery": true,
-        "Continuous Integration": true,
-        "Unit Testing": false,
-        "Acceptance Testing": false,
+
         Postgres: true,
         MySQL: true,
         MSSQL: true,
         GraphQL: false,
         ElasticSearch: true,
         "Tailwind CSS": true,
-        Bootstrap: true,
+
         AI: false,
-        Midjourney: false,
-        ChatGPT: false,
       },
     },
-  ]
+  ],
 };
 
 export default cv;
